@@ -7,6 +7,17 @@ export const translations = {
     cta: 'Přejít na Vedos.cz',
     discountCode: 'Slevový kód',
     validUntil: 'do',
+    coupons: {
+      webhostingNoLimit: 'Webhosting NoLimit a Extra sleva 70 %',
+      webhostingLowCost: 'Webhosting LowCost, NoLimit a Extra sleva 60 %',
+      domains: '50% sleva na domény (.EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE, .FUN)',
+      vps: 'VPS ON sleva 33 %',
+      website: 'VEDOS WebSite sleva 50 %',
+      cd: 'VEDOS CD sleva 25 %',
+      mailhosting: 'Mailhosting sleva 50 %',
+      renewal: 'Sleva na PRODLOUŽENÍ',
+      renewalInfo: '(max. 300x). Případně zkuste najít v aktuálním newsletteru'
+    },
     services: {
       webhostingNoLimit: {
         title: 'Webhosting NoLimit',
@@ -29,13 +40,13 @@ export const translations = {
         cta: 'Získat VPS se slevou 33%'
       },
       website: {
-        title: 'V(W)EDOS WebSite',
-        content: 'Vytvořte si vlastní web jednoduše a rychle. Nyní se slevou 50% na službu V(W)EDOS WebSite.',
+        title: 'VEDOS WebSite',
+        content: 'Vytvořte si vlastní web jednoduše a rychle. Nyní se slevou 50% na službu VEDOS WebSite.',
         cta: 'Vytvořit web se slevou 50%'
       },
       cd: {
-        title: 'V(W)EDOS CD',
-        content: 'Cloudové úložiště pro vaše data. Využijte 25% slevu na V(W)EDOS CD služby.',
+        title: 'VEDOS CD',
+        content: 'Cloudové úložiště pro vaše data. Využijte 25% slevu na VEDOS CD služby.',
         cta: 'Aktivovat se slevou 25%'
       },
       mailhosting: {
@@ -56,6 +67,17 @@ export const translations = {
     cta: 'Go to Vedos.cz',
     discountCode: 'Discount code',
     validUntil: 'valid until',
+    coupons: {
+      webhostingNoLimit: 'Webhosting NoLimit and Extra 70% discount',
+      webhostingLowCost: 'Webhosting LowCost, NoLimit and Extra 60% discount',
+      domains: '50% discount on domains (.EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE, .FUN)',
+      vps: 'VPS ON 33% discount',
+      website: 'VEDOS WebSite 50% discount',
+      cd: 'VEDOS CD 25% discount',
+      mailhosting: 'Mailhosting 50% discount',
+      renewal: 'RENEWAL Discount',
+      renewalInfo: '(max. 300x). Alternatively, check the current newsletter'
+    },
     services: {
       webhostingNoLimit: {
         title: 'Webhosting NoLimit',
@@ -78,13 +100,13 @@ export const translations = {
         cta: 'Get VPS with 33% discount'
       },
       website: {
-        title: 'V(W)EDOS WebSite',
-        content: 'Create your own website easily and quickly. Now with 50% discount on V(W)EDOS WebSite service.',
+        title: 'VEDOS WebSite',
+        content: 'Create your own website easily and quickly. Now with 50% discount on VEDOS WebSite service.',
         cta: 'Create website with 50% discount'
       },
       cd: {
-        title: 'V(W)EDOS CD',
-        content: 'Cloud storage for your data. Get 25% discount on V(W)EDOS CD services.',
+        title: 'VEDOS CD',
+        content: 'Cloud storage for your data. Get 25% discount on VEDOS CD services.',
         cta: 'Activate with 25% discount'
       },
       mailhosting: {
@@ -105,6 +127,17 @@ export const translations = {
     cta: 'Przejdź do Vedos.cz',
     discountCode: 'Kod rabatowy',
     validUntil: 'ważny do',
+    coupons: {
+      webhostingNoLimit: 'Webhosting NoLimit i dodatkowy rabat 70%',
+      webhostingLowCost: 'Webhosting LowCost, NoLimit i dodatkowy rabat 60%',
+      domains: '50% rabatu na domeny (.EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE, .FUN)',
+      vps: 'VPS ON rabat 33%',
+      website: 'VEDOS WebSite rabat 50%',
+      cd: 'VEDOS CD rabat 25%',
+      mailhosting: 'Mailhosting rabat 50%',
+      renewal: 'Rabat na PRZEDŁUŻENIE',
+      renewalInfo: '(maks. 300x). Ewentualnie sprawdź w aktualnym newsletterze'
+    },
     services: {
       webhostingNoLimit: {
         title: 'Webhosting NoLimit',
@@ -127,13 +160,13 @@ export const translations = {
         cta: 'Uzyskaj VPS z 33% rabatem'
       },
       website: {
-        title: 'V(W)EDOS WebSite',
-        content: 'Stwórz własną stronę internetową łatwo i szybko. Teraz 50% zniżki na usługę V(W)EDOS WebSite.',
+        title: 'VEDOS WebSite',
+        content: 'Stwórz własną stronę internetową łatwo i szybko. Teraz 50% zniżki na usługę VEDOS WebSite.',
         cta: 'Stwórz stronę z 50% rabatem'
       },
       cd: {
-        title: 'V(W)EDOS CD',
-        content: 'Przechowywanie w chmurze dla Twoich danych. Skorzystaj z 25% zniżki na usługi V(W)EDOS CD.',
+        title: 'VEDOS CD',
+        content: 'Przechowywanie w chmurze dla Twoich danych. Skorzystaj z 25% zniżki na usługi VEDOS CD.',
         cta: 'Aktywuj z 25% rabatem'
       },
       mailhosting: {
@@ -154,6 +187,17 @@ export const translations = {
     cta: 'Prejsť na Vedos.cz',
     discountCode: 'Zľavový kód',
     validUntil: 'platný do',
+    coupons: {
+      webhostingNoLimit: 'Webhosting NoLimit a Extra zľava 70 %',
+      webhostingLowCost: 'Webhosting LowCost, NoLimit a Extra zľava 60 %',
+      domains: '50% zľava na domény (.EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE, .FUN)',
+      vps: 'VPS ON zľava 33 %',
+      website: 'VEDOS WebSite zľava 50 %',
+      cd: 'VEDOS CD zľava 25 %',
+      mailhosting: 'Mailhosting zľava 50 %',
+      renewal: 'Zľava na PREDĹŽENIE',
+      renewalInfo: '(max. 300x). Prípadne skúste nájsť v aktuálnom newsletteri'
+    },
     services: {
       webhostingNoLimit: {
         title: 'Webhosting NoLimit',
@@ -176,13 +220,13 @@ export const translations = {
         cta: 'Získať VPS so zľavou 33%'
       },
       website: {
-        title: 'V(W)EDOS WebSite',
-        content: 'Vytvorte si vlastnú webstránku jednoducho a rýchlo. Teraz s 50% zľavou na službu V(W)EDOS WebSite.',
+        title: 'VEDOS WebSite',
+        content: 'Vytvorte si vlastnú webstránku jednoducho a rýchlo. Teraz s 50% zľavou na službu VEDOS WebSite.',
         cta: 'Vytvoriť web so zľavou 50%'
       },
       cd: {
-        title: 'V(W)EDOS CD',
-        content: 'Cloudové úložisko pre vaše dáta. Využite 25% zľavu na služby V(W)EDOS CD.',
+        title: 'VEDOS CD',
+        content: 'Cloudové úložisko pre vaše dáta. Využite 25% zľavu na služby VEDOS CD.',
         cta: 'Aktivovať so zľavou 25%'
       },
       mailhosting: {
@@ -203,6 +247,17 @@ export const translations = {
     cta: 'Zu Vedos.cz',
     discountCode: 'Rabattcode',
     validUntil: 'gültig bis',
+    coupons: {
+      webhostingNoLimit: 'Webhosting NoLimit und Extra 70% Rabatt',
+      webhostingLowCost: 'Webhosting LowCost, NoLimit und Extra 60% Rabatt',
+      domains: '50% Rabatt auf Domains (.EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE, .FUN)',
+      vps: 'VPS ON 33% Rabatt',
+      website: 'VEDOS WebSite 50% Rabatt',
+      cd: 'VEDOS CD 25% Rabatt',
+      mailhosting: 'Mailhosting 50% Rabatt',
+      renewal: 'VERLÄNGERUNGS-Rabatt',
+      renewalInfo: '(max. 300x). Alternativ im aktuellen Newsletter nachsehen'
+    },
     services: {
       webhostingNoLimit: {
         title: 'Webhosting NoLimit',
@@ -225,13 +280,13 @@ export const translations = {
         cta: 'VPS mit 33% Rabatt erhalten'
       },
       website: {
-        title: 'V(W)EDOS WebSite',
-        content: 'Erstellen Sie Ihre eigene Website einfach und schnell. Jetzt mit 50% Rabatt auf den V(W)EDOS WebSite-Service.',
+        title: 'VEDOS WebSite',
+        content: 'Erstellen Sie Ihre eigene Website einfach und schnell. Jetzt mit 50% Rabatt auf den VEDOS WebSite-Service.',
         cta: 'Website mit 50% Rabatt erstellen'
       },
       cd: {
-        title: 'V(W)EDOS CD',
-        content: 'Cloud-Speicher für Ihre Daten. Nutzen Sie 25% Rabatt auf V(W)EDOS CD-Dienste.',
+        title: 'VEDOS CD',
+        content: 'Cloud-Speicher für Ihre Daten. Nutzen Sie 25% Rabatt auf VEDOS CD-Dienste.',
         cta: 'Mit 25% Rabatt aktivieren'
       },
       mailhosting: {
