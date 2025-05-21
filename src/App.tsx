@@ -8,45 +8,45 @@ import { LanguageProvider } from './contexts/LanguageContext';
 import { useLanguage } from './contexts/LanguageContext';
 import { DiscountCoupon } from './types';
 
-const coupons: DiscountCoupon[] = [
-  {
-    description: 'Webhosting NoLimit a Extra sleva 70 %:',
-    code: 'WN252AY1ME'
-  },
-  {
-    description: 'Webhosting LowCost, NoLimit a Extra sleva 60 %:',
-    code: 'WN251YEAKI'
-  },
-  {
-    description: '50% sleva na domény (.EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE, .FUN):',
-    code: 'DM251GO78Y'
-  },
-  {
-    description: 'VPS ON sleva 33 %:',
-    code: 'VN251Y7PDS'
-  },
-  {
-    description: 'V(W)EDOS WebSite sleva 50 %:',
-    code: 'WS251YW5UR'
-  },
-  {
-    description: 'V(W)EDOS CD sleva 25 %:',
-    code: 'CD251AST7P'
-  },
-  {
-    description: 'Mailhosting sleva 50 %:',
-    code: 'MH251FGR9N'
-  },
-  {
-    description: 'Sleva na PRODLOUŽENÍ:',
-    code: 'WTPXS2025',
-    validUntil: '21.4.2025',
-    additionalInfo: '(max. 300x). Případně zkuste najít v aktuálním newsletteru'
-  }
-];
-
 const AppContent: React.FC = () => {
   const { t } = useLanguage();
+
+  const coupons: DiscountCoupon[] = [
+    {
+      description: t('coupons.webhostingNoLimit') + ':',
+      code: 'WN252AY1ME'
+    },
+    {
+      description: t('coupons.webhostingLowCost') + ':',
+      code: 'WN251YEAKI'
+    },
+    {
+      description: t('coupons.domains') + ':',
+      code: 'DM251GO78Y'
+    },
+    {
+      description: t('coupons.vps') + ':',
+      code: 'VN251Y7PDS'
+    },
+    {
+      description: t('coupons.website') + ':',
+      code: 'WS251YW5UR'
+    },
+    {
+      description: t('coupons.cd') + ':',
+      code: 'CD251AST7P'
+    },
+    {
+      description: t('coupons.mailhosting') + ':',
+      code: 'MH251FGR9N'
+    },
+    {
+      description: t('coupons.renewal') + ':',
+      code: 'WTPXS2025',
+      validUntil: '21.4.2025',
+      additionalInfo: t('coupons.renewalInfo')
+    }
+  ];
 
   return (
     <div className="App">
