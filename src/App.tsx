@@ -4,47 +4,65 @@ import './App.css';
 import CouponList from './components/CouponList';
 import InfoTile from './components/InfoTile';
 import LanguagePicker from './components/LanguagePicker';
+import Footer from './components/Footer';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { useLanguage } from './contexts/LanguageContext';
 import { DiscountCoupon } from './types';
+import { validCoupons } from './coupons';
+
+const getLocalizedUrl = (baseUrl: string, language: string): string => {
+  if (language === 'cs') return baseUrl;
+  if (language === 'sk') {
+    return baseUrl
+      .replace('vedos.cz', 'vedos.cz/sk')
+      .replace('wedos.com/cs/', 'wedos.com/sk/');
+  }
+  return baseUrl
+    .replace('vedos.cz', 'vedos.cz/en')
+    .replace('wedos.com/cs/', 'wedos.com/en/');
+};
 
 const AppContent: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const coupons: DiscountCoupon[] = [
     {
       description: t('coupons.webhostingNoLimit') + ':',
-      code: 'WN252AY1ME'
+      code: validCoupons.webhostingNoLimit.code
     },
     {
       description: t('coupons.webhostingLowCost') + ':',
-      code: 'WN251YEAKI'
+      code: validCoupons.webhostingLowCost.code
     },
     {
       description: t('coupons.domains') + ':',
-      code: 'DM251GO78Y'
+      code: validCoupons.domains.code
     },
     {
       description: t('coupons.vps') + ':',
-      code: 'VN251Y7PDS'
+      code: validCoupons.vps.code
     },
     {
       description: t('coupons.website') + ':',
-      code: 'WS251YW5UR'
+      code: validCoupons.website.code
     },
     {
       description: t('coupons.cd') + ':',
-      code: 'CD251AST7P'
+      code: validCoupons.cd.code
     },
     {
       description: t('coupons.mailhosting') + ':',
-      code: 'MH251FGR9N'
+      code: validCoupons.mailhosting.code
     },
     {
       description: t('coupons.renewal') + ':',
-      code: 'WTPXS2025',
-      validUntil: '21.4.2025',
-      additionalInfo: t('coupons.renewalInfo')
+      code: validCoupons.renewal.code,
+      validUntil: validCoupons.renewal.validUntil,
+      additionalInfo: {
+        text: t('coupons.renewalInfo.text'),
+        linkText: t('coupons.renewalInfo.linkText'),
+        linkUrl: t('coupons.renewalInfo.linkUrl')
+      }
     }
   ];
 
@@ -106,7 +124,7 @@ const AppContent: React.FC = () => {
             <CouponList coupons={coupons} />
             <div className="text-left">
               <a 
-                href="https://vedos.cz/?ap=Lf2pCY" 
+                href={getLocalizedUrl("https://vedos.cz/?ap=Lf2pCY", language)} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn btn-primary btn-lg mt-4"
@@ -124,11 +142,11 @@ const AppContent: React.FC = () => {
             bgColor="#003484"
             textColor="light"
             discountCode={{
-              code: "WN252AY1ME",
-              validUntil: "31.12.2025"
+              code: coupons[0].code,
+              validUntil: validCoupons.webhostingNoLimit.validUntil
             }}
             link={{
-              url: "https://order.wedos.com/cs/webhosting/order.html?step=1&coupon_code=WN252AY1ME&variant=nolimit&ap=Lf2pCY",
+              url: getLocalizedUrl("https://order.wedos.com/cs/webhosting/order.html?step=1&coupon_code=WN252AY1ME&variant=nolimit&ap=Lf2pCY", language),
               text: t('services.webhostingNoLimit.cta')
             }}
           />
@@ -138,11 +156,11 @@ const AppContent: React.FC = () => {
             bgColor="#003484"
             textColor="light"
             discountCode={{
-              code: "WN251YEAKI",
-              validUntil: "31.12.2025"
+              code: coupons[1].code,
+              validUntil: validCoupons.webhostingLowCost.validUntil
             }}
             link={{
-              url: "https://order.wedos.com/cs/webhosting/order.html?step=1&coupon_code=WN251YEAKI&variant=lowcost&ap=Lf2pCY",
+              url: getLocalizedUrl("https://order.wedos.com/cs/webhosting/order.html?step=1&coupon_code=WN251YEAKI&variant=lowcost&ap=Lf2pCY", language),
               text: t('services.webhostingLowCost.cta')
             }}
           />
@@ -152,11 +170,11 @@ const AppContent: React.FC = () => {
             bgColor="#003484"
             textColor="light"
             discountCode={{
-              code: "DM251GO78Y",
-              validUntil: "31.12.2025"
+              code: coupons[2].code,
+              validUntil: validCoupons.domains.validUntil
             }}
             link={{
-              url: "https://www.vedos.cz/domeny/?ap=Lf2pCY",
+              url: getLocalizedUrl("https://www.vedos.cz/domeny/?ap=Lf2pCY", language),
               text: t('services.domains.cta')
             }}
           />
@@ -166,11 +184,11 @@ const AppContent: React.FC = () => {
             bgColor="#003484"
             textColor="light"
             discountCode={{
-              code: "VN251Y7PDS",
-              validUntil: "31.12.2025"
+              code: coupons[3].code,
+              validUntil: validCoupons.vps.validUntil
             }}
             link={{
-              url: "https://www.vedos.cz/vps-ssd/?ap=Lf2pCY",
+              url: getLocalizedUrl("https://www.vedos.cz/vps-ssd/?ap=Lf2pCY", language),
               text: t('services.vps.cta')
             }}
           />
@@ -180,11 +198,11 @@ const AppContent: React.FC = () => {
             bgColor="#003484"
             textColor="light"
             discountCode={{
-              code: "WS251YW5UR",
-              validUntil: "31.12.2025"
+              code: coupons[4].code,
+              validUntil: validCoupons.website.validUntil
             }}
             link={{
-              url: "https://www.vedos.cz/website-1-0/?ap=Lf2pCY",
+              url: getLocalizedUrl("https://www.vedos.cz/website-1-0/?ap=Lf2pCY", language),
               text: t('services.website.cta')
             }}
           />
@@ -194,11 +212,11 @@ const AppContent: React.FC = () => {
             bgColor="#003484"
             textColor="light"
             discountCode={{
-              code: "CD251AST7P",
-              validUntil: "31.12.2025"
+              code: coupons[5].code,
+              validUntil: validCoupons.cd.validUntil
             }}
             link={{
-              url: "https://www.vedos.cz/cd/?ap=Lf2pCY",
+              url: getLocalizedUrl("https://www.vedos.cz/cd/?ap=Lf2pCY", language),
               text: t('services.cd.cta')
             }}
           />
@@ -208,11 +226,11 @@ const AppContent: React.FC = () => {
             bgColor="#003484"
             textColor="light"
             discountCode={{
-              code: "MH251FGR9N",
-              validUntil: "31.12.2025"
+              code: coupons[6].code,
+              validUntil: validCoupons.mailhosting.validUntil
             }}
             link={{
-              url: "https://www.vedos.cz/mailhosting/?ap=Lf2pCY",
+              url: getLocalizedUrl("https://www.vedos.cz/mailhosting/?ap=Lf2pCY", language),
               text: t('services.mailhosting.cta')
             }}
           />
@@ -222,16 +240,17 @@ const AppContent: React.FC = () => {
             bgColor="#003484"
             textColor="light"
             discountCode={{
-              code: "WTPXS2025",
-              validUntil: "21.4.2025"
+              code: coupons[7].code,
+              validUntil: coupons[7].validUntil
             }}
             link={{
-              url: "https://www.vedos.cz/?ap=Lf2pCY",
+              url: getLocalizedUrl("https://www.vedos.cz/?ap=Lf2pCY", language),
               text: t('services.renewal.cta')
             }}
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

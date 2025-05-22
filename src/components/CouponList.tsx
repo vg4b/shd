@@ -15,7 +15,23 @@ const CouponList: React.FC<CouponListProps> = ({ coupons }) => {
             <span className="text-muted"> ({t('validUntil')} {coupon.validUntil})</span>
           )}
           {coupon.additionalInfo && (
-            <span className="text-muted"> {coupon.additionalInfo}</span>
+            <span className="text-muted">
+              {' '}
+              {typeof coupon.additionalInfo === 'string' ? (
+                coupon.additionalInfo
+              ) : (
+                <>
+                  {coupon.additionalInfo.text}{' '}
+                  <a 
+                    href={coupon.additionalInfo.linkUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {coupon.additionalInfo.linkText}
+                  </a>
+                </>
+              )}
+            </span>
           )}
         </li>
       ))}
