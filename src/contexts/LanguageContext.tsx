@@ -35,10 +35,6 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         window.history.pushState({}, '', newPath);
       }
     }
-
-    // Dispatch custom event for language change
-    const event = new CustomEvent('languageChange', { detail: { language } });
-    window.dispatchEvent(event);
   }, [language]);
 
   const t = (key: string): string => {
