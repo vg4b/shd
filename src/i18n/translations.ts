@@ -16,7 +16,11 @@ export const translations = {
       cd: 'VEDOS CD sleva 25 %',
       mailhosting: 'Mailhosting sleva 50 %',
       renewal: 'Sleva na PRODLOUŽENÍ',
-      renewalInfo: '(max. 300x). Případně zkuste najít v aktuálním newsletteru'
+      renewalInfo: {
+        text: '(max. 300x). Případně zkuste najít v',
+        linkText: 'aktuálním newsletteru',
+        linkUrl: 'https://www.vedos.cz/newsletter?ap=Lf2pCY'
+      }
     },
     services: {
       webhostingNoLimit: {
@@ -76,7 +80,11 @@ export const translations = {
       cd: 'VEDOS CD 25% discount',
       mailhosting: 'Mailhosting 50% discount',
       renewal: 'RENEWAL Discount',
-      renewalInfo: '(max. 300x). Alternatively, check the current newsletter'
+      renewalInfo: {
+        text: '(max. 300x). Alternatively, check the',
+        linkText: 'current newsletter',
+        linkUrl: 'https://www.vedos.cz/en/newsletter?ap=Lf2pCY'
+      }
     },
     services: {
       webhostingNoLimit: {
@@ -136,7 +144,11 @@ export const translations = {
       cd: 'VEDOS CD rabat 25%',
       mailhosting: 'Mailhosting rabat 50%',
       renewal: 'Rabat na PRZEDŁUŻENIE',
-      renewalInfo: '(maks. 300x). Ewentualnie sprawdź w aktualnym newsletterze'
+      renewalInfo: {
+        text: '(maks. 300x). Ewentualnie sprawdź w',
+        linkText: 'aktualnym newsletterze',
+        linkUrl: 'https://www.vedos.cz/newsletter?ap=Lf2pCY'
+      }
     },
     services: {
       webhostingNoLimit: {
@@ -196,7 +208,11 @@ export const translations = {
       cd: 'VEDOS CD zľava 25 %',
       mailhosting: 'Mailhosting zľava 50 %',
       renewal: 'Zľava na PREDĹŽENIE',
-      renewalInfo: '(max. 300x). Prípadne skúste nájsť v aktuálnom newsletteri'
+      renewalInfo: {
+        text: '(max. 300x). Prípadne skúste nájsť v',
+        linkText: 'aktuálnom newsletteri',
+        linkUrl: 'https://www.vedos.cz/sk/newsletter?ap=Lf2pCY'
+      }
     },
     services: {
       webhostingNoLimit: {
@@ -256,7 +272,11 @@ export const translations = {
       cd: 'VEDOS CD 25% Rabatt',
       mailhosting: 'Mailhosting 50% Rabatt',
       renewal: 'VERLÄNGERUNGS-Rabatt',
-      renewalInfo: '(max. 300x). Alternativ im aktuellen Newsletter nachsehen'
+      renewalInfo: {
+        text: '(max. 300x). Alternativ im',
+        linkText: 'aktuellen Newsletter',
+        linkUrl: 'https://www.vedos.cz/en/newsletter?ap=Lf2pCY'
+      }
     },
     services: {
       webhostingNoLimit: {
