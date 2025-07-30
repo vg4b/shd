@@ -28,8 +28,8 @@ export const validCoupons = {
       validUntil: "31.12.2025",
       },
     "renewal": {
-      code: "NWL25KVEPR",
-      validUntil: "31.5.2025",
+      code: "NWL25CRCPR",
+      validUntil: "31.7.2025",
     }
   }
 
