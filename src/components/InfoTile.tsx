@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface InfoTileProps {
@@ -8,6 +9,7 @@ interface InfoTileProps {
     url: string;
     text: string;
   };
+  internalLink?: string; // For React Router navigation
   bgColor?: string;
   textColor?: string;
   discountCode?: {
@@ -20,30 +22,37 @@ const InfoTile: React.FC<InfoTileProps> = ({
   title, 
   content, 
   link, 
+  internalLink,
   bgColor = '#f8f9fa', 
   textColor = 'dark',
   discountCode 
 }) => {
   const { t } = useLanguage();
 
-  return (
-    <div className="col-md-6 mb-4">
-      <div 
-        className={`info-tile h-100 p-5 rounded-3 text-${textColor}`}
-        style={{ backgroundColor: bgColor }}
-      >
-        <h2>{title}</h2>
-        <p>{content}</p>
-        {discountCode && (
-          <p className="mb-3">
-            <strong>{t('discountCode')}: </strong>
-            {discountCode.code}
-            {discountCode.validUntil && (
-              <span className="ms-2">({t('validUntil')} {discountCode.validUntil})</span>
-            )}
-          </p>
-        )}
-        {link && (
+  const tileContent = (
+    <div 
+      className={`info-tile h-100 p-5 rounded-3 text-${textColor} ${internalLink ? 'cursor-pointer' : ''}`}
+      style={{ backgroundColor: bgColor }}
+    >
+      <h2>{title}</h2>
+      <p>{content}</p>
+      {discountCode && (
+        <p className="mb-3">
+          <strong>{t('discountCode')}: </strong>
+          {discountCode.code}
+          {discountCode.validUntil && (
+            <span className="ms-2">({t('validUntil')} {discountCode.validUntil})</span>
+          )}
+        </p>
+      )}
+      {internalLink ? (
+        <div className="mt-3">
+          <span className="btn btn-outline-light">
+            Více informací →
+          </span>
+        </div>
+      ) : (
+        link && (
           <a 
             href={link.url}
             target="_blank"
@@ -52,8 +61,20 @@ const InfoTile: React.FC<InfoTileProps> = ({
           >
             {link.text}
           </a>
-        )}
-      </div>
+        )
+      )}
+    </div>
+  );
+
+  return (
+    <div className="col-md-6 mb-4">
+      {internalLink ? (
+        <Link to={internalLink} className="text-decoration-none">
+          {tileContent}
+        </Link>
+      ) : (
+        tileContent
+      )}
     </div>
   );
 };

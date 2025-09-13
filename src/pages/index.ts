@@ -1,0 +1,11 @@
+export { default as HomePage } from './HomePage';
+export { default as WebhostingNoLimitPage } from './WebhostingNoLimitPage';
+export { default as WebhostingLowCostPage } from './WebhostingLowCostPage';
+// export { default as DomainsPage } from './DomainsPage';
+export { default as VpsPage } from './VpsPage';
+export { default as WebsitePage } from './WebsitePage';
+// export { default as CdPage } from './CdPage';
+export { default as DiskPage } from './DiskPage';
+export { default as MailhostingPage } from './MailhostingPage';
+export { default as RenewalPage } from './RenewalPage';
+export { default as VoucherPage } from './VoucherPage';

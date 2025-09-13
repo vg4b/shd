@@ -7,10 +7,6 @@ export const validCoupons = {
       code: "WN251YEAKI",
       validUntil: "31.12.2025",
     },
-    "domains": {
-      code: "DM251GO78Y",
-      validUntil: "31.12.2025",
-    },
     "vps": {
       code: "VN251Y7PDS",
       validUntil: "31.12.2025",
@@ -19,8 +15,8 @@ export const validCoupons = {
       code: "WS251YW5UR",
       validUntil: "31.12.2025",
     },
-    "cd": {
-      code: "CD251AST7P",
+    "disk": {
+      code: "DK251SAVE25",
       validUntil: "31.12.2025",
     },
     "mailhosting": {
@@ -32,4 +28,14 @@ export const validCoupons = {
       validUntil: "31.7.2025",
     }
   }
+
+// Commented out services for reference:
+// "domains": {
+//   code: "DM251GO78Y",
+//   validUntil: "31.12.2025",
+// },
+// "cd": {
+//   code: "CD251AST7P",
+//   validUntil: "31.12.2025",
+// },
 
