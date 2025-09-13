@@ -7,6 +7,9 @@ export const translations = {
     cta: 'Přejít na Vedos.cz',
     discountCode: 'Slevový kód',
     validUntil: 'do',
+    site: {
+      title: 'slevy-hosting-domeny.cz'
+    },
     coupons: {
       webhostingNoLimit: 'Webhosting NoLimit a Extra sleva 70 %',
       webhostingLowCost: 'Webhosting LowCost, NoLimit a Extra sleva 60 %',
@@ -98,6 +101,9 @@ export const translations = {
     cta: 'Go to Vedos.cz',
     discountCode: 'Discount code',
     validUntil: 'valid until',
+    site: {
+      title: 'slevy-hosting-domeny.cz'
+    },
     coupons: {
       webhostingNoLimit: 'Webhosting NoLimit and Extra 70% discount',
       webhostingLowCost: 'Webhosting LowCost, NoLimit and Extra 60% discount',
@@ -189,6 +195,9 @@ export const translations = {
     cta: 'Przejdź do Vedos.cz',
     discountCode: 'Kod rabatowy',
     validUntil: 'ważny do',
+    site: {
+      title: 'slevy-hosting-domeny.cz'
+    },
     coupons: {
       webhostingNoLimit: 'Webhosting NoLimit i dodatkowy rabat 70%',
       webhostingLowCost: 'Webhosting LowCost, NoLimit i dodatkowy rabat 60%',
@@ -280,6 +289,9 @@ export const translations = {
     cta: 'Prejsť na Vedos.cz',
     discountCode: 'Zľavový kód',
     validUntil: 'platný do',
+    site: {
+      title: 'slevy-hosting-domeny.cz'
+    },
     coupons: {
       webhostingNoLimit: 'Webhosting NoLimit a Extra zľava 70 %',
       webhostingLowCost: 'Webhosting LowCost, NoLimit a Extra zľava 60 %',
@@ -371,6 +383,9 @@ export const translations = {
     cta: 'Zu Vedos.cz',
     discountCode: 'Rabattcode',
     validUntil: 'gültig bis',
+    site: {
+      title: 'slevy-hosting-domeny.cz'
+    },
     coupons: {
       webhostingNoLimit: 'Webhosting NoLimit und Extra 70% Rabatt',
       webhostingLowCost: 'Webhosting LowCost, NoLimit und Extra 60% Rabatt',

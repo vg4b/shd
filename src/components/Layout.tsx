@@ -53,7 +53,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 strokeLinejoin="round"
               />
             </svg>
-            <span className="fs-4">slevy-hosting-domeny.cz</span>
+            <span className="fs-4">{t('site.title')}</span>
           </Link>
           <LanguagePicker />
         </header>
