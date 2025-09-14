@@ -92,7 +92,54 @@ export const translations = {
       moreCoupons: 'Další slevové kupóny',
       exploreMore: 'Prozkoumejte další dostupné slevy na služby Vedos.cz',
       allCoupons: 'Všechny kupóny',
-      above: 'výše'
+      above: 'výše',
+      faqTitle: 'Nejčastější otázky',
+      long: {
+        webhostingNoLimit: 'Webhosting NoLimit je ideální volba pro projekty, které potřebují vyvážený poměr výkonu, stability a ceny. Díky neomezenému prostoru a vysoké dostupnosti zvládne WordPress, WooCommerce i náročnější redakční systémy. V kombinaci s pravidelnými slevovými akcemi jde o jednu z nejvýhodnějších nabídek na trhu.\n\nV rámci balíčku získáte moderní technologii, českou podporu a transparentní ceník bez skrytých poplatků. Přenést web k poskytovateli je snadné a většinu běžných webů zprovozníte během několika minut.',
+        webhostingLowCost: 'LowCost i NoLimit pokrývají potřeby většiny webů. LowCost je skvělý začátek pro osobní stránky, blogy a menší firemní weby. Pokud plánujete růst, zvažte NoLimit se silnější konfigurací a lepšími parametry pro databáze a PHP.\n\nSlevové kódy pravidelně zlevňují jak zřizovací poplatek, tak první fakturační období, díky čemuž ušetříte hned na startu.',
+        vps: 'VPS ON je flexibilní řešení s možností nastavit parametry na míru – CPU, RAM i disk (100% SSD). Běží na ověřené infrastruktuře OpenNebula a hodí se pro aplikace, které vyžadují izolované prostředí, přístup root a možnost škálování.\n\nSleva Vám umožní otestovat produkční prostředí za nižší náklady a následně škálovat podle potřeby.',
+        website: 'VEDOS WebSite umožňuje rychlé sestavení webu bez programování. Vyberete si šablonu, upravíte obsah a publikujete. Řešení je ideální pro živnostníky a malé firmy, které chtějí být online bez zbytečné složitosti.\n\nDíky akční slevě získáte profesionálně vypadající web za zlomek ceny oproti zakázkovému vývoji.',
+        disk: 'VEDOS Disk je bezpečné vzdálené úložiště pro zálohy a archivaci. Přístup přes FTP, rsync, SMB, SVN či Git umožňuje snadnou integraci do Vašich procesů. Vhodné pro firmy i jednotlivce, kteří potřebují spolehlivý prostor mimo vlastní infrastrukturu.\n\nSlevový kód sníží náklady na dlouhodobé uchovávání dat.',
+        mailhosting: 'Mailhosting na vlastní doméně posílí profesionální prezentaci firmy. Služba nabízí moderní webmail, antivirovou a antispamovou ochranu a data uložená v ČR. Snadno přidáte další schránky a nastavíte přesměrování či aliasy.\n\nSe slevou vyřešíte firemní e-mail rychle a levně.',
+        renewal: 'Se slevou na prodloužení ušetříte při zachování stávajících parametrů služeb. Vhodné pro dlouhodobé projekty, kde se vyplatí stabilita a kontinuální provoz bez výpadků. Sledujte newsletter – často obsahuje výhodné kódy na více prodloužení.'
+      },
+      faqs: {
+        webhostingNoLimit: [
+          { q: 'Pro koho je NoLimit vhodný?', a: 'Pro firemní weby, blogy, magazíny i menší e‑shopy na WordPressu. Nabízí dostatek výkonu a neomezený prostor.' },
+          { q: 'Lze přejít z LowCost na NoLimit?', a: 'Ano, přechod je možný kdykoliv. Parametry lze navýšit bez výpadku provozu.' },
+          { q: 'Podporujete HTTPS a zálohy?', a: 'Ano, k dispozici je Let’s Encrypt/SSL a pravidelné zálohy dle podmínek služby.' }
+        ],
+        webhostingLowCost: [
+          { q: 'Stačí LowCost pro menší web?', a: 'Ano, pro osobní stránky a menší firemní weby je ideální. Při růstu lze přejít na NoLimit.' },
+          { q: 'Jak uplatním slevu?', a: 'Při objednávce vložte kód do košíku a potvrďte. Sleva se ihned projeví.' },
+          { q: 'Je migrace webu složitá?', a: 'Většina CMS má jednoduchý postup. V případě potřeby Vám poradí podpora.' }
+        ],
+        vps: [
+          { q: 'Proč zvolit VPS místo hostingu?', a: 'Získáte plnou kontrolu nad serverem (root), izolované prostředí a škálování parametrů.' },
+          { q: 'Jaké technologie jsou podporovány?', a: 'Libovolná linuxová distribuce, databáze, Docker a další – dle Vaší konfigurace.' },
+          { q: 'Je výkon garantovaný?', a: 'Parametry si volíte sami. Infrastruktura je postavená na OpenNebula s SSD úložištěm.' }
+        ],
+        website: [
+          { q: 'Musím umět programovat?', a: 'Ne, stačí vybrat šablonu a upravit obsah v editoru. Publikace je na pár kliknutí.' },
+          { q: 'Hodí se pro malé firmy?', a: 'Ano, je to rychlé a cenově dostupné řešení pro prezentaci služeb i kontaktů.' },
+          { q: 'Mohu později přejít na hosting?', a: 'Ano, až budete potřebovat větší flexibilitu, lze zvolit NoLimit a vlastní CMS.' }
+        ],
+        disk: [
+          { q: 'Na co je Disk vhodný?', a: 'Na zálohy, archivaci a sdílení dat mimo vlastní infrastrukturu s různými protokoly přístupu.' },
+          { q: 'Je přenos dat zabezpečený?', a: 'Ano, využívají se zabezpečené protokoly a přístupy dle zvoleného způsobu připojení.' },
+          { q: 'Jak vyberu kapacitu?', a: 'Začněte menším tarifem a dle potřeby jej navyšujte. Sleva sníží počáteční náklady.' }
+        ],
+        mailhosting: [
+          { q: 'Podporujete vlastní doménu?', a: 'Ano, e‑maily běží na Vaší doméně, což působí profesionálně a důvěryhodně.' },
+          { q: 'Je k dispozici antispam?', a: 'Ano, součástí je antispamová a antivirová ochrana a moderní webmail.' },
+          { q: 'Kolik schránek mohu mít?', a: 'Počet schránek lze snadno rozšiřovat podle potřeb týmu nebo firmy.' }
+        ],
+        renewal: [
+          { q: 'Na jaké služby sleva platí?', a: 'Na prodloužení stávajících služeb dle aktuálních podmínek akce.' },
+          { q: 'Lze slevu kombinovat?', a: 'Záleží na pravidlech konkrétní akce. Sledujte newsletter pro detaily.' },
+          { q: 'Je kód časově omezen?', a: 'Ano, platnost je vždy uvedena u kupónu. Doporučujeme objednat včas.' }
+        ]
+      }
     }
   },
   en: {
@@ -186,7 +233,54 @@ export const translations = {
       moreCoupons: 'More discount coupons',
       exploreMore: 'Explore other available discounts on Vedos.cz services',
       allCoupons: 'All coupons',
-      above: 'above'
+      above: 'above',
+      faqTitle: 'Frequently Asked Questions',
+      long: {
+        webhostingNoLimit: 'Webhosting NoLimit is a balanced choice for projects that need stable performance, unlimited space and great value. It easily handles WordPress, WooCommerce and most popular CMS platforms.\n\nWith recurring promotions, it belongs to the most cost‑effective options on the market. Migration is straightforward and most sites can be launched within minutes.',
+        webhostingLowCost: 'LowCost and NoLimit cover the needs of most websites. LowCost is perfect for personal sites, blogs and small business pages. If you expect growth, consider NoLimit with stronger database and PHP parameters.\n\nDiscount codes usually reduce the setup fee and the first billing period so you save right from the start.',
+        vps: 'VPS ON gives you full control – choose CPU, RAM and SSD storage on reliable OpenNebula infrastructure. It suits apps that require root access, isolation and the ability to scale.\n\nThe discount helps you validate production‑like environments at a lower cost and scale later.',
+        website: 'VEDOS WebSite lets you build a website without coding. Pick a template, edit content and publish. It is ideal for freelancers and small businesses who want to get online quickly.\n\nThe promo makes professional‑looking websites very affordable compared to custom development.',
+        disk: 'VEDOS Disk is secure remote storage for backups and archives. Access via FTP, rsync, SMB, SVN or Git integrates easily with your workflows. Suitable for companies and individuals who need reliable space outside their own infrastructure.\n\nThe coupon reduces the total cost of long‑term data retention.',
+        mailhosting: 'Mailhosting on your own domain improves your professional image. You get modern webmail, anti‑virus and anti‑spam protection, with data stored in the Czech Republic. It is easy to add mailboxes and configure aliases.\n\nWith the discount, you can set up company email quickly and affordably.',
+        renewal: 'Renewal discounts reduce costs while keeping your current service parameters. Great for long‑running projects that benefit from stability and uninterrupted operation. Watch the newsletter – it often includes generous renewal codes.'
+      },
+      faqs: {
+        webhostingNoLimit: [
+          { q: 'Who is NoLimit for?', a: 'For business sites, blogs, magazines and small e‑shops on WordPress, with ample performance and unlimited space.' },
+          { q: 'Can I upgrade from LowCost?', a: 'Yes, you can upgrade anytime without service downtime.' },
+          { q: 'Is HTTPS and backup available?', a: 'Yes, Let’s Encrypt/SSL and regular backups are available per service policy.' }
+        ],
+        webhostingLowCost: [
+          { q: 'Is LowCost enough for a small site?', a: 'Yes, it suits personal and small business sites. You can upgrade to NoLimit later.' },
+          { q: 'How do I apply the coupon?', a: 'Enter the code in the checkout and confirm; the price updates immediately.' },
+          { q: 'Is migration difficult?', a: 'Most CMS platforms have simple migration steps. Support can help if needed.' }
+        ],
+        vps: [
+          { q: 'Why choose VPS over shared hosting?', a: 'You get full root control, isolated environment and scalable resources.' },
+          { q: 'What technologies can I run?', a: 'Any Linux distro, databases, Docker and more – according to your setup.' },
+          { q: 'Is performance guaranteed?', a: 'You select the parameters. The platform runs on OpenNebula with SSD storage.' }
+        ],
+        website: [
+          { q: 'Do I need to code?', a: 'No, choose a template and edit content in an editor. Publish in minutes.' },
+          { q: 'Is it good for small businesses?', a: 'Yes, a quick and budget‑friendly way to present your services and contacts.' },
+          { q: 'Can I switch to hosting later?', a: 'Yes, move to NoLimit and your own CMS when you need more flexibility.' }
+        ],
+        disk: [
+          { q: 'What is Disk good for?', a: 'Backups, archiving and sharing data outside your infrastructure with multiple access protocols.' },
+          { q: 'Is data transfer secure?', a: 'Yes, secure protocols and access methods are available depending on configuration.' },
+          { q: 'How to choose capacity?', a: 'Start smaller and scale as needed. The discount lowers initial costs.' }
+        ],
+        mailhosting: [
+          { q: 'Do you support my own domain?', a: 'Yes, email runs on your domain for a professional, trustworthy presence.' },
+          { q: 'Is anti‑spam included?', a: 'Yes, anti‑spam and anti‑virus protection with modern webmail are included.' },
+          { q: 'How many mailboxes can I have?', a: 'You can easily add more mailboxes as your team grows.' }
+        ],
+        renewal: [
+          { q: 'Which services does it apply to?', a: 'Renewals of existing services according to current promo rules.' },
+          { q: 'Can I combine discounts?', a: 'Depends on the campaign rules. Check the newsletter for details.' },
+          { q: 'Is the code time‑limited?', a: 'Yes, validity is always stated with the coupon. Order in time.' }
+        ]
+      }
     }
   },
   pl: {
@@ -280,7 +374,54 @@ export const translations = {
       moreCoupons: 'Więcej kuponów rabatowych',
       exploreMore: 'Poznaj inne dostępne zniżki na usługi Vedos.cz',
       allCoupons: 'Wszystkie kupony',
-      above: 'powyżej'
+      above: 'powyżej',
+      faqTitle: 'Najczęściej zadawane pytania',
+      long: {
+        webhostingNoLimit: 'Webhosting NoLimit to stabilne i opłacalne rozwiązanie dla WordPressa, WooCommerce i popularnych CMS‑ów. Oferuje nielimitowaną przestrzeń i dobrą wydajność w rozsądnej cenie.\n\nDzięki promocjom jest to jedna z najkorzystniejszych ofert. Migracja strony zwykle zajmuje kilka minut.',
+        webhostingLowCost: 'LowCost i NoLimit pokrywają potrzeby większości stron. LowCost jest świetny na start dla blogów i małych firm. Przy wzroście ruchu warto rozważyć NoLimit z lepszymi parametrami.\n\nKody rabatowe obniżają koszt uruchomienia oraz pierwszego okresu rozliczeniowego.',
+        vps: 'VPS ON daje pełną kontrolę – CPU, RAM i dysk SSD w oparciu o OpenNebula. Idealny dla aplikacji wymagających dostępu root, izolacji i skalowania.\n\nZniżka pozwala taniej przetestować środowisko produkcyjne.',
+        website: 'VEDOS WebSite umożliwia stworzenie strony bez programowania. Wybierz szablon, edytuj treść i opublikuj. Rozwiązanie idealne dla jednoosobowych firm i małych biznesów.\n\nPromocja znacząco obniża koszt profesjonalnie wyglądającej witryny.',
+        disk: 'VEDOS Disk to bezpieczna pamięć masowa na kopie zapasowe i archiwum. Dostęp przez FTP, rsync, SMB, SVN, Git ułatwia integrację z procesami.\n\nKupon obniża koszt długoterminowej retencji danych.',
+        mailhosting: 'Mailhosting na własnej domenie wzmacnia wizerunek firmy. Nowoczesny webmail i ochrona antyspamowa/antywirusowa, dane w centrum danych w Czechach.\n\nDzięki zniżce szybko i tanio uruchomisz pocztę firmową.',
+        renewal: 'Zniżka na przedłużenie obniża koszty przy zachowaniu bieżących parametrów usług. Dobre dla projektów długoterminowych. Warto śledzić newsletter z kodami.'
+      },
+      faqs: {
+        webhostingNoLimit: [
+          { q: 'Dla kogo jest NoLimit?', a: 'Dla firmowych stron, blogów, magazynów i małych sklepów na WordPressie.' },
+          { q: 'Czy mogę przejść z LowCost?', a: 'Tak, aktualizacja jest możliwa w dowolnym momencie bez przestoju.' },
+          { q: 'Czy jest HTTPS i kopie zapasowe?', a: 'Tak, Let’s Encrypt/SSL i regularne backupy zgodnie z polityką usługi.' }
+        ],
+        webhostingLowCost: [
+          { q: 'Czy LowCost wystarczy na małą stronę?', a: 'Tak, a w razie potrzeby można przejść na NoLimit.' },
+          { q: 'Jak użyć kodu rabatowego?', a: 'Wpisz kod w koszyku i potwierdź – cena zaktualizuje się od razu.' },
+          { q: 'Czy migracja jest trudna?', a: 'Większość CMS‑ów ma prostą procedurę. W razie potrzeby pomoże wsparcie.' }
+        ],
+        vps: [
+          { q: 'Dlaczego VPS zamiast hostingu?', a: 'Pełna kontrola (root), izolacja i skalowalne zasoby.' },
+          { q: 'Jakie technologie są wspierane?', a: 'Dowolne dystrybucje Linuksa, bazy danych, Docker i inne.' },
+          { q: 'Czy wydajność jest gwarantowana?', a: 'Parametry wybierasz sam. Platforma działa na OpenNebula z dyskami SSD.' }
+        ],
+        website: [
+          { q: 'Czy muszę programować?', a: 'Nie, wybierz szablon i edytuj treść w edytorze. Publikacja w kilka minut.' },
+          { q: 'Czy nadaje się dla małych firm?', a: 'Tak, szybkie i budżetowe rozwiązanie do prezentacji usług.' },
+          { q: 'Czy mogę później przejść na hosting?', a: 'Tak, przy większych wymaganiach wybierz NoLimit i własny CMS.' }
+        ],
+        disk: [
+          { q: 'Do czego służy Disk?', a: 'Kopie zapasowe, archiwizacja i udostępnianie danych z różnymi protokołami dostępu.' },
+          { q: 'Czy transfer jest bezpieczny?', a: 'Tak, dostępne są bezpieczne protokoły i metody dostępu.' },
+          { q: 'Jak dobrać pojemność?', a: 'Zacznij od mniejszego planu i zwiększaj w razie potrzeby.' }
+        ],
+        mailhosting: [
+          { q: 'Czy obsługujecie własną domenę?', a: 'Tak, poczta działa na Twojej domenie – profesjonalnie i wiarygodnie.' },
+          { q: 'Czy jest antyspam?', a: 'Tak, dostępna jest ochrona antyspamowa i antywirusowa oraz nowoczesny webmail.' },
+          { q: 'Ile skrzynek mogę mieć?', a: 'Liczbę skrzynek można łatwo zwiększać wraz z rozwojem zespołu.' }
+        ],
+        renewal: [
+          { q: 'Jakie usługi obejmuje zniżka?', a: 'Przedłużenia istniejących usług zgodnie z zasadami promocji.' },
+          { q: 'Czy można łączyć zniżki?', a: 'Zależy od kampanii – szczegóły w newsletterze.' },
+          { q: 'Czy kod jest ograniczony czasowo?', a: 'Tak, ważność jest podana przy kuponie. Zamów w odpowiednim czasie.' }
+        ]
+      }
     }
   },
   sk: {
@@ -374,7 +515,54 @@ export const translations = {
       moreCoupons: 'Ďalšie zľavové kupóny',
       exploreMore: 'Preskúmajte ďalšie dostupné zľavy na služby Vedos.cz',
       allCoupons: 'Všetky kupóny',
-      above: 'vyššie'
+      above: 'vyššie',
+      faqTitle: 'Najčastejšie otázky',
+      long: {
+        webhostingNoLimit: 'Webhosting NoLimit je vyvážená voľba pre WordPress, WooCommerce aj CMS s dôrazom na stabilitu a neobmedzený priestor.\n\nVďaka akciám patrí medzi cenovo najvýhodnejšie riešenia. Migrácia je jednoduchá a rýchla.',
+        webhostingLowCost: 'LowCost a NoLimit pokrývajú potreby väčšiny webov. LowCost je skvelý štart pre blogy a menšie firmy, pri raste sa oplatí prejsť na NoLimit s lepšími parametrami.\n\nZľavové kódy obvykle znižujú zriaďovací poplatok aj prvé obdobie.',
+        vps: 'VPS ON dáva plnú kontrolu – voľba CPU, RAM a SSD disku na OpenNebula infraštruktúre. Vhodné pre aplikácie vyžadujúce root prístup, izoláciu a škálovanie.\n\nZľava umožní lacnejší test produkčného prostredia.',
+        website: 'VEDOS WebSite umožní zostaviť web bez programovania. Vyberiete šablónu, upravíte obsah a publikujete. Ideálne pre živnostníkov a malé firmy.\n\nVďaka zľave získate profesionálny web za nízku cenu.',
+        disk: 'VEDOS Disk je bezpečné vzdialené úložisko pre zálohy a archív. Prístup cez FTP, rsync, SMB, SVN či Git uľahčuje integráciu do procesov.\n\nKupón znižuje náklady na dlhodobé uloženie dát.',
+        mailhosting: 'Mailhosting na vlastnej doméne podporí profesionálny imidž. Moderný webmail, antispam/antivírus a dáta uložené v ČR. Jednoduché rozširovanie počtu schránok.\n\nSo zľavou vybavíte firemný e‑mail rýchlo a výhodne.',
+        renewal: 'Zľava na predĺženie znižuje náklady pri zachovaní parametrov. Vhodné pre dlhodobé projekty so zameraním na stabilitu. Sledujte newsletter pre výhodné kódy.'
+      },
+      faqs: {
+        webhostingNoLimit: [
+          { q: 'Pre koho je NoLimit?', a: 'Pre firemné weby, blogy, magazíny a menšie e‑shopy na WordPress.' },
+          { q: 'Je možný prechod z LowCost?', a: 'Áno, kedykoľvek bez odstávky služby.' },
+          { q: 'Je k dispozícii HTTPS a zálohy?', a: 'Áno, Let’s Encrypt/SSL a pravidelné zálohy podľa podmienok služby.' }
+        ],
+        webhostingLowCost: [
+          { q: 'Stačí LowCost pre menší web?', a: 'Áno, a pri raste môžete prejsť na NoLimit.' },
+          { q: 'Ako uplatním zľavu?', a: 'Zadajte kód v košíku a potvrďte – cena sa ihneď upraví.' },
+          { q: 'Je migrácia zložitá?', a: 'Väčšina CMS má jednoduchý postup. Podpora poradí, ak bude treba.' }
+        ],
+        vps: [
+          { q: 'Prečo VPS namiesto hostingu?', a: 'Plná kontrola (root), izolované prostredie a škálovateľné zdroje.' },
+          { q: 'Aké technológie môžem používať?', a: 'Ľubovoľné Linux distribúcie, databázy, Docker a ďalšie.' },
+          { q: 'Je výkon garantovaný?', a: 'Parametre si volíte sami. Platforma beží na OpenNebula s SSD úložiskom.' }
+        ],
+        website: [
+          { q: 'Musím vedieť programovať?', a: 'Nie, stačí šablóna a editor. Publikácia je otázkou minút.' },
+          { q: 'Hodí sa pre malé firmy?', a: 'Áno, rýchle a cenovo dostupné riešenie prezentácie služieb.' },
+          { q: 'Môžem neskôr prejsť na hosting?', a: 'Áno, pri väčších požiadavkách zvoľte NoLimit a vlastné CMS.' }
+        ],
+        disk: [
+          { q: 'Na čo je Disk vhodný?', a: 'Na zálohy, archiváciu a zdieľanie dát mimo vlastnej infraštruktúry.' },
+          { q: 'Je prenos dát zabezpečený?', a: 'Áno, k dispozícii sú bezpečné protokoly a prístupy.' },
+          { q: 'Ako zvoliť kapacitu?', a: 'Začnite menším plánom a podľa potreby ho navyšujte.' }
+        ],
+        mailhosting: [
+          { q: 'Podporujete vlastnú doménu?', a: 'Áno, e‑mail beží na Vašej doméne – profesionálne a dôveryhodne.' },
+          { q: 'Je zahrnutý antispam?', a: 'Áno, antispam a antivírus s moderným webmailom.' },
+          { q: 'Koľko schránok môžem mať?', a: 'Počet schránok možno jednoducho rozširovať.' }
+        ],
+        renewal: [
+          { q: 'Na ktoré služby platí zľava?', a: 'Na predĺženie existujúcich služieb podľa pravidiel akcie.' },
+          { q: 'Dá sa zľava kombinovať?', a: 'Záleží od kampane. Detaily nájdete v newsletteri.' },
+          { q: 'Je kód časovo obmedzený?', a: 'Áno, platnosť je uvedená pri kupóne. Objednajte včas.' }
+        ]
+      }
     }
   },
   de: {
@@ -468,7 +656,54 @@ export const translations = {
       moreCoupons: 'Weitere Rabattgutscheine',
       exploreMore: 'Entdecken Sie weitere verfügbare Rabatte auf Vedos.cz-Dienste',
       allCoupons: 'Alle Gutscheine',
-      above: 'oben'
+      above: 'oben',
+      faqTitle: 'Häufig gestellte Fragen',
+      long: {
+        webhostingNoLimit: 'Webhosting NoLimit bietet stabile Leistung, unbegrenzten Speicher und ein hervorragendes Preis‑Leistungs‑Verhältnis für WordPress, WooCommerce und gängige CMS.\n\nDank regelmäßiger Aktionen zählt es zu den günstigsten Angeboten. Die Migration ist in der Regel in wenigen Minuten erledigt.',
+        webhostingLowCost: 'LowCost und NoLimit decken die meisten Anforderungen ab. LowCost eignet sich für kleinere Projekte, bei Wachstum empfiehlt sich NoLimit mit stärkeren Parametern.\n\nGutscheincodes reduzieren oft die Einrichtungsgebühr und die erste Abrechnungsperiode.',
+        vps: 'VPS ON gibt volle Kontrolle – CPU, RAM und SSD‑Speicher auf zuverlässiger OpenNebula‑Infrastruktur. Geeignet für Anwendungen mit Root‑Zugriff, Isolation und Skalierbarkeit.\n\nDer Rabatt erleichtert Tests produktionsnaher Umgebungen.',
+        website: 'VEDOS WebSite ermöglicht den schnellen Aufbau einer Website ohne Programmierung. Vorlage wählen, Inhalte anpassen und veröffentlichen – ideal für kleine Unternehmen.\n\nDie Aktion macht professionelle Websites deutlich günstiger als Individualentwicklung.',
+        disk: 'VEDOS Disk ist sicherer externer Speicher für Backups und Archivierung. Zugriff über FTP, rsync, SMB, SVN oder Git – einfach in Workflows integrierbar.\n\nDer Gutschein senkt die Kosten der Langzeitaufbewahrung.',
+        mailhosting: 'Mailhosting auf eigener Domain stärkt das professionelle Auftreten. Moderner Webmail, Anti‑Spam/Anti‑Virus, Daten in Rechenzentren in Tschechien.\n\nMit dem Rabatt richten Sie Firmen‑E‑Mail schnell und günstig ein.',
+        renewal: 'Mit dem Verlängerungsrabatt sparen Sie bei gleichbleibenden Parametern. Ideal für langfristige Projekte mit Fokus auf Stabilität. Newsletter beachten – oft mit attraktiven Codes.'
+      },
+      faqs: {
+        webhostingNoLimit: [
+          { q: 'Für wen ist NoLimit geeignet?', a: 'Für Unternehmenswebsites, Blogs, Magazine und kleine Shops auf WordPress.' },
+          { q: 'Kann ich von LowCost upgraden?', a: 'Ja, ein Upgrade ist jederzeit ohne Ausfall möglich.' },
+          { q: 'Gibt es HTTPS und Backups?', a: 'Ja, Let’s Encrypt/SSL und regelmäßige Backups gemäß Servicebedingungen.' }
+        ],
+        webhostingLowCost: [
+          { q: 'Reicht LowCost für kleine Websites?', a: 'Ja, und bei Bedarf können Sie auf NoLimit wechseln.' },
+          { q: 'Wie löse ich den Gutschein ein?', a: 'Geben Sie den Code im Warenkorb ein – der Preis aktualisiert sich sofort.' },
+          { q: 'Ist die Migration kompliziert?', a: 'Die meisten CMS bieten einfache Schritte. Der Support hilft bei Bedarf.' }
+        ],
+        vps: [
+          { q: 'Warum VPS statt Shared Hosting?', a: 'Volle Root‑Kontrolle, isolierte Umgebung und skalierbare Ressourcen.' },
+          { q: 'Welche Technologien sind möglich?', a: 'Beliebige Linux‑Distributionen, Datenbanken, Docker u. v. m.' },
+          { q: 'Ist die Leistung garantiert?', a: 'Sie wählen die Parameter. Plattform auf OpenNebula mit SSD‑Storage.' }
+        ],
+        website: [
+          { q: 'Muss ich programmieren können?', a: 'Nein, Vorlage wählen, Inhalte bearbeiten, veröffentlichen – in Minuten.' },
+          { q: 'Geeignet für kleine Unternehmen?', a: 'Ja, schneller und budgetfreundlicher Webauftritt.' },
+          { q: 'Kann ich später wechseln?', a: 'Ja, bei höheren Anforderungen zu NoLimit und eigenem CMS.' }
+        ],
+        disk: [
+          { q: 'Wofür eignet sich Disk?', a: 'Für Backups, Archivierung und Datenaustausch außerhalb der eigenen Infrastruktur.' },
+          { q: 'Ist die Übertragung sicher?', a: 'Ja, es stehen sichere Protokolle und Zugänge zur Verfügung.' },
+          { q: 'Wie wähle ich die Kapazität?', a: 'Klein starten und bei Bedarf erweitern. Der Rabatt senkt Einstiegskosten.' }
+        ],
+        mailhosting: [
+          { q: 'Unterstützen Sie eigene Domains?', a: 'Ja, E‑Mails laufen auf Ihrer Domain – professionell und vertrauenswürdig.' },
+          { q: 'Gibt es Anti‑Spam?', a: 'Ja, Anti‑Spam und Anti‑Virus sowie moderner Webmail sind enthalten.' },
+          { q: 'Wie viele Postfächer sind möglich?', a: 'Die Anzahl lässt sich flexibel erweitern.' }
+        ],
+        renewal: [
+          { q: 'Für welche Dienste gilt der Rabatt?', a: 'Für Verlängerungen bestehender Dienste gemäß Aktionsregeln.' },
+          { q: 'Kann ich Rabatte kombinieren?', a: 'Kommt auf die Kampagne an – Details im Newsletter.' },
+          { q: 'Ist der Code befristet?', a: 'Ja, die Gültigkeit ist beim Coupon angegeben. Rechtzeitig bestellen.' }
+        ]
+      }
     }
   }
 }; 

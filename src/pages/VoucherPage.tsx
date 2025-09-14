@@ -4,6 +4,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import Layout from '../components/Layout';
 import InfoTile from '../components/InfoTile';
 import { validCoupons } from '../coupons';
+import { translations } from '../i18n/translations';
 
 interface VoucherPageProps {
   category: keyof typeof validCoupons;
@@ -42,6 +43,9 @@ const VoucherPage: React.FC<VoucherPageProps> = ({ category }) => {
   
   const couponData = validCoupons[category];
   const serviceKey = `services.${category}` as const;
+  const seoLong: string | undefined = (translations as any)[language]?.seo?.long?.[category];
+  const faqs: Array<{ q: string; a: string }> | undefined = (translations as any)[language]?.seo?.faqs?.[category];
+  const faqTitle: string | undefined = (translations as any)[language]?.seo?.faqTitle;
 
   // Scroll to top when component mounts
   useEffect(() => {
@@ -183,6 +187,10 @@ const VoucherPage: React.FC<VoucherPageProps> = ({ category }) => {
               <p>
                 {t('seo.aboutVedos')}
               </p>
+
+              {seoLong && seoLong.split('\n\n').map((para, idx) => (
+                <p key={`long-${idx}`}>{para}</p>
+              ))}
               
               <h3 className="h4 mt-4 mb-3">{t('seo.howToUse')}</h3>
               <ol>
@@ -200,6 +208,38 @@ const VoucherPage: React.FC<VoucherPageProps> = ({ category }) => {
                 <li>{t('seo.reason4')}</li>
                 <li>{t('seo.reason5')}</li>
               </ul>
+
+              {faqs && faqs.length > 0 && (
+                <>
+                  <h3 className="h4 mt-4 mb-3">{faqTitle}</h3>
+                  <div className="accordion" id="faq">
+                    {faqs.map((item, i) => (
+                      <div className="accordion-item" key={`faq-${i}`}>
+                        <h2 className="accordion-header" id={`faq-h-${i}`}>
+                          <button
+                            className="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target={`#faq-c-${i}`}
+                            aria-expanded="false"
+                            aria-controls={`faq-c-${i}`}
+                          >
+                            {item.q}
+                          </button>
+                        </h2>
+                        <div
+                          id={`faq-c-${i}`}
+                          className="accordion-collapse collapse"
+                          aria-labelledby={`faq-h-${i}`}
+                          data-bs-parent="#faq"
+                        >
+                          <div className="accordion-body">{item.a}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
           </div>
           <div className="col-md-4">
@@ -239,6 +279,19 @@ const VoucherPage: React.FC<VoucherPageProps> = ({ category }) => {
           "url": `https://slevy-hosting-domeny.cz/${category.replace(/([A-Z])/g, '-$1').toLowerCase()}`
         })}
       </script>
+      {faqs && faqs.length > 0 && (
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map((f) => ({
+              "@type": "Question",
+              "name": f.q,
+              "acceptedAnswer": { "@type": "Answer", "text": f.a }
+            }))
+          })}
+        </script>
+      )}
     </Layout>
   );
 };
