@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguageAwareNavigation } from '../hooks/useLanguageAwareNavigation';
 import Layout from '../components/Layout';
 import InfoTile from '../components/InfoTile';
 import { validCoupons } from '../coupons';
@@ -40,6 +41,7 @@ const getServiceUrl = (category: keyof typeof validCoupons, language: string): s
 
 const VoucherPage: React.FC<VoucherPageProps> = ({ category }) => {
   const { t, language } = useLanguage();
+  const navigateWithLanguage = useLanguageAwareNavigation();
   
   const couponData = validCoupons[category];
   const serviceKey = `services.${category}` as const;
@@ -104,7 +106,7 @@ const VoucherPage: React.FC<VoucherPageProps> = ({ category }) => {
       <nav aria-label="breadcrumb" className="mb-4">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
-            <Link to="/">{t('title')}</Link>
+            <Link to="" onClick={(e) => { e.preventDefault(); navigateWithLanguage(''); }}>{t('title')}</Link>
           </li>
           <li className="breadcrumb-item active" aria-current="page">
             {t(`${serviceKey}.title` as any)}
@@ -140,11 +142,11 @@ const VoucherPage: React.FC<VoucherPageProps> = ({ category }) => {
               href={getServiceUrl(category, language)} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="btn btn-primary btn-lg me-3"
+              className="btn btn-primary btn-lg me-3 mb-2 mb-md-0"
             >
               {t(`${serviceKey}.cta` as any)}
             </a>
-            <Link to="/" className="btn btn-outline-secondary btn-lg">
+            <Link to="" onClick={(e) => { e.preventDefault(); navigateWithLanguage(''); }} className="btn btn-outline-secondary btn-lg">
               ← {t('title')}
             </Link>
           </div>
@@ -247,9 +249,13 @@ const VoucherPage: React.FC<VoucherPageProps> = ({ category }) => {
               <div className="card-body">
                 <h4 className="card-title">{t('seo.moreCoupons')}</h4>
                 <p className="card-text">{t('seo.exploreMore')}</p>
-                <Link to="/" className="btn btn-primary">
-                  {t('seo.allCoupons')} →
-                </Link>
+              <Link 
+                to="" 
+                onClick={(e) => { e.preventDefault(); navigateWithLanguage(''); }}
+                className="btn btn-primary"
+              >
+                {t('seo.allCoupons')} →
+              </Link>
               </div>
             </div>
           </div>

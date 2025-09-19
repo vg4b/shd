@@ -10,11 +10,12 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 const getInitialLanguage = (): Language => {
-  const path = window.location.pathname;
-  if (path.startsWith('/en')) return 'en';
-  if (path.startsWith('/pl')) return 'pl';
-  if (path.startsWith('/sk')) return 'sk';
-  if (path.startsWith('/de')) return 'de';
+  const pathParts = window.location.pathname.split('/').filter(Boolean);
+  const firstPart = pathParts[0];
+  
+  if (['en', 'pl', 'sk', 'de'].includes(firstPart)) {
+    return firstPart as Language;
+  }
   return 'cs';
 };
 
@@ -23,17 +24,31 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   useEffect(() => {
     const currentPath = window.location.pathname;
-    const basePath = currentPath.split('/').slice(2).join('/');
+    const pathParts = currentPath.split('/').filter(Boolean);
+    const currentLang = pathParts[0];
     
+    // Determine if current first part is a language code
+    const isCurrentLangPath = ['en', 'pl', 'sk', 'de'].includes(currentLang);
+    
+    // Get the base path depending on whether we're on a language path
+    const basePath = isCurrentLangPath ? pathParts.slice(1).join('/') : pathParts.join('/');
+    
+    // Don't modify URL if we're already on the correct language path
+    if (currentLang === language) {
+      return;
+    }
+
+    // Construct the new path
+    let newPath;
     if (language === 'cs') {
-      if (currentPath !== '/' && currentPath !== `/${basePath}`) {
-        window.history.pushState({}, '', `/${basePath}`);
-      }
+      newPath = basePath ? `/${basePath}` : '/';
     } else {
-      const newPath = `/${language}${basePath ? `/${basePath}` : ''}`;
-      if (currentPath !== newPath) {
-        window.history.pushState({}, '', newPath);
-      }
+      newPath = `/${language}${basePath ? `/${basePath}` : ''}`;
+    }
+
+    // Only update if the path actually changed
+    if (currentPath !== newPath) {
+      window.history.pushState({}, '', newPath);
     }
   }, [language]);
 

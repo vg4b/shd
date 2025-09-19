@@ -15,29 +15,49 @@ import MailhostingPage from './pages/MailhostingPage';
 import RenewalPage from './pages/RenewalPage';
 
 const AppContent: React.FC = () => {
+  const routes = [
+    { path: "", element: <HomePage /> },
+    { path: "webhosting-nolimit", element: <WebhostingNoLimitPage /> },
+    { path: "webhosting-lowcost", element: <WebhostingLowCostPage /> },
+    { path: "vps", element: <VpsPage /> },
+    { path: "website", element: <WebsitePage /> },
+    { path: "disk", element: <DiskPage /> },
+    { path: "mailhosting", element: <MailhostingPage /> },
+    { path: "renewal", element: <RenewalPage /> }
+  ];
+
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/webhosting-nolimit" element={<WebhostingNoLimitPage />} />
-      <Route path="/webhosting-lowcost" element={<WebhostingLowCostPage />} />
-      {/* <Route path="/domains" element={<DomainsPage />} /> */}
-      <Route path="/vps" element={<VpsPage />} />
-      <Route path="/website" element={<WebsitePage />} />
-      {/* <Route path="/cd" element={<CdPage />} /> */}
-      <Route path="/disk" element={<DiskPage />} />
-      <Route path="/mailhosting" element={<MailhostingPage />} />
-      <Route path="/renewal" element={<RenewalPage />} />
+      {/* Routes with language prefixes (including default 'cs') */}
+      {["cs", "en", "pl", "sk", "de"].map(lang => 
+        routes.map(({ path, element }) => {
+          const routePath = lang === "cs" 
+            ? `/${path}` // Default language without prefix
+            : `/${lang}${path ? `/${path}` : ""}`; // Other languages with prefix
+          
+          return (
+            <Route 
+              key={`${lang}/${path}`} 
+              path={routePath}
+              element={element} 
+            />
+          );
+        })
+      ).flat()}
+
+      {/* Catch-all redirect to home page */}
+      <Route path="*" element={<HomePage />} />
     </Routes>
   );
 };
 
 function App() {
   return (
-    <LanguageProvider>
-      <Router>
-      <AppContent />
-      </Router>
-    </LanguageProvider>
+    <Router>
+      <LanguageProvider>
+        <AppContent />
+      </LanguageProvider>
+    </Router>
   );
 }
 

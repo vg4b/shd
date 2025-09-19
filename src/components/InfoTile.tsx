@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguageAwareNavigation } from '../hooks/useLanguageAwareNavigation';
 
 interface InfoTileProps {
   title: string;
@@ -28,6 +29,7 @@ const InfoTile: React.FC<InfoTileProps> = ({
   discountCode 
 }) => {
   const { t } = useLanguage();
+  const navigateWithLanguage = useLanguageAwareNavigation();
 
   const tileContent = (
     <div 
@@ -69,7 +71,14 @@ const InfoTile: React.FC<InfoTileProps> = ({
   return (
     <div className="col-md-6 mb-4">
       {internalLink ? (
-        <Link to={internalLink} className="text-decoration-none">
+        <Link 
+          to="" 
+          onClick={(e) => { 
+            e.preventDefault(); 
+            navigateWithLanguage(internalLink);
+          }} 
+          className="text-decoration-none"
+        >
           {tileContent}
         </Link>
       ) : (

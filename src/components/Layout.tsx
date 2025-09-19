@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguageAwareNavigation } from '../hooks/useLanguageAwareNavigation';
 import LanguagePicker from './LanguagePicker';
 import Footer from './Footer';
 
@@ -10,12 +11,17 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const { t } = useLanguage();
+  const navigateWithLanguage = useLanguageAwareNavigation();
 
   return (
     <div className="App">
       <div className="container py-4">
         <header className="pb-3 mb-4 border-bottom d-flex justify-content-between align-items-center">
-          <Link to="/" className="d-flex align-items-center text-body-emphasis text-decoration-none">
+          <Link 
+            to="" 
+            onClick={(e) => { e.preventDefault(); navigateWithLanguage(''); }}
+            className="d-flex align-items-center text-body-emphasis text-decoration-none"
+          >
             <svg
               width="32"
               height="32"
