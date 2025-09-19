@@ -16,7 +16,7 @@ export const validCoupons = {
       validUntil: "31.12.2025",
     },
     "disk": {
-      code: "DK251SAVE25",
+      code: "WD251OSCHO",
       validUntil: "31.12.2025",
     },
     "mailhosting": {
