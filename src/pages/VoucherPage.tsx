@@ -56,10 +56,15 @@ const VoucherPage: React.FC<VoucherPageProps> = ({ category }) => {
 
   // SEO meta tags
   useEffect(() => {
+    const categorySlug = category.replace(/([A-Z])/g, '-$1').toLowerCase().replace(/^-/, '');
+    const currentUrl = `https://slevy-hosting-domeny.cz${language === 'cs' ? '' : `/${language}`}/${categorySlug}/`;
     const title = `${t(`${serviceKey}.title` as any)} - ${t('discountCode')}: ${couponData.code} | slevy-hosting-domeny.cz`;
     const description = `${t(`${serviceKey}.content` as any)} ${t('discountCode')}: ${couponData.code}. ${t('validUntil')} ${couponData.validUntil}.`;
     
     document.title = title;
+    
+    // Update lang attribute
+    document.documentElement.lang = language;
     
     // Update meta description
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -69,6 +74,29 @@ const VoucherPage: React.FC<VoucherPageProps> = ({ category }) => {
       document.head.appendChild(metaDescription);
     }
     metaDescription.setAttribute('content', description);
+
+    // Update canonical URL
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', currentUrl);
+
+    // Update hreflang tags
+    const languages = ['cs', 'en', 'sk', 'de', 'pl', 'it'];
+    languages.forEach(lang => {
+      let hreflang = document.querySelector(`link[hreflang="${lang}"]`);
+      if (!hreflang) {
+        hreflang = document.createElement('link');
+        hreflang.setAttribute('rel', 'alternate');
+        hreflang.setAttribute('hreflang', lang);
+        document.head.appendChild(hreflang);
+      }
+      const langUrl = `https://slevy-hosting-domeny.cz${lang === 'cs' ? '' : `/${lang}`}/${categorySlug}/`;
+      hreflang.setAttribute('href', langUrl);
+    });
 
     // Update Open Graph tags
     let ogTitle = document.querySelector('meta[property="og:title"]');
@@ -93,13 +121,30 @@ const VoucherPage: React.FC<VoucherPageProps> = ({ category }) => {
       ogUrl.setAttribute('property', 'og:url');
       document.head.appendChild(ogUrl);
     }
-    ogUrl.setAttribute('content', `https://slevy-hosting-domeny.cz/${category.replace(/([A-Z])/g, '-$1').toLowerCase()}`);
+    ogUrl.setAttribute('content', currentUrl);
+
+    // Update locale
+    let ogLocale = document.querySelector('meta[property="og:locale"]');
+    if (!ogLocale) {
+      ogLocale = document.createElement('meta');
+      ogLocale.setAttribute('property', 'og:locale');
+      document.head.appendChild(ogLocale);
+    }
+    const localeMap: Record<string, string> = {
+      cs: 'cs_CZ',
+      en: 'en_US',
+      sk: 'sk_SK',
+      de: 'de_DE',
+      pl: 'pl_PL',
+      it: 'it_IT'
+    };
+    ogLocale.setAttribute('content', localeMap[language] || 'cs_CZ');
 
     // Cleanup function to reset title when component unmounts
     return () => {
       document.title = `${t('title')} | slevy-hosting-domeny.cz`;
     };
-  }, [t, category, couponData, serviceKey]);
+  }, [t, category, couponData, serviceKey, language]);
 
   return (
     <Layout>
@@ -262,27 +307,77 @@ const VoucherPage: React.FC<VoucherPageProps> = ({ category }) => {
         </div>
       </div>
 
-      {/* Structured Data for SEO */}
+      {/* Structured Data for SEO and AI */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Offer",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": t('title'),
+              "item": `https://slevy-hosting-domeny.cz${language === 'cs' ? '/' : `/${language}/`}`
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": t(`${serviceKey}.title` as any),
+              "item": `https://slevy-hosting-domeny.cz${language === 'cs' ? '' : `/${language}`}/${category.replace(/([A-Z])/g, '-$1').toLowerCase().replace(/^-/, '')}/`
+            }
+          ]
+        })}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
           "name": t(`${serviceKey}.title` as any),
           "description": t(`${serviceKey}.content` as any),
-          "seller": {
-            "@type": "Organization",
+          "brand": {
+            "@type": "Brand",
             "name": "Vedos.cz"
           },
-          "priceSpecification": {
-            "@type": "PriceSpecification",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
             "priceCurrency": "CZK",
-            "eligibleQuantity": {
-              "@type": "QuantitativeValue",
-              "unitText": "Discount Code: " + couponData.code
-            }
+            "availability": "https://schema.org/InStock",
+            "validThrough": couponData.validUntil,
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "CZK",
+              "eligibleQuantity": {
+                "@type": "QuantitativeValue",
+                "unitText": "Discount Code: " + couponData.code
+              }
+            },
+            "seller": {
+              "@type": "Organization",
+              "name": "Vedos.cz"
+            },
+            "url": `https://slevy-hosting-domeny.cz${language === 'cs' ? '' : `/${language}`}/${category.replace(/([A-Z])/g, '-$1').toLowerCase().replace(/^-/, '')}/`
+          }
+        })}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": t(`${serviceKey}.title` as any),
+          "description": t(`${serviceKey}.content` as any),
+          "url": `https://slevy-hosting-domeny.cz${language === 'cs' ? '' : `/${language}`}/${category.replace(/([A-Z])/g, '-$1').toLowerCase().replace(/^-/, '')}/`,
+          "inLanguage": language,
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "Slevy Hosting Domény",
+            "url": "https://slevy-hosting-domeny.cz"
           },
-          "validThrough": couponData.validUntil,
-          "url": `https://slevy-hosting-domeny.cz/${category.replace(/([A-Z])/g, '-$1').toLowerCase()}`
+          "about": {
+            "@type": "Thing",
+            "name": t(`${serviceKey}.title` as any),
+            "description": `Slevový kupón ${couponData.code} na ${t(`${serviceKey}.title` as any)}`
+          }
         })}
       </script>
       {faqs && faqs.length > 0 && (

@@ -13,7 +13,7 @@ const getInitialLanguage = (): Language => {
   const pathParts = window.location.pathname.split('/').filter(Boolean);
   const firstPart = pathParts[0];
   
-  if (['en', 'pl', 'sk', 'de'].includes(firstPart)) {
+  if (['en', 'pl', 'sk', 'de', 'it'].includes(firstPart)) {
     return firstPart as Language;
   }
   return 'cs';
@@ -28,7 +28,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     const currentLang = pathParts[0];
     
     // Determine if current first part is a language code
-    const isCurrentLangPath = ['en', 'pl', 'sk', 'de'].includes(currentLang);
+    const isCurrentLangPath = ['en', 'pl', 'sk', 'de', 'it'].includes(currentLang);
     
     // Get the base path depending on whether we're on a language path
     const basePath = isCurrentLangPath ? pathParts.slice(1).join('/') : pathParts.join('/');

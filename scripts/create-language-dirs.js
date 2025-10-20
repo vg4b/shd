@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const languages = ["cs", "en", "pl", "sk", "de"];
+const languages = ["cs", "en", "pl", "sk", "de", "it"];
 const routes = [
   "",
   "webhosting-nolimit",
