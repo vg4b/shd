@@ -1,0 +1,66 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Vedos Discount Coupons",
+  "name_for_model": "vedos_coupons",
+  "description_for_human": "Find current discount coupons for Vedos.cz web hosting, VPS servers, domains, and related services. Save up to 70% with verified discount codes.",
+  "description_for_model": "This website provides current and verified discount coupons for Vedos.cz, a Czech web hosting provider. Available coupons include: Webhosting NoLimit (70% discount), Webhosting LowCost (60% discount), VPS servers (33% discount), VEDOS WebSite (50% discount), VEDOS Disk storage (25% discount), Mailhosting (50% discount), and renewal discounts. All coupons include expiration dates and are regularly updated. The site is available in Czech, English, Slovak, German, Polish, and Italian languages.",
+  "api": {
+    "type": "content",
+    "has_user_authentication": false
+  },
+  "auth": {
+    "type": "none"
+  },
+  "logo_url": "https://slevy-hosting-domeny.cz/android-chrome-512x512.png",
+  "contact_email": "info@slevy-hosting-domeny.cz",
+  "legal_info_url": "https://slevy-hosting-domeny.cz",
+  "services": [
+    {
+      "name": "Webhosting NoLimit",
+      "discount": "70%",
+      "category": "web-hosting",
+      "provider": "Vedos.cz"
+    },
+    {
+      "name": "Webhosting LowCost",
+      "discount": "60%",
+      "category": "web-hosting",
+      "provider": "Vedos.cz"
+    },
+    {
+      "name": "VPS ON",
+      "discount": "33%",
+      "category": "vps-servers",
+      "provider": "Vedos.cz"
+    },
+    {
+      "name": "VEDOS WebSite",
+      "discount": "50%",
+      "category": "website-builder",
+      "provider": "Vedos.cz"
+    },
+    {
+      "name": "VEDOS Disk",
+      "discount": "25%",
+      "category": "storage",
+      "provider": "Vedos.cz"
+    },
+    {
+      "name": "Mailhosting",
+      "discount": "50%",
+      "category": "email-hosting",
+      "provider": "Vedos.cz"
+    },
+    {
+      "name": "Service Renewal",
+      "discount": "Variable",
+      "category": "renewal",
+      "provider": "Vedos.cz"
+    }
+  ],
+  "languages": ["cs", "en", "sk", "de", "pl", "it"],
+  "content_type": "discount-coupons",
+  "update_frequency": "daily",
+  "target_audience": "Users seeking web hosting, VPS, domains, and related services in Czech Republic and Central Europe"
+}
+

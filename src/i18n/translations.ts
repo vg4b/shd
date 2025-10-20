@@ -1,4 +1,4 @@
-export type Language = 'cs' | 'en' | 'pl' | 'sk' | 'de';
+export type Language = 'cs' | 'en' | 'pl' | 'sk' | 'de' | 'it';
 
 export const translations = {
   cs: {
@@ -702,6 +702,135 @@ export const translations = {
           { q: 'Für welche Dienste gilt der Rabatt?', a: 'Für Verlängerungen bestehender Dienste gemäß Aktionsregeln.' },
           { q: 'Kann ich Rabatte kombinieren?', a: 'Kommt auf die Kampagne an – Details im Newsletter.' },
           { q: 'Ist der Code befristet?', a: 'Ja, die Gültigkeit ist beim Coupon angegeben. Rechtzeitig bestellen.' }
+        ]
+      }
+    }
+  },
+  it: {
+    title: 'Coupon Sconto Attuali per Vedos.cz',
+    subtitle: 'Usa i coupon sconto attuali e risparmia su hosting web, domini e altri servizi.',
+    cta: 'Vai a Vedos.cz',
+    discountCode: 'Codice sconto',
+    validUntil: 'valido fino al',
+    site: {
+      title: 'slevy-hosting-domeny.cz'
+    },
+    coupons: {
+      webhostingNoLimit: 'Webhosting NoLimit e sconto Extra del 70%',
+      webhostingLowCost: 'Webhosting LowCost, NoLimit e sconto Extra del 60%',
+      vps: 'VPS ON sconto del 33%',
+      website: 'VEDOS WebSite sconto del 50%',
+      disk: 'VEDOS Disk sconto del 25%',
+      mailhosting: 'Mailhosting sconto del 50%',
+      renewal: 'Sconto RINNOVO',
+      renewalInfo: {
+        text: '(max. 300x). In alternativa, controlla la',
+        linkText: 'newsletter attuale',
+        linkUrl: 'https://www.vedos.cz/en/newsletter?ap=Lf2pCY'
+      }
+    },
+    services: {
+      webhostingNoLimit: {
+        title: 'Webhosting NoLimit',
+        content: 'L\'hosting web più popolare e venduto nella Repubblica Ceca, ideale per WordPress, e-commerce e progetti impegnativi. Spazio illimitato, prestazioni stabili e supporto 24/7.',
+        cta: 'Ordina con il 70% di sconto'
+      },
+      webhostingLowCost: {
+        title: 'Webhosting LowCost e NoLimit',
+        content: 'Sconto del 60% su Webhosting LowCost e NoLimit - soluzione perfetta per progetti piccoli e grandi.',
+        cta: 'Ordina con il 60% di sconto'
+      },
+      vps: {
+        title: 'VPS ON',
+        content: 'Server virtuali su infrastruttura cloud OpenNebula. Paga solo ciò di cui hai bisogno! Scegli RAM, spazio disco (100% SSD) e numero di core CPU.',
+        cta: 'Ottieni VPS con il 33% di sconto'
+      },
+      website: {
+        title: 'VEDOS WebSite',
+        content: 'Crea il tuo sito web facilmente e velocemente. Ora con il 50% di sconto sul servizio VEDOS WebSite.',
+        cta: 'Crea sito con il 50% di sconto'
+      },
+      disk: {
+        title: 'VEDOS Disk',
+        content: 'Archiviazione sicura per i tuoi dati. Spazio disco con accesso FTP, rsync, SMB, SVN e Git. Da 30 GB a multipli di TB.',
+        cta: 'Ottieni con il 25% di sconto'
+      },
+      mailhosting: {
+        title: 'Mailhosting',
+        content: 'Email moderna sul tuo dominio con supporto ceco. Servizio stabile e sicuro con dati archiviati esclusivamente nel datacenter nella Repubblica Ceca.',
+        cta: 'Ottieni mailhosting con il 50% di sconto'
+      },
+      renewal: {
+        title: 'Rinnovo Servizi',
+        content: 'Sconto speciale sul rinnovo dei servizi esistenti (max. 300x).',
+        cta: 'Rinnova servizi'
+      }
+    },
+    seo: {
+      useCode: 'Usa il nostro codice sconto esclusivo',
+      saveOnServices: 'e risparmia sui servizi Vedos.cz. Questo coupon è valido fino al',
+      significantDiscount: 'e fornisce uno sconto significativo su',
+      aboutVedos: 'Vedos.cz è uno dei principali fornitori di hosting web e servizi di dominio nella Repubblica Ceca. I nostri coupon sconto ti permettono di ottenere servizi di qualità a ottimi prezzi.',
+      howToUse: 'Come usare il codice sconto',
+      step1: 'Clicca sul pulsante',
+      step2: 'Seleziona il servizio o pacchetto desiderato',
+      step3: 'Inserisci il codice sconto nel carrello:',
+      step4: 'Completa l\'ordine con lo sconto applicato',
+      whyChoose: 'Perché scegliere Vedos.cz',
+      reason1: 'Oltre 15 anni di esperienza sul mercato',
+      reason2: 'Servizi affidabili con alta disponibilità',
+      reason3: 'Supporto tecnico ceco',
+      reason4: 'Prezzi competitivi',
+      reason5: 'Tecnologia e infrastruttura moderne',
+      moreCoupons: 'Altri coupon sconto',
+      exploreMore: 'Esplora altri sconti disponibili sui servizi Vedos.cz',
+      allCoupons: 'Tutti i coupon',
+      above: 'sopra',
+      faqTitle: 'Domande Frequenti',
+      long: {
+        webhostingNoLimit: 'Webhosting NoLimit è una scelta bilanciata per progetti che necessitano di prestazioni stabili, spazio illimitato e ottimo rapporto qualità-prezzo. Gestisce facilmente WordPress, WooCommerce e le piattaforme CMS più popolari.\n\nCon promozioni ricorrenti, appartiene alle opzioni più convenienti sul mercato. La migrazione è semplice e la maggior parte dei siti può essere lanciata in pochi minuti.',
+        webhostingLowCost: 'LowCost e NoLimit coprono le esigenze della maggior parte dei siti web. LowCost è perfetto per siti personali, blog e piccole pagine aziendali. Se prevedi una crescita, considera NoLimit con parametri database e PHP più potenti.\n\nI codici sconto riducono solitamente la tariffa di attivazione e il primo periodo di fatturazione, così risparmi fin dall\'inizio.',
+        vps: 'VPS ON ti offre pieno controllo – scegli CPU, RAM e storage SSD su una infrastruttura OpenNebula affidabile. È adatto per applicazioni che richiedono accesso root, isolamento e capacità di scalare.\n\nLo sconto ti aiuta a validare ambienti simili alla produzione a un costo inferiore e scalare successivamente.',
+        website: 'VEDOS WebSite ti permette di costruire un sito web senza codificare. Scegli un template, modifica i contenuti e pubblica. È ideale per liberi professionisti e piccole imprese che vogliono andare online rapidamente.\n\nLa promozione rende i siti web dall\'aspetto professionale molto convenienti rispetto allo sviluppo personalizzato.',
+        disk: 'VEDOS Disk è uno storage remoto sicuro per backup e archivi. L\'accesso tramite FTP, rsync, SMB, SVN o Git si integra facilmente con i tuoi flussi di lavoro. Adatto per aziende e privati che necessitano di spazio affidabile al di fuori della propria infrastruttura.\n\nIl coupon riduce il costo totale della conservazione dei dati a lungo termine.',
+        mailhosting: 'Il Mailhosting sul tuo dominio migliora la tua immagine professionale. Ottieni webmail moderna, protezione antivirus e antispam, con dati archiviati nella Repubblica Ceca. È facile aggiungere caselle di posta e configurare alias.\n\nCon lo sconto, puoi configurare la posta aziendale rapidamente e a prezzi accessibili.',
+        renewal: 'Gli sconti sul rinnovo riducono i costi mantenendo i parametri del servizio correnti. Ottimo per progetti a lungo termine che beneficiano di stabilità e funzionamento ininterrotto. Segui la newsletter – spesso include generosi codici di rinnovo.'
+      },
+      faqs: {
+        webhostingNoLimit: [
+          { q: 'Per chi è adatto NoLimit?', a: 'Per siti aziendali, blog, magazine e piccoli e-shop su WordPress, con prestazioni ampie e spazio illimitato.' },
+          { q: 'Posso passare da LowCost a NoLimit?', a: 'Sì, puoi aggiornare in qualsiasi momento senza tempi di inattività del servizio.' },
+          { q: 'Sono disponibili HTTPS e backup?', a: 'Sì, Let\'s Encrypt/SSL e backup regolari sono disponibili secondo la politica del servizio.' }
+        ],
+        webhostingLowCost: [
+          { q: 'LowCost è sufficiente per un piccolo sito?', a: 'Sì, è adatto per siti personali e di piccole imprese. Puoi passare a NoLimit in seguito.' },
+          { q: 'Come applico il coupon?', a: 'Inserisci il codice al momento del pagamento e conferma; il prezzo si aggiorna immediatamente.' },
+          { q: 'La migrazione è difficile?', a: 'La maggior parte delle piattaforme CMS ha semplici passaggi di migrazione. Il supporto può aiutare se necessario.' }
+        ],
+        vps: [
+          { q: 'Perché scegliere VPS invece dell\'hosting condiviso?', a: 'Ottieni il pieno controllo root, ambiente isolato e risorse scalabili.' },
+          { q: 'Quali tecnologie posso usare?', a: 'Qualsiasi distribuzione Linux, database, Docker e altro – secondo la tua configurazione.' },
+          { q: 'Le prestazioni sono garantite?', a: 'Selezioni tu i parametri. La piattaforma funziona su OpenNebula con storage SSD.' }
+        ],
+        website: [
+          { q: 'Devo saper programmare?', a: 'No, scegli un template e modifica i contenuti in un editor. Pubblica in pochi minuti.' },
+          { q: 'È adatto per piccole imprese?', a: 'Sì, un modo rapido e conveniente per presentare i tuoi servizi e contatti.' },
+          { q: 'Posso passare all\'hosting in seguito?', a: 'Sì, passa a NoLimit e al tuo CMS quando hai bisogno di maggiore flessibilità.' }
+        ],
+        disk: [
+          { q: 'A cosa serve Disk?', a: 'Per backup, archiviazione e condivisione di dati al di fuori della tua infrastruttura con più protocolli di accesso.' },
+          { q: 'Il trasferimento dati è sicuro?', a: 'Sì, protocolli sicuri e metodi di accesso sono disponibili a seconda della configurazione.' },
+          { q: 'Come scegliere la capacità?', a: 'Inizia con un piano più piccolo e scala secondo necessità. Lo sconto riduce i costi iniziali.' }
+        ],
+        mailhosting: [
+          { q: 'Supportate il mio dominio?', a: 'Sì, l\'email funziona sul tuo dominio per una presenza professionale e affidabile.' },
+          { q: 'È incluso l\'antispam?', a: 'Sì, protezione antispam e antivirus con webmail moderna sono inclusi.' },
+          { q: 'Quante caselle di posta posso avere?', a: 'Puoi facilmente aggiungere più caselle di posta man mano che il tuo team cresce.' }
+        ],
+        renewal: [
+          { q: 'A quali servizi si applica?', a: 'Ai rinnovi dei servizi esistenti secondo le regole promozionali correnti.' },
+          { q: 'Posso combinare gli sconti?', a: 'Dipende dalle regole della campagna. Controlla la newsletter per i dettagli.' },
+          { q: 'Il codice ha una scadenza?', a: 'Sì, la validità è sempre indicata con il coupon. Ordina in tempo.' }
         ]
       }
     }

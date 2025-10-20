@@ -29,7 +29,7 @@ const AppContent: React.FC = () => {
   return (
     <Routes>
       {/* Routes with language prefixes (including default 'cs') */}
-      {["cs", "en", "pl", "sk", "de"].map(lang => 
+      {["cs", "en", "pl", "sk", "de", "it"].map(lang => 
         routes.map(({ path, element }) => {
           const routePath = lang === "cs" 
             ? `/${path}` // Default language without prefix

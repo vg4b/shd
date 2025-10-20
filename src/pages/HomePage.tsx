@@ -28,10 +28,16 @@ const HomePage: React.FC = () => {
 
   // SEO meta tags for homepage
   useEffect(() => {
-    const title = `${t('title')} | slevy-hosting-domeny.cz`;
+    const title = language === 'cs' 
+      ? 'Vedos Slevové Kupóny 2025 - Až 70% Sleva na Webhosting, VPS a Domény'
+      : `${t('title')} | slevy-hosting-domeny.cz`;
     const description = t('subtitle');
+    const currentUrl = `https://slevy-hosting-domeny.cz${language === 'cs' ? '/' : `/${language}/`}`;
     
     document.title = title;
+    
+    // Update lang attribute
+    document.documentElement.lang = language;
     
     // Update meta description
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -41,6 +47,15 @@ const HomePage: React.FC = () => {
       document.head.appendChild(metaDescription);
     }
     metaDescription.setAttribute('content', description);
+
+    // Update canonical URL
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', currentUrl);
 
     // Update Open Graph tags
     let ogTitle = document.querySelector('meta[property="og:title"]');
@@ -58,7 +73,32 @@ const HomePage: React.FC = () => {
       document.head.appendChild(ogDescription);
     }
     ogDescription.setAttribute('content', description);
-  }, [t]);
+
+    let ogUrl = document.querySelector('meta[property="og:url"]');
+    if (!ogUrl) {
+      ogUrl = document.createElement('meta');
+      ogUrl.setAttribute('property', 'og:url');
+      document.head.appendChild(ogUrl);
+    }
+    ogUrl.setAttribute('content', currentUrl);
+
+    // Update locale
+    let ogLocale = document.querySelector('meta[property="og:locale"]');
+    if (!ogLocale) {
+      ogLocale = document.createElement('meta');
+      ogLocale.setAttribute('property', 'og:locale');
+      document.head.appendChild(ogLocale);
+    }
+    const localeMap: Record<string, string> = {
+      cs: 'cs_CZ',
+      en: 'en_US',
+      sk: 'sk_SK',
+      de: 'de_DE',
+      pl: 'pl_PL',
+      it: 'it_IT'
+    };
+    ogLocale.setAttribute('content', localeMap[language] || 'cs_CZ');
+  }, [t, language]);
 
   const coupons: DiscountCoupon[] = [
     {
@@ -107,6 +147,83 @@ const HomePage: React.FC = () => {
 
   return (
     <Layout>
+      {/* Structured Data for AI and Search Engines */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Slevy Hosting Domény",
+          "url": `https://slevy-hosting-domeny.cz${language === 'cs' ? '/' : `/${language}/`}`,
+          "description": t('subtitle'),
+          "inLanguage": language,
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": `https://slevy-hosting-domeny.cz${language === 'cs' ? '/' : `/${language}/`}?q={search_term_string}`,
+            "query-input": "required name=search_term_string"
+          }
+        })}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Slevy Hosting Domény",
+          "url": "https://slevy-hosting-domeny.cz",
+          "logo": "https://slevy-hosting-domeny.cz/android-chrome-512x512.png",
+          "description": "Aktuální slevové kupóny na Vedos.cz webhosting, VPS servery, domény a další služby",
+          "sameAs": [
+            "https://vedos.cz"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "availableLanguage": ["Czech", "English", "Slovak", "German", "Polish", "Italian"]
+          }
+        })}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "name": "Aktuální slevové kupóny Vedos.cz",
+          "description": "Seznam aktuálních slevových kupónů na služby Vedos.cz",
+          "numberOfItems": coupons.length,
+          "itemListElement": coupons.map((coupon, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "item": {
+              "@type": "Offer",
+              "name": coupon.description,
+              "description": coupon.description,
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "unitText": `Discount Code: ${coupon.code}`
+                }
+              },
+              "seller": {
+                "@type": "Organization",
+                "name": "Vedos.cz"
+              }
+            }
+          }))
+        })}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": t('title'),
+              "item": `https://slevy-hosting-domeny.cz${language === 'cs' ? '/' : `/${language}/`}`
+            }
+          ]
+        })}
+      </script>
       <div className="p-2 mb-4 bg-body-tertiary rounded-3">
         <div className="container-fluid py-5">
           <h1 className="display-5 fw-bold">
@@ -121,7 +238,7 @@ const HomePage: React.FC = () => {
               href={getLocalizedUrl("https://vedos.cz/?ap=Lf2pCY", language)} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="btn btn-primary btn-lg mt-4"
+              className="btn btn-primary btn-lg mt-2"
             >
               {t('cta')}
             </a>

@@ -7,7 +7,8 @@ const languages: { code: Language; name: string; flag: string }[] = [
   { code: 'sk', name: 'Slovensky', flag: '🇸🇰' },
   { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
   { code: 'en', name: 'English', flag: '🇬🇧' },
-  { code: 'pl', name: 'Polski', flag: '🇵🇱' }
+  { code: 'pl', name: 'Polski', flag: '🇵🇱' },
+  { code: 'it', name: 'Italiano', flag: '🇮🇹' }
 ];
 
 const LanguagePicker: React.FC = () => {
