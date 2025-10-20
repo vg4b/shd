@@ -558,3 +558,8 @@ footer a:hover {
   color: var(--text-secondary);
   line-height: 1.7;
 }
+
+.accordion-header {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
