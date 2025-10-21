@@ -11,14 +11,14 @@ export const translations = {
       title: 'slevy-hosting-domeny.cz'
     },
     coupons: {
-      webhostingNoLimit: 'Webhosting NoLimit a Extra sleva 70 %',
-      webhostingLowCost: 'Webhosting LowCost, NoLimit a Extra sleva 60 %',
+      webhostingNoLimit: 'Webhosting NoLimit a Extra sleva 70 %',
+      webhostingLowCost: 'Webhosting LowCost, NoLimit a Extra sleva 60 %',
       // domains: '50% sleva na domény (.EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE, .FUN)',
-      vps: 'VPS ON sleva 33 %',
-      website: 'VEDOS WebSite sleva 50 %',
-      // cd: 'VEDOS CD sleva 25 %',
-      disk: 'VEDOS Disk sleva 25 %',
-      mailhosting: 'Mailhosting sleva 50 %',
+      vps: 'VPS ON sleva 33 %',
+      website: 'VEDOS WebSite sleva 50 %',
+      // cd: 'VEDOS CD sleva 25 %',
+      disk: 'VEDOS Disk sleva 25 %',
+      mailhosting: 'Mailhosting sleva 50 %',
       renewal: 'Sleva na PRODLOUŽENÍ',
       renewalInfo: {
         text: '(max. 300x). Případně zkuste najít v',
@@ -434,14 +434,14 @@ export const translations = {
       title: 'slevy-hosting-domeny.cz'
     },
     coupons: {
-      webhostingNoLimit: 'Webhosting NoLimit a Extra zľava 70 %',
-      webhostingLowCost: 'Webhosting LowCost, NoLimit a Extra zľava 60 %',
+      webhostingNoLimit: 'Webhosting NoLimit a Extra zľava 70 %',
+      webhostingLowCost: 'Webhosting LowCost, NoLimit a Extra zľava 60 %',
       // domains: '50% zľava na domény (.EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE, .FUN)',
-      vps: 'VPS ON zľava 33 %',
-      website: 'VEDOS WebSite zľava 50 %',
-      // cd: 'VEDOS CD zľava 25 %',
-      disk: 'VEDOS Disk zľava 25 %',
-      mailhosting: 'Mailhosting zľava 50 %',
+      vps: 'VPS ON zľava 33 %',
+      website: 'VEDOS WebSite zľava 50 %',
+      // cd: 'VEDOS CD zľava 25 %',
+      disk: 'VEDOS Disk zľava 25 %',
+      mailhosting: 'Mailhosting zľava 50 %',
       renewal: 'Zľava na PREDĹŽENIE',
       renewalInfo: {
         text: '(max. 300x). Prípadne skúste nájsť v',
