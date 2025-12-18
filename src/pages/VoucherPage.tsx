@@ -27,8 +27,9 @@ const getServiceUrl = (category: keyof typeof validCoupons, language: string): s
   const urls = {
     webhostingNoLimit: `https://order.wedos.com/cs/webhosting/order.html?step=1&coupon_code=${validCoupons.webhostingNoLimit.code}&variant=nolimit&ap=Lf2pCY`,
     webhostingLowCost: `https://order.wedos.com/cs/webhosting/order.html?step=1&coupon_code=${validCoupons.webhostingLowCost.code}&variant=lowcost&ap=Lf2pCY`,
-    // domains: "https://www.vedos.cz/domeny/?ap=Lf2pCY",
-    vps: "https://www.vedos.cz/vps-on/?ap=Lf2pCY",
+    domains: "https://www.vedos.cz/domeny/?ap=Lf2pCY",
+    vpsOn: "https://www.vedos.cz/vps-on/?ap=Lf2pCY",
+    vpsSsd: "https://www.vedos.cz/vps-ssd/?ap=Lf2pCY",
     website: "https://www.vedos.cz/website-1-0/?ap=Lf2pCY",
     // cd: "https://www.vedos.cz/cd/?ap=Lf2pCY",
     disk: "https://www.vedos.cz/disk/?ap=Lf2pCY",

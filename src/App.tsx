@@ -6,8 +6,9 @@ import { LanguageProvider } from './contexts/LanguageContext';
 import HomePage from './pages/HomePage';
 import WebhostingNoLimitPage from './pages/WebhostingNoLimitPage';
 import WebhostingLowCostPage from './pages/WebhostingLowCostPage';
-// import DomainsPage from './pages/DomainsPage';
-import VpsPage from './pages/VpsPage';
+import DomainsPage from './pages/DomainsPage';
+import VpsOnPage from './pages/VpsOnPage';
+import VpsSsdPage from './pages/VpsSsdPage';
 import WebsitePage from './pages/WebsitePage';
 // import CdPage from './pages/CdPage';
 import DiskPage from './pages/DiskPage';
@@ -19,7 +20,9 @@ const AppContent: React.FC = () => {
     { path: "", element: <HomePage /> },
     { path: "webhosting-nolimit", element: <WebhostingNoLimitPage /> },
     { path: "webhosting-lowcost", element: <WebhostingLowCostPage /> },
-    { path: "vps", element: <VpsPage /> },
+    { path: "domains", element: <DomainsPage /> },
+    { path: "vps-on", element: <VpsOnPage /> },
+    { path: "vps-ssd", element: <VpsSsdPage /> },
     { path: "website", element: <WebsitePage /> },
     { path: "disk", element: <DiskPage /> },
     { path: "mailhosting", element: <MailhostingPage /> },

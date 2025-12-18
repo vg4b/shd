@@ -1,41 +1,44 @@
 export const validCoupons = {
-    "webhostingNoLimit": {
-      code: "WN252AY1ME",
-      validUntil: "31.12.2025",
-    },
-    "webhostingLowCost": {
-      code: "WN251YEAKI",
-      validUntil: "31.12.2025",
-    },
-    "vps": {
-      code: "VN251Y7PDS",
-      validUntil: "31.12.2025",
-    },
-    "website": {
-      code: "WS251YW5UR",
-      validUntil: "31.12.2025",
-    },
-    "disk": {
-      code: "WD251OSCHO",
-      validUntil: "31.12.2025",
-    },
-    "mailhosting": {
-      code: "MH251FGR9N",
-      validUntil: "31.12.2025",
-      },
-    "renewal": {
-      code: "NWL25RIJPR",
-      validUntil: "31.10.2025",
-    }
-  }
+  webhostingNoLimit: {
+    code: "WN2616TWAJ",
+    validUntil: "31.12.2026",
+  },
+  webhostingLowCost: {
+    code: "WN251YEAKI",
+    validUntil: "10.12.2025",
+  },
+  vpsOn: {
+    code: "VN261OVUUB",
+    validUntil: "31.12.2026",
+  },
+  vpsSsd: {
+    code: "VD261L7JYS",
+    validUntil: "31.12.2026",
+  },
+  website: {
+    code: "WS251YW5UR",
+    validUntil: "10.12.2025",
+  },
+  disk: {
+    code: "WD261YSHIV",
+    validUntil: "31.12.2026",
+  },
+  mailhosting: {
+    code: "MH2614WLTJ",
+    validUntil: "31.12.2026",
+  },
+  renewal: {
+    code: "NWL25PROPR",
+    validUntil: "31.12.2025",
+  },
+  domains: {
+    code: "DM261BOE47",
+    validUntil: "31.12.2026",
+  },
+};
 
 // Commented out services for reference:
-// "domains": {
-//   code: "DM251GO78Y",
-//   validUntil: "31.12.2025",
-// },
 // "cd": {
 //   code: "CD251AST7P",
 //   validUntil: "31.12.2025",
 // },
-
