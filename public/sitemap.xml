@@ -4,7 +4,7 @@
   <!-- Czech (default) version -->
   <url>
     <loc>https://slevy-hosting-domeny.cz/</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/"/>
@@ -19,7 +19,7 @@
   <!-- English version -->
   <url>
     <loc>https://slevy-hosting-domeny.cz/en/</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/"/>
@@ -34,7 +34,7 @@
   <!-- Polish version -->
   <url>
     <loc>https://slevy-hosting-domeny.cz/pl/</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/"/>
@@ -49,7 +49,7 @@
   <!-- Slovak version -->
   <url>
     <loc>https://slevy-hosting-domeny.cz/sk/</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/"/>
@@ -64,7 +64,7 @@
   <!-- German version -->
   <url>
     <loc>https://slevy-hosting-domeny.cz/de/</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/"/>
@@ -79,7 +79,7 @@
   <!-- Italian version -->
   <url>
     <loc>https://slevy-hosting-domeny.cz/it/</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/"/>
@@ -94,7 +94,7 @@
   <!-- Webhosting No Limit Pages -->
   <url>
     <loc>https://slevy-hosting-domeny.cz/webhosting-nolimit/</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/webhosting-nolimit/"/>
@@ -109,7 +109,7 @@
   <!-- Webhosting Low Cost Pages -->
   <url>
     <loc>https://slevy-hosting-domeny.cz/webhosting-lowcost/</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/webhosting-lowcost/"/>
@@ -121,25 +121,55 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://slevy-hosting-domeny.cz/webhosting-lowcost/"/>
   </url>
 
-  <!-- VPS Pages -->
+  <!-- Domains Pages -->
   <url>
-    <loc>https://slevy-hosting-domeny.cz/vps/</loc>
-    <lastmod>2025-09-15</lastmod>
+    <loc>https://slevy-hosting-domeny.cz/domains/</loc>
+    <lastmod>2025-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/vps/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slevy-hosting-domeny.cz/en/vps/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://slevy-hosting-domeny.cz/pl/vps/"/>
-    <xhtml:link rel="alternate" hreflang="sk" href="https://slevy-hosting-domeny.cz/sk/vps/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://slevy-hosting-domeny.cz/de/vps/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://slevy-hosting-domeny.cz/it/vps/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slevy-hosting-domeny.cz/vps/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/domains/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://slevy-hosting-domeny.cz/en/domains/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://slevy-hosting-domeny.cz/pl/domains/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://slevy-hosting-domeny.cz/sk/domains/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://slevy-hosting-domeny.cz/de/domains/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://slevy-hosting-domeny.cz/it/domains/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://slevy-hosting-domeny.cz/domains/"/>
+  </url>
+
+  <!-- VPS ON Pages -->
+  <url>
+    <loc>https://slevy-hosting-domeny.cz/vps-on/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/vps-on/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://slevy-hosting-domeny.cz/en/vps-on/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://slevy-hosting-domeny.cz/pl/vps-on/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://slevy-hosting-domeny.cz/sk/vps-on/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://slevy-hosting-domeny.cz/de/vps-on/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://slevy-hosting-domeny.cz/it/vps-on/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://slevy-hosting-domeny.cz/vps-on/"/>
+  </url>
+
+  <!-- VPS SSD Pages -->
+  <url>
+    <loc>https://slevy-hosting-domeny.cz/vps-ssd/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/vps-ssd/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://slevy-hosting-domeny.cz/en/vps-ssd/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://slevy-hosting-domeny.cz/pl/vps-ssd/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://slevy-hosting-domeny.cz/sk/vps-ssd/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://slevy-hosting-domeny.cz/de/vps-ssd/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://slevy-hosting-domeny.cz/it/vps-ssd/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://slevy-hosting-domeny.cz/vps-ssd/"/>
   </url>
 
   <!-- Website Pages -->
   <url>
     <loc>https://slevy-hosting-domeny.cz/website/</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/website/"/>
@@ -154,7 +184,7 @@
   <!-- Disk Pages -->
   <url>
     <loc>https://slevy-hosting-domeny.cz/disk/</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/disk/"/>
@@ -169,7 +199,7 @@
   <!-- Mailhosting Pages -->
   <url>
     <loc>https://slevy-hosting-domeny.cz/mailhosting/</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/mailhosting/"/>
@@ -184,7 +214,7 @@
   <!-- Renewal Pages -->
   <url>
     <loc>https://slevy-hosting-domeny.cz/renewal/</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/renewal/"/>
@@ -195,4 +225,4 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://slevy-hosting-domeny.cz/it/renewal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://slevy-hosting-domeny.cz/renewal/"/>
   </url>
-</urlset> 
+</urlset>
