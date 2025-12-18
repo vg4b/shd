@@ -147,9 +147,19 @@ const VoucherPage: React.FC<VoucherPageProps> = ({ category }) => {
     };
   }, [t, category, couponData, serviceKey, language]);
 
+  const getIconForCategory = (cat: string): "hosting" | "vps" | "domain" | "website" | "disk" | "mail" | "renewal" => {
+    if (cat.includes('webhosting')) return 'hosting';
+    if (cat.includes('vps')) return 'vps';
+    if (cat === 'domains') return 'domain';
+    if (cat === 'website') return 'website';
+    if (cat === 'disk') return 'disk';
+    if (cat === 'mailhosting') return 'mail';
+    return 'renewal';
+  };
+
   return (
     <Layout>
-      <nav aria-label="breadcrumb" className="mb-4">
+      <nav aria-label="breadcrumb">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
             <Link to="" onClick={(e) => { e.preventDefault(); navigateWithLanguage(''); }}>{t('title')}</Link>
@@ -160,52 +170,49 @@ const VoucherPage: React.FC<VoucherPageProps> = ({ category }) => {
         </ol>
       </nav>
 
-      <div className="p-2 mb-4 bg-body-tertiary rounded-3">
-        <div className="container-fluid py-5">
-          <h1 className="display-5 fw-bold">
-            {t(`${serviceKey}.title` as any)}
-          </h1>
-          <p className="col-md-8 fs-4 mb-4">
-            {t(`${serviceKey}.content` as any)}
-          </p>
-          
-          <div className="row mb-4">
-            <div className="col-md-6">
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">{t('discountCode')}</h5>
-                  <h2 className="text-primary">{couponData.code}</h2>
-                  <p className="card-text text-muted">
-                    {t('validUntil')} {couponData.validUntil}
-                  </p>
-                </div>
-              </div>
+      <div className="hero-section mb-5">
+        <div className="row align-items-center">
+          <div className="col-lg-8">
+            <h1 className="mb-3">{t(`${serviceKey}.title` as any)}</h1>
+            <p className="lead mb-4">{t(`${serviceKey}.content` as any)}</p>
+            <div className="d-flex flex-wrap gap-3">
+              <a 
+                href={getServiceUrl(category, language)} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn-modern btn-modern-primary"
+              >
+                {t(`${serviceKey}.cta` as any)}
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <Link to="" onClick={(e) => { e.preventDefault(); navigateWithLanguage(''); }} className="btn-modern btn-modern-outline">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                {t('title')}
+              </Link>
             </div>
           </div>
-
-          <div className="text-left">
-            <a 
-              href={getServiceUrl(category, language)} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="btn btn-primary btn-lg me-3 mb-2 mb-md-0"
-            >
-              {t(`${serviceKey}.cta` as any)}
-            </a>
-            <Link to="" onClick={(e) => { e.preventDefault(); navigateWithLanguage(''); }} className="btn btn-outline-secondary btn-lg">
-              ← {t('title')}
-            </Link>
+          <div className="col-lg-4 mt-4 mt-lg-0">
+            <div className="card shadow-lg border-0 bg-white text-dark">
+              <div className="card-body p-4 text-center">
+                <h5 className="text-muted mb-3 uppercase tracking-wider small fw-bold">{t('discountCode')}</h5>
+                <div className="display-6 fw-bold text-primary mb-2" style={{ fontFamily: 'monospace', letterSpacing: '2px' }}>
+                  {couponData.code}
+                </div>
+                <p className="text-muted mb-0 small">
+                  {t('validUntil')} {couponData.validUntil}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="row align-items-md-stretch">
-        <div className="col-12">
+      <div className="row">
+        <div className="col-12 mb-5">
           <InfoTile
             title={t(`${serviceKey}.title` as any)}
             content={t(`${serviceKey}.content` as any)}
-            bgColor="#003484"
-            textColor="light"
+            icon={getIconForCategory(category)}
             discountCode={{
               code: couponData.code,
               validUntil: couponData.validUntil

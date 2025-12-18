@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Layout from "../components/Layout";
-import CouponList from "../components/CouponList";
 import InfoTile from "../components/InfoTile";
 import { useLanguage } from "../contexts/LanguageContext";
 import { DiscountCoupon } from "../types";
@@ -28,10 +27,7 @@ const HomePage: React.FC = () => {
 
   // SEO meta tags for homepage
   useEffect(() => {
-    const title =
-      language === "cs"
-        ? "Vedos Slevové Kupóny 2025 - Až 70% Sleva na Webhosting, VPS ON, VPS SSD a Domény"
-        : `${t("title")} | slevy-hosting-domeny.cz`;
+    const title = t("homeTitle");
     const description = t("subtitle");
     const currentUrl = `https://slevy-hosting-domeny.cz${
       language === "cs" ? "/" : `/${language}/`
@@ -110,10 +106,6 @@ const HomePage: React.FC = () => {
       description: t("coupons.webhostingNoLimit") + ":",
       code: validCoupons.webhostingNoLimit.code,
     },
-    // {
-    //   description: t("coupons.webhostingLowCost") + ":",
-    //   code: validCoupons.webhostingLowCost.code,
-    // },
     {
       description: t("coupons.domains") + ":",
       code: validCoupons.domains.code,
@@ -130,10 +122,6 @@ const HomePage: React.FC = () => {
       description: t("coupons.website") + ":",
       code: validCoupons.website.code,
     },
-    // {
-    //   description: t('coupons.cd') + ':',
-    //   code: validCoupons.cd.code
-    // },
     {
       description: t("coupons.disk") + ":",
       code: validCoupons.disk.code,
@@ -245,198 +233,122 @@ const HomePage: React.FC = () => {
           ],
         })}
       </script>
-      <div className="p-2 mb-4 bg-body-tertiary rounded-3">
-        <div className="container-fluid py-5">
-          <h1 className="display-5 fw-bold">{t("title")}</h1>
-          <p className="col-md-8 fs-4">{t("subtitle")}</p>
-          <CouponList coupons={coupons} />
-          <div className="text-left">
-            <a
-              href={getLocalizedUrl("https://vedos.cz/?ap=Lf2pCY", language)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary btn-lg mt-2"
-            >
-              {t("cta")}
-            </a>
+
+      <div className="hero-section">
+        <div className="row align-items-center">
+          <div className="col-lg-7">
+            <h1 className="display-4 fw-bold">{t("title")}</h1>
+            <p className="lead mb-4">{t("subtitle")}</p>
+            <div className="d-flex flex-wrap gap-3">
+              <a
+                href={getLocalizedUrl("https://vedos.cz/?ap=Lf2pCY", language)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-modern btn-modern-primary"
+              >
+                {t("cta")}
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <div className="col-lg-5 mt-4 mt-lg-0">
+            <div className="hero-coupons">
+              <h3 className="h5 mb-3 text-white-50">{t("topCoupons")}</h3>
+              <div className="hero-coupon-item">
+                <span>{t("services.webhostingNoLimit.title")}</span>
+                <span className="hero-coupon-code">{validCoupons.webhostingNoLimit.code}</span>
+              </div>
+              <div className="hero-coupon-item">
+                <span>{t("services.vpsOn.title")}</span>
+                <span className="hero-coupon-code">{validCoupons.vpsOn.code}</span>
+              </div>
+              <div className="hero-coupon-item">
+                <span>{t("services.domains.title")}</span>
+                <span className="hero-coupon-code">{validCoupons.domains.code}</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="row align-items-md-stretch">
+      <div className="row">
         <InfoTile
           title={t("services.webhostingNoLimit.title")}
           content={t("services.webhostingNoLimit.content")}
-          bgColor="#003484"
-          textColor="light"
+          icon="hosting"
           discountCode={{
             code: validCoupons.webhostingNoLimit.code,
             validUntil: validCoupons.webhostingNoLimit.validUntil,
           }}
-          link={{
-            url: getLocalizedUrl(
-              "https://order.wedos.com/cs/webhosting/order.html?step=1&coupon_code=WN252AY1ME&variant=nolimit&ap=Lf2pCY",
-              language
-            ),
-            text: t("services.webhostingNoLimit.cta"),
-          }}
           internalLink="/webhosting-nolimit"
         />
-        {/* <InfoTile
-          title={t("services.webhostingLowCost.title")}
-          content={t("services.webhostingLowCost.content")}
-          bgColor="#003484"
-          textColor="light"
+        <InfoTile
+          title={t("services.domains.title")}
+          content={t("services.domains.content")}
+          icon="domain"
           discountCode={{
-            code: coupons[1].code,
-            validUntil: validCoupons.webhostingLowCost.validUntil,
+            code: validCoupons.domains.code,
+            validUntil: validCoupons.domains.validUntil,
           }}
-          link={{
-            url: getLocalizedUrl(
-              "https://order.wedos.com/cs/webhosting/order.html?step=1&coupon_code=WN251YEAKI&variant=lowcost&ap=Lf2pCY",
-              language
-            ),
-            text: t("services.webhostingLowCost.cta"),
-          }}
-          internalLink="/webhosting-lowcost"
-        /> */}
-        {
-          <InfoTile
-            title={t("services.domains.title")}
-            content={t("services.domains.content")}
-            bgColor="#003484"
-            textColor="light"
-            discountCode={{
-              code: validCoupons.domains.code,
-              validUntil: validCoupons.domains.validUntil,
-            }}
-            link={{
-              url: getLocalizedUrl(
-                "https://www.vedos.cz/domeny/?ap=Lf2pCY",
-                language
-              ),
-              text: t("services.domains.cta"),
-            }}
-            internalLink="/domains"
-          />
-        }
+          internalLink="/domains"
+        />
         <InfoTile
           title={t("services.vpsOn.title")}
           content={t("services.vpsOn.content")}
-          bgColor="#003484"
-          textColor="light"
+          icon="vps"
           discountCode={{
             code: validCoupons.vpsOn.code,
             validUntil: validCoupons.vpsOn.validUntil,
-          }}
-          link={{
-            url: getLocalizedUrl(
-              "https://www.vedos.cz/vps-on/?ap=Lf2pCY",
-              language
-            ),
-            text: t("services.vpsOn.cta"),
           }}
           internalLink="/vps-on"
         />
         <InfoTile
           title={t("services.vpsSsd.title")}
           content={t("services.vpsSsd.content")}
-          bgColor="#003484"
-          textColor="light"
+          icon="vps"
           discountCode={{
             code: validCoupons.vpsSsd.code,
             validUntil: validCoupons.vpsSsd.validUntil,
-          }}
-          link={{
-            url: getLocalizedUrl(
-              "https://www.vedos.cz/vps-ssd/?ap=Lf2pCY",
-              language
-            ),
-            text: t("services.vpsSsd.cta"),
           }}
           internalLink="/vps-ssd"
         />
         <InfoTile
           title={t("services.website.title")}
           content={t("services.website.content")}
-          bgColor="#003484"
-          textColor="light"
+          icon="website"
           discountCode={{
             code: validCoupons.website.code,
             validUntil: validCoupons.website.validUntil,
           }}
-          link={{
-            url: getLocalizedUrl(
-              "https://www.vedos.cz/website-1-0/?ap=Lf2pCY",
-              language
-            ),
-            text: t("services.website.cta"),
-          }}
           internalLink="/website"
         />
-        {/* <InfoTile
-          title={t('services.cd.title')}
-          content={t('services.cd.content')}
-          bgColor="#003484"
-          textColor="light"
-          discountCode={{
-            code: coupons[6].code,
-            validUntil: validCoupons.cd.validUntil
-          }}
-          link={{
-            url: getLocalizedUrl("https://www.vedos.cz/cd/?ap=Lf2pCY", language),
-            text: t('services.cd.cta')
-          }}
-          internalLink="/cd"
-        /> */}
         <InfoTile
           title={t("services.disk.title")}
           content={t("services.disk.content")}
-          bgColor="#003484"
-          textColor="light"
+          icon="disk"
           discountCode={{
             code: validCoupons.disk.code,
             validUntil: validCoupons.disk.validUntil,
-          }}
-          link={{
-            url: getLocalizedUrl(
-              "https://www.vedos.cz/disk/?ap=Lf2pCY",
-              language
-            ),
-            text: t("services.disk.cta"),
           }}
           internalLink="/disk"
         />
         <InfoTile
           title={t("services.mailhosting.title")}
           content={t("services.mailhosting.content")}
-          bgColor="#003484"
-          textColor="light"
+          icon="mail"
           discountCode={{
             code: validCoupons.mailhosting.code,
             validUntil: validCoupons.mailhosting.validUntil,
-          }}
-          link={{
-            url: getLocalizedUrl(
-              "https://www.vedos.cz/mailhosting/?ap=Lf2pCY",
-              language
-            ),
-            text: t("services.mailhosting.cta"),
           }}
           internalLink="/mailhosting"
         />
         <InfoTile
           title={t("services.renewal.title")}
           content={t("services.renewal.content")}
-          bgColor="#003484"
-          textColor="light"
+          icon="renewal"
           discountCode={{
             code: validCoupons.renewal.code,
             validUntil: validCoupons.renewal.validUntil,
-          }}
-          link={{
-            url: getLocalizedUrl("https://www.vedos.cz/?ap=Lf2pCY", language),
-            text: t("services.renewal.cta"),
           }}
           internalLink="/renewal"
         />

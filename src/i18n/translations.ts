@@ -5,8 +5,12 @@ export const translations = {
     title: 'Aktuální slevové kupóny na Vedos.cz',
     subtitle: 'Využijte aktuální slevové kupóny a ušetřete na webhostingu, doménách a dalších službách.',
     cta: 'Přejít na Vedos.cz',
+    homeTitle: 'Vedos Slevové Kupóny 2025 - Až 70% Sleva na Webhosting, VPS ON, VPS SSD a Domény',
+    skipToContent: 'Přeskočit na obsah',
     discountCode: 'Slevový kód',
     validUntil: 'do',
+    topCoupons: 'Top Slevové Kódy',
+    moreInfo: 'Více informací',
     site: {
       title: 'slevy-hosting-domeny.cz'
     },
@@ -25,7 +29,8 @@ export const translations = {
         text: '(max. 300x). Případně zkuste najít v',
         linkText: 'aktuálním newsletteru',
         linkUrl: 'https://www.vedos.cz/newsletter?ap=Lf2pCY'
-      }
+      },
+      allCodes: 'Dostupné Slevové Kódy'
     },
     services: {
       webhostingNoLimit: {
@@ -105,6 +110,7 @@ export const translations = {
         webhostingLowCost: 'LowCost i NoLimit pokrývají potřeby většiny webů. LowCost je skvělý začátek pro osobní stránky, blogy a menší firemní weby. Pokud plánujete růst, zvažte NoLimit se silnější konfigurací a lepšími parametry pro databáze a PHP.\n\nSlevové kódy pravidelně zlevňují jak zřizovací poplatek, tak první fakturační období, díky čemuž ušetříte hned na startu.',
         vpsOn: 'VPS ON je flexibilní řešení s možností nastavit parametry na míru – CPU, RAM i disk (100% SSD). Běží na ověřené infrastruktuře OpenNebula a hodí se pro aplikace, které vyžadují izolované prostředí, přístup root a možnost škálování.\n\nSleva Vám umožní otestovat produkční prostředí za nižší náklady a následně škálovat podle potřeby.',
         vpsSsd: 'VPS SSD nabízí vyvážený poměr ceny a výkonu s garantovanými parametry v rámci modulů. Je ideální pro projekty, které vyžadují stabilní a predikovatelné prostředí. Díky SSD diskům jsou operace velmi rychlé.\n\nSleva se vztahuje na zřízení služby a umožňuje Vám začít s profesionálním virtuálním serverem za minimální náklady.',
+        domains: 'Registrace domény je prvním krokem k vlastnímu webu. S naší slevou získáte oblíbené koncovky jako .EU, .ONLINE nebo .STORE za zlomek běžné ceny. Výhodná cena platí pro první rok registrace a umožní Vám rezervovat si vysněný název bez velkých investic.\n\nKe každé doméně navíc získáte základní správu DNS a možnost snadného propojení s dalšími službami Vedos.',
         website: 'VEDOS WebSite umožňuje rychlé sestavení webu bez programování. Vyberete si šablonu, upravíte obsah a publikujete. Řešení je ideální pro živnostníky a malé firmy, které chtějí být online bez zbytečné složitosti.\n\nDíky akční slevě získáte profesionálně vypadající web za zlomek ceny oproti zakázkovému vývoji.',
         disk: 'VEDOS Disk je bezpečné vzdálené úložiště pro zálohy a archivaci. Přístup přes FTP, rsync, SMB, SVN či Git umožňuje snadnou integraci do Vašich procesů. Vhodné pro firmy i jednotlivce, kteří potřebují spolehlivý prostor mimo vlastní infrastrukturu.\n\nSlevový kód sníží náklady na dlouhodobé uchovávání dat.',
         mailhosting: 'Mailhosting na vlastní doméně posílí profesionální prezentaci firmy. Služba nabízí moderní webmail, antivirovou a antispamovou ochranu a data uložená v ČR. Snadno přidáte další schránky a nastavíte přesměrování či aliasy.\n\nSe slevou vyřešíte firemní e-mail rychle a levně.',
@@ -120,6 +126,11 @@ export const translations = {
           { q: 'Stačí LowCost pro menší web?', a: 'Ano, pro osobní stránky a menší firemní weby je ideální. Při růstu lze přejít na NoLimit.' },
           { q: 'Jak uplatním slevu?', a: 'Při objednávce vložte kód do košíku a potvrďte. Sleva se ihned projeví.' },
           { q: 'Je migrace webu složitá?', a: 'Většina CMS má jednoduchý postup. V případě potřeby Vám poradí podpora.' }
+        ],
+        domains: [
+          { q: 'Na jaké koncovky sleva platí?', a: 'Sleva 50 % platí pro domény .EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE a .FUN.' },
+          { q: 'Platí sleva i na prodloužení?', a: 'Akční cena se vztahuje na první rok registrace domény.' },
+          { q: 'Jak dlouho trvá registrace?', a: 'Registrace probíhá automaticky po spárování platby, většinou během několika minut.' }
         ],
         vps: [
           { q: 'Proč zvolit VPS místo hostingu?', a: 'Získáte plnou kontrolu nad serverem (root), izolované prostředí a škálování parametrů.' },
@@ -153,8 +164,12 @@ export const translations = {
     title: 'Current Discount Coupons for Vedos.cz',
     subtitle: 'Use current discount coupons and save on web hosting, domains, and other services.',
     cta: 'Go to Vedos.cz',
+    homeTitle: 'Vedos Discount Coupons 2025 - Up to 70% off Webhosting, VPS ON, VPS SSD and Domains',
+    skipToContent: 'Skip to main content',
     discountCode: 'Discount code',
     validUntil: 'valid until',
+    topCoupons: 'Top Discount Codes',
+    moreInfo: 'More information',
     site: {
       title: 'slevy-hosting-domeny.cz'
     },
@@ -173,7 +188,8 @@ export const translations = {
         text: '(max. 300x). Alternatively, check the',
         linkText: 'current newsletter',
         linkUrl: 'https://www.vedos.cz/en/newsletter?ap=Lf2pCY'
-      }
+      },
+      allCodes: 'Available Discount Codes'
     },
     services: {
       webhostingNoLimit: {
@@ -253,6 +269,7 @@ export const translations = {
         webhostingLowCost: 'LowCost and NoLimit cover the needs of most websites. LowCost is perfect for personal sites, blogs and small business pages. If you expect growth, consider NoLimit with stronger database and PHP parameters.\n\nDiscount codes usually reduce the setup fee and the first billing period so you save right from the start.',
         vpsOn: 'VPS ON gives you full control – choose CPU, RAM and SSD storage on reliable OpenNebula infrastructure. It suits apps that require root access, isolation and the ability to scale.\n\nThe discount helps you validate production‑like environments at a lower cost and scale later.',
         vpsSsd: 'VPS SSD offers a balanced price-performance ratio with guaranteed parameters within modules. It is ideal for projects requiring a stable and predictable environment. Thanks to SSD disks, operations are very fast.\n\nThe discount applies to service setup and allows you to start with a professional virtual server at minimal cost.',
+        domains: 'Domain registration is the first step to your own website. With our discount, you can get popular extensions like .EU, .ONLINE or .STORE at a fraction of the regular price. The promotional price applies to the first year of registration.\n\nIn addition, you get basic DNS management with every domain and the possibility of easy connection with other Vedos services.',
         website: 'VEDOS WebSite lets you build a website without coding. Pick a template, edit content and publish. It is ideal for freelancers and small businesses who want to get online quickly.\n\nThe promo makes professional‑looking websites very affordable compared to custom development.',
         disk: 'VEDOS Disk is secure remote storage for backups and archives. Access via FTP, rsync, SMB, SVN or Git integrates easily with your workflows. Suitable for companies and individuals who need reliable space outside their own infrastructure.\n\nThe coupon reduces the total cost of long‑term data retention.',
         mailhosting: 'Mailhosting on your own domain improves your professional image. You get modern webmail, anti‑virus and anti‑spam protection, with data stored in the Czech Republic. It is easy to add mailboxes and configure aliases.\n\nWith the discount, you can set up company email quickly and affordably.',
@@ -268,6 +285,11 @@ export const translations = {
           { q: 'Is LowCost enough for a small site?', a: 'Yes, it suits personal and small business sites. You can upgrade to NoLimit later.' },
           { q: 'How do I apply the coupon?', a: 'Enter the code in the checkout and confirm; the price updates immediately.' },
           { q: 'Is migration difficult?', a: 'Most CMS platforms have simple migration steps. Support can help if needed.' }
+        ],
+        domains: [
+          { q: 'Which extensions is the discount for?', a: 'The 50% discount applies to .EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE, and .FUN domains.' },
+          { q: 'Does the discount apply to renewal?', a: 'The promotional price applies to the first year of domain registration.' },
+          { q: 'How long does registration take?', a: 'Registration is automatic after payment matching, usually within minutes.' }
         ],
         vps: [
           { q: 'Why choose VPS over shared hosting?', a: 'You get full root control, isolated environment and scalable resources.' },
@@ -301,8 +323,12 @@ export const translations = {
     title: 'Aktualne kupony rabatowe na Vedos.cz',
     subtitle: 'Skorzystaj z aktualnych kuponów rabatowych i zaoszczędź na hostingu, domenach i innych usługach.',
     cta: 'Przejdź do Vedos.cz',
+    homeTitle: 'Kupony rabatowe Vedos 2025 - Do 70% zniżki na Webhosting, VPS ON, VPS SSD i Domeny',
+    skipToContent: 'Przejdź do treści',
     discountCode: 'Kod rabatowy',
     validUntil: 'ważny do',
+    topCoupons: 'Najlepsze Kody Rabatowe',
+    moreInfo: 'Więcej informacji',
     site: {
       title: 'slevy-hosting-domeny.cz'
     },
@@ -321,7 +347,8 @@ export const translations = {
         text: '(maks. 300x). Ewentualnie sprawdź w',
         linkText: 'aktualnym newsletterze',
         linkUrl: 'https://www.vedos.cz/newsletter?ap=Lf2pCY'
-      }
+      },
+      allCodes: 'Dostępne Kody Rabatowe'
     },
     services: {
       webhostingNoLimit: {
@@ -417,6 +444,11 @@ export const translations = {
           { q: 'Jak użyć kodu rabatowego?', a: 'Wpisz kod w koszyku i potwierdź – cena zaktualizuje się od razu.' },
           { q: 'Czy migracja jest trudna?', a: 'Większość CMS‑ów ma prostą procedurę. W razie potrzeby pomoże wsparcie.' }
         ],
+        domains: [
+          { q: 'Na jakie rozszerzenia obowiązuje zniżka?', a: 'Zniżka 50% dotyczy domen .EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE i .FUN.' },
+          { q: 'Czy zniżka dotyczy również przedłużenia?', a: 'Cena promocyjna dotyczy pierwszego roku rejestracji domeny.' },
+          { q: 'Jak długo trwa rejestracja?', a: 'Rejestracja odbywa się automatycznie po zaksięgowaniu wpłaty, zwykle w ciągu kilku minut.' }
+        ],
         vps: [
           { q: 'Dlaczego VPS zamiast hostingu?', a: 'Pełna kontrola (root), izolacja i skalowalne zasoby.' },
           { q: 'Jakie technologie są wspierane?', a: 'Dowolne dystrybucje Linuksa, bazy danych, Docker i inne.' },
@@ -449,8 +481,12 @@ export const translations = {
     title: 'Aktuálne zľavové kupóny na Vedos.cz',
     subtitle: 'Využite aktuálne zľavové kupóny a ušetrite na webhostingu, doménach a ďalších službách.',
     cta: 'Prejsť na Vedos.cz',
+    homeTitle: 'Vedos Zľavové Kupóny 2025 - Až 70% Zľava na Webhosting, VPS ON, VPS SSD a Domény',
+    skipToContent: 'Preskočiť na obsah',
     discountCode: 'Zľavový kód',
     validUntil: 'platný do',
+    topCoupons: 'Top Zľavové Kódy',
+    moreInfo: 'Viac informácií',
     site: {
       title: 'slevy-hosting-domeny.cz'
     },
@@ -469,7 +505,8 @@ export const translations = {
         text: '(max. 300x). Prípadne skúste nájsť v',
         linkText: 'aktuálnom newsletteri',
         linkUrl: 'https://www.vedos.cz/sk/newsletter?ap=Lf2pCY'
-      }
+      },
+      allCodes: 'Dostupné Zľavové Kódy'
     },
     services: {
       webhostingNoLimit: {
@@ -565,6 +602,11 @@ export const translations = {
           { q: 'Ako uplatním zľavu?', a: 'Zadajte kód v košíku a potvrďte – cena sa ihneď upraví.' },
           { q: 'Je migrácia zložitá?', a: 'Väčšina CMS má jednoduchý postup. Podpora poradí, ak bude treba.' }
         ],
+        domains: [
+          { q: 'Na ktoré koncovky zľava platí?', a: 'Zľava 50 % platí pre domény .EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE a .FUN.' },
+          { q: 'Platí zľava aj na predĺženie?', a: 'Akčná cena sa vzťahuje na prvý rok registrácie domény.' },
+          { q: 'Ako dlho trvá registrácia?', a: 'Registrácia prebieha automaticky po spárovaní platby, väčšinou počas niekoľkých minút.' }
+        ],
         vps: [
           { q: 'Prečo VPS namiesto hostingu?', a: 'Plná kontrola (root), izolované prostredie a škálovateľné zdroje.' },
           { q: 'Aké technológie môžem používať?', a: 'Ľubovoľné Linux distribúcie, databázy, Docker a ďalšie.' },
@@ -597,8 +639,12 @@ export const translations = {
     title: 'Aktuelle Rabatt-Coupons für Vedos.cz',
     subtitle: 'Nutzen Sie aktuelle Rabatt-Coupons und sparen Sie bei Webhosting, Domains und anderen Dienstleistungen.',
     cta: 'Zu Vedos.cz',
+    homeTitle: 'Vedos Rabatt-Coupons 2025 - Bis zu 70% Rabatt auf Webhosting, VPS ON, VPS SSD und Domains',
+    skipToContent: 'Zum Inhalt springen',
     discountCode: 'Rabattcode',
     validUntil: 'gültig bis',
+    topCoupons: 'Top Rabattcodes',
+    moreInfo: 'Mehr Informationen',
     site: {
       title: 'slevy-hosting-domeny.cz'
     },
@@ -617,7 +663,8 @@ export const translations = {
         text: '(max. 300x). Alternativ im',
         linkText: 'aktuellen Newsletter',
         linkUrl: 'https://www.vedos.cz/en/newsletter?ap=Lf2pCY'
-      }
+      },
+      allCodes: 'Verfügbare Rabattcodes'
     },
     services: {
       webhostingNoLimit: {
@@ -697,6 +744,7 @@ export const translations = {
         webhostingLowCost: 'LowCost und NoLimit decken die meisten Anforderungen ab. LowCost eignet sich für kleinere Projekte, bei Wachstum empfiehlt sich NoLimit mit stärkeren Parametern.\n\nGutscheincodes reduzieren oft die Einrichtungsgebühr und die erste Abrechnungsperiode.',
         vpsOn: 'VPS ON gibt volle Kontrolle – CPU, RAM und SSD‑Speicher auf zuverlässiger OpenNebula‑Infrastruktur. Geeignet für Anwendungen mit Root‑Zugriff, Isolation und Skalierbarkeit.\n\nDer Rabatt erleichtert Tests produktionsnaher Umgebungen.',
         vpsSsd: 'VPS SSD bietet ein ausgewogenes Preis-Leistungs-Verhältnis mit garantierten Parametern innerhalb von Modulen. Ideal für Projekte, die eine stabile und vorhersagbare Umgebung erfordern. Dank SSD-Festplatten sind Operationen sehr schnell.\n\nDer Rabatt gilt für die Einrichtung des Dienstes und ermöglicht Ihnen den Start mit einem professionellen virtuellen Server zu minimalen Kosten.',
+        domains: 'Die Domainregistrierung ist der erste Schritt zur eigenen Website. Mit unserem Rabatt erhalten Sie beliebte Endungen wie .EU, .ONLINE oder .STORE zu einem Bruchteil des regulären Preises. Der Aktionspreis gilt für das erste Jahr der Registrierung.\n\nDarüber hinaus erhalten Sie zu jeder Domain eine grundlegende DNS-Verwaltung und die Möglichkeit der einfachen Anbindung an andere Vedos-Dienste.',
         website: 'VEDOS WebSite ermöglicht den schnellen Aufbau einer Website ohne Programmierung. Vorlage wählen, Inhalte anpassen und veröffentlichen – ideal für kleine Unternehmen.\n\nDie Aktion macht professionelle Websites deutlich günstiger als Individualentwicklung.',
         disk: 'VEDOS Disk ist sicherer externer Speicher für Backups und Archivierung. Zugriff über FTP, rsync, SMB, SVN oder Git – einfach in Workflows integrierbar.\n\nDer Gutschein senkt die Kosten der Langzeitaufbewahrung.',
         mailhosting: 'Mailhosting auf eigener Domain stärkt das professionelle Auftreten. Moderner Webmail, Anti‑Spam/Anti‑Virus, Daten in Rechenzentren in Tschechien.\n\nMit dem Rabatt richten Sie Firmen‑E‑Mail schnell und günstig ein.',
@@ -712,6 +760,11 @@ export const translations = {
           { q: 'Reicht LowCost für kleine Websites?', a: 'Ja, und bei Bedarf können Sie auf NoLimit wechseln.' },
           { q: 'Wie löse ich den Gutschein ein?', a: 'Geben Sie den Code im Warenkorb ein – der Preis aktualisiert sich sofort.' },
           { q: 'Ist die Migration kompliziert?', a: 'Die meisten CMS bieten einfache Schritte. Der Support hilft bei Bedarf.' }
+        ],
+        domains: [
+          { q: 'Für welche Endungen gilt der Rabatt?', a: 'Der Rabatt von 50 % gilt für die Domains .EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE und .FUN.' },
+          { q: 'Gilt der Rabatt auch für die Verlängerung?', a: 'Der Aktionspreis gilt für das erste Jahr der Domainregistrierung.' },
+          { q: 'Wie lange dauert die Registrierung?', a: 'Die Registrierung erfolgt automatisch nach Zahlungseingang, meist innerhalb weniger Minuten.' }
         ],
         vps: [
           { q: 'Warum VPS statt Shared Hosting?', a: 'Volle Root‑Kontrolle, isolierte Umgebung und skalierbare Ressourcen.' },
@@ -745,8 +798,12 @@ export const translations = {
     title: 'Coupon Sconto Attuali per Vedos.cz',
     subtitle: 'Usa i coupon sconto attuali e risparmia su hosting web, domini e altri servizi.',
     cta: 'Vai a Vedos.cz',
+    homeTitle: 'Coupon Sconto Vedos 2025 - Fino al 70% di sconto su Webhosting, VPS ON, VPS SSD e Domini',
+    skipToContent: 'Vai al contenuto',
     discountCode: 'Codice sconto',
     validUntil: 'valido fino al',
+    topCoupons: 'Migliori Codici Sconto',
+    moreInfo: 'Più informazioni',
     site: {
       title: 'slevy-hosting-domeny.cz'
     },
@@ -764,7 +821,8 @@ export const translations = {
         text: '(max. 300x). In alternativa, controlla la',
         linkText: 'newsletter attuale',
         linkUrl: 'https://www.vedos.cz/en/newsletter?ap=Lf2pCY'
-      }
+      },
+      allCodes: 'Codici Sconto Disponibili'
     },
     services: {
       webhostingNoLimit: {
@@ -839,6 +897,7 @@ export const translations = {
         webhostingLowCost: 'LowCost e NoLimit coprono le esigenze della maggior parte dei siti web. LowCost è perfetto per siti personali, blog e piccole pagine aziendali. Se prevedi una crescita, considera NoLimit con parametri database e PHP più potenti.\n\nI codici sconto riducono solitamente la tariffa di attivazione e il primo periodo di fatturazione, così risparmi fin dall\'inizio.',
         vpsOn: 'VPS ON ti offre pieno controllo – scegli CPU, RAM e storage SSD su una infrastruttura OpenNebula affidabile. È adatto per applicazioni che richiedono accesso root, isolamento e capacità di scalare.\n\nLo sconto ti aiuta a validare ambienti simili alla produzione a un costo inferiore e scalare successivamente.',
         vpsSsd: 'VPS SSD offre un rapporto qualità-prezzo equilibrato con parametri garantiti all\'interno dei moduli. È ideale per progetti che richiedono un ambiente stabile e prevedibile. Grazie ai dischi SSD, le operazioni sono molto veloci.\n\nLo sconto si applica all\'attivazione del servizio e ti permette di iniziare con un server virtuale professionale a un costo minimo.',
+        domains: 'La registrazione del dominio è il primo passo verso il tuo sito web. Con il nostro sconto, puoi ottenere estensioni popolari come .EU, .ONLINE o .STORE a una frazione del prezzo normale. Il prezzo promozionale si applica al primo anno di registrazione.\n\nInoltre, ottieni la gestione DNS di base con ogni dominio e la possibilità di una facile connessione con altri servizi Vedos.',
         website: 'VEDOS WebSite ti permette di costruire un sito web senza codificare. Scegli un template, modifica i contenuti e pubblica. È ideale per liberi professionisti e piccole imprese che vogliono andare online rapidamente.\n\nLa promozione rende i siti web dall\'aspetto professionale molto convenienti rispetto allo sviluppo personalizzato.',
         disk: 'VEDOS Disk è uno storage remoto sicuro per backup e archivi. L\'accesso tramite FTP, rsync, SMB, SVN o Git si integra facilmente con i tuoi flussi di lavoro. Adatto per aziende e privati che necessitano di spazio affidabile al di fuori della propria infrastruttura.\n\nIl coupon riduce il costo totale della conservazione dei dati a lungo termine.',
         mailhosting: 'Il Mailhosting sul tuo dominio migliora la tua immagine professionale. Ottieni webmail moderna, protezione antivirus e antispam, con dati archiviati nella Repubblica Ceca. È facile aggiungere caselle di posta e configurare alias.\n\nCon lo sconto, puoi configurare la posta aziendale rapidamente e a prezzi accessibili.',
@@ -854,6 +913,11 @@ export const translations = {
           { q: 'LowCost è sufficiente per un piccolo sito?', a: 'Sì, è adatto per siti personali e di piccole imprese. Puoi passare a NoLimit in seguito.' },
           { q: 'Come applico il coupon?', a: 'Inserisci il codice al momento del pagamento e conferma; il prezzo si aggiorna immediatamente.' },
           { q: 'La migrazione è difficile?', a: 'La maggior parte delle piattaforme CMS ha semplici passaggi di migrazione. Il supporto può aiutare se necessario.' }
+        ],
+        domains: [
+          { q: 'Per quali estensioni vale lo sconto?', a: 'Lo sconto del 50% si applica ai domini .EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE e .FUN.' },
+          { q: 'Lo sconto si applica anche al rinnovo?', a: 'Il prezzo promozionale si applica al primo anno di registrazione del dominio.' },
+          { q: 'Quanto tempo richiede la registrazione?', a: 'La registrazione è automatica dopo l\'abbinamento del pagamento, solitamente in pochi minuti.' }
         ],
         vps: [
           { q: 'Perché scegliere VPS invece dell\'hosting condiviso?', a: 'Ottieni il pieno controllo root, ambiente isolato e risorse scalabili.' },

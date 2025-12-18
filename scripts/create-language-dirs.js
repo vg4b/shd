@@ -64,4 +64,10 @@ languages.forEach((lang) => {
   }
 });
 
-console.log("Language directories and routes created successfully!");
+// Create 404.html as a copy of index.html for better routing support on static hosts
+fs.copyFileSync(
+  path.join(buildDir, "index.html"),
+  path.join(buildDir, "404.html")
+);
+
+console.log("Language directories, routes, and 404.html created successfully!");
