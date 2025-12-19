@@ -73,6 +73,7 @@ header .fs-4 {
   overflow: hidden;
   color: white;
   box-shadow: var(--shadow-xl);
+  background-image: url("/public/network4.jpg");
 }
 
 .hero-section::before {
