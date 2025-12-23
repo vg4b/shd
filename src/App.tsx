@@ -14,6 +14,7 @@ import WebsitePage from './pages/WebsitePage';
 import DiskPage from './pages/DiskPage';
 import MailhostingPage from './pages/MailhostingPage';
 import RenewalPage from './pages/RenewalPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 
 const AppContent: React.FC = () => {
   const routes = [
@@ -26,7 +27,8 @@ const AppContent: React.FC = () => {
     { path: "website", element: <WebsitePage /> },
     { path: "disk", element: <DiskPage /> },
     { path: "mailhosting", element: <MailhostingPage /> },
-    { path: "renewal", element: <RenewalPage /> }
+    { path: "renewal", element: <RenewalPage /> },
+    { path: "privacy", element: <PrivacyPolicyPage /> }
   ];
 
   return (

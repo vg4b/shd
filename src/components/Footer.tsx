@@ -1,6 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Footer: React.FC = () => {
+  const { t, language } = useLanguage();
+
   return (
     <footer style={{
       borderTop: '1px solid #eaeaea',
@@ -10,6 +14,14 @@ const Footer: React.FC = () => {
       backgroundColor: 'white',
       marginTop: '2rem'
     }}>
+      <div style={{ marginBottom: '10px' }}>
+        <Link 
+          to={language === 'cs' ? '/privacy' : `/${language}/privacy`}
+          style={{ color: '#666', textDecoration: 'none', fontSize: '0.9rem' }}
+        >
+          {t('privacyPolicy')}
+        </Link>
+      </div>
       <p style={{ margin: 0, fontSize: '0.9rem', color: '#666' }}>
         © 2024-2025{' '}
         <a 
@@ -28,4 +40,4 @@ const Footer: React.FC = () => {
   );
 };
 
-export default Footer; 
+export default Footer;
