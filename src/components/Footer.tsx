@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
         </Link>
       </div>
       <p style={{ margin: 0, fontSize: '0.9rem', color: '#666' }}>
-        © 2024-2025{' '}
+        © 2024-2026{' '}
         <a 
           href="https://fixweb.cz" 
           target="_blank" 
