@@ -119,6 +119,10 @@ const HomePage: React.FC = () => {
       code: validCoupons.vpsSsd.code,
     },
     {
+      description: t("coupons.wordpressHosting") + ":",
+      code: validCoupons.wordpressHosting.code,
+    },
+    {
       description: t("coupons.website") + ":",
       code: validCoupons.website.code,
     },
@@ -263,6 +267,10 @@ const HomePage: React.FC = () => {
                 <span className="hero-coupon-code">{validCoupons.vpsOn.code}</span>
               </div>
               <div className="hero-coupon-item">
+                <span>{t("services.wordpressHosting.title")}</span>
+                <span className="hero-coupon-code">{validCoupons.wordpressHosting.code}</span>
+              </div>
+              <div className="hero-coupon-item">
                 <span>{t("services.domains.title")}</span>
                 <span className="hero-coupon-code">{validCoupons.domains.code}</span>
               </div>
@@ -311,6 +319,16 @@ const HomePage: React.FC = () => {
             validUntil: validCoupons.vpsSsd.validUntil,
           }}
           internalLink="/vps-ssd"
+        />
+        <InfoTile
+          title={t("services.wordpressHosting.title")}
+          content={t("services.wordpressHosting.content")}
+          icon="hosting"
+          discountCode={{
+            code: validCoupons.wordpressHosting.code,
+            validUntil: validCoupons.wordpressHosting.validUntil,
+          }}
+          internalLink="/wordpress-hosting"
         />
         <InfoTile
           title={t("services.website.title")}

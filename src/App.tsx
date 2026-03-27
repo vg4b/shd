@@ -9,6 +9,7 @@ import WebhostingLowCostPage from './pages/WebhostingLowCostPage';
 import DomainsPage from './pages/DomainsPage';
 import VpsOnPage from './pages/VpsOnPage';
 import VpsSsdPage from './pages/VpsSsdPage';
+import WordpressHostingPage from './pages/WordpressHostingPage';
 import WebsitePage from './pages/WebsitePage';
 // import CdPage from './pages/CdPage';
 import DiskPage from './pages/DiskPage';
@@ -24,6 +25,7 @@ const AppContent: React.FC = () => {
     { path: "domains", element: <DomainsPage /> },
     { path: "vps-on", element: <VpsOnPage /> },
     { path: "vps-ssd", element: <VpsSsdPage /> },
+    { path: "wordpress-hosting", element: <WordpressHostingPage /> },
     { path: "website", element: <WebsitePage /> },
     { path: "disk", element: <DiskPage /> },
     { path: "mailhosting", element: <MailhostingPage /> },

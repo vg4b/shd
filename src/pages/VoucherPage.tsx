@@ -30,6 +30,7 @@ const getServiceUrl = (category: keyof typeof validCoupons, language: string): s
     domains: "https://www.vedos.cz/domeny/?ap=Lf2pCY",
     vpsOn: "https://www.vedos.cz/vps-on/?ap=Lf2pCY",
     vpsSsd: "https://www.vedos.cz/vps-ssd/?ap=Lf2pCY",
+    wordpressHosting: "https://www.vedos.cz/wordpress-hosting/?ap=Lf2pCY",
     website: "https://www.vedos.cz/website-1-0/?ap=Lf2pCY",
     // cd: "https://www.vedos.cz/cd/?ap=Lf2pCY",
     disk: "https://www.vedos.cz/disk/?ap=Lf2pCY",
@@ -149,6 +150,7 @@ const VoucherPage: React.FC<VoucherPageProps> = ({ category }) => {
 
   const getIconForCategory = (cat: string): "hosting" | "vps" | "domain" | "website" | "disk" | "mail" | "renewal" => {
     if (cat.includes('webhosting')) return 'hosting';
+    if (cat.includes('wordpress')) return 'hosting';
     if (cat.includes('vps')) return 'vps';
     if (cat === 'domains') return 'domain';
     if (cat === 'website') return 'website';

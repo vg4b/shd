@@ -15,6 +15,10 @@ export const validCoupons = {
     code: "VD261L7JYS",
     validUntil: "31.12.2026",
   },
+  wordpressHosting: {
+    code: "WPXLXGI30H",
+    validUntil: "31.12.2026",
+  },
   website: {
     code: "WS251YW5UR",
     validUntil: "10.12.2025",
@@ -28,8 +32,8 @@ export const validCoupons = {
     validUntil: "31.12.2026",
   },
   renewal: {
-    code: "NWL26UNOPR",
-    validUntil: "28.2.2026",
+    code: "NWL26BREPR",
+    validUntil: "31.3.2026",
   },
   domains: {
     code: "DM261BOE47",

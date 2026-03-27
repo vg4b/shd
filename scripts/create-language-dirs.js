@@ -9,6 +9,7 @@ const routes = [
   "domains",
   "vps-on",
   "vps-ssd",
+  "wordpress-hosting",
   "website",
   "disk",
   "mailhosting",
@@ -29,7 +30,7 @@ languages.forEach((lang) => {
         }
         fs.copyFileSync(
           path.join(buildDir, "index.html"),
-          path.join(routeDir, "index.html")
+          path.join(routeDir, "index.html"),
         );
       }
     });
@@ -45,7 +46,7 @@ languages.forEach((lang) => {
     // Copy index.html to language directory
     fs.copyFileSync(
       path.join(buildDir, "index.html"),
-      path.join(langDir, "index.html")
+      path.join(langDir, "index.html"),
     );
 
     // Create subdirectories for each route and copy index.html
@@ -57,7 +58,7 @@ languages.forEach((lang) => {
         }
         fs.copyFileSync(
           path.join(buildDir, "index.html"),
-          path.join(routeDir, "index.html")
+          path.join(routeDir, "index.html"),
         );
       }
     });
@@ -67,7 +68,7 @@ languages.forEach((lang) => {
 // Create 404.html as a copy of index.html for better routing support on static hosts
 fs.copyFileSync(
   path.join(buildDir, "index.html"),
-  path.join(buildDir, "404.html")
+  path.join(buildDir, "404.html"),
 );
 
 console.log("Language directories, routes, and 404.html created successfully!");

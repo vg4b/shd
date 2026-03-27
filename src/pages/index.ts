@@ -4,6 +4,7 @@ export { default as WebhostingLowCostPage } from './WebhostingLowCostPage';
 export { default as DomainsPage } from './DomainsPage';
 export { default as VpsOnPage } from './VpsOnPage';
 export { default as VpsSsdPage } from './VpsSsdPage';
+export { default as WordpressHostingPage } from './WordpressHostingPage';
 export { default as WebsitePage } from './WebsitePage';
 // export { default as CdPage } from './CdPage';
 export { default as DiskPage } from './DiskPage';

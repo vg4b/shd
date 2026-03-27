@@ -21,6 +21,7 @@ export const translations = {
       domains: '50% sleva na domény (.EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE, .FUN)',
       vpsOn: 'VPS ON sleva 33 %',
       vpsSsd: 'VPS SSD sleva 25 %',
+      wordpressHosting: 'WordPress hosting (WP LowCost + WP NoLimit) sleva 50 %',
       website: 'VEDOS WebSite sleva 50 %',
       // cd: 'VEDOS CD sleva 25 %',
       disk: 'VEDOS Disk sleva 25 %',
@@ -58,6 +59,11 @@ export const translations = {
         title: 'VPS SSD',
         content: 'Výkonné virtuální servery s vyhrazeným výkonem a SSD disky. Garantovaný výkon a dostupnost pro vaše náročné projekty.',
         cta: 'Získat VPS SSD se slevou 25%'
+      },
+      wordpressHosting: {
+        title: 'WordPress hosting',
+        content: 'Speciální 50% sleva na WordPress hosting WP LowCost a WP NoLimit. Ideální volba pro rychlé a bezpečné WordPress weby s českou podporou.',
+        cta: 'Získat WordPress hosting se slevou 50%'
       },
       website: {
         title: 'VEDOS WebSite',
@@ -111,6 +117,7 @@ export const translations = {
         webhostingLowCost: 'LowCost i NoLimit pokrývají potřeby většiny webů. LowCost je skvělý začátek pro osobní stránky, blogy a menší firemní weby. Pokud plánujete růst, zvažte NoLimit se silnější konfigurací a lepšími parametry pro databáze a PHP.\n\nSlevové kódy pravidelně zlevňují jak zřizovací poplatek, tak první fakturační období, díky čemuž ušetříte hned na startu.',
         vpsOn: 'VPS ON je flexibilní řešení s možností nastavit parametry na míru – CPU, RAM i disk (100% SSD). Běží na ověřené infrastruktuře OpenNebula a hodí se pro aplikace, které vyžadují izolované prostředí, přístup root a možnost škálování.\n\nSleva Vám umožní otestovat produkční prostředí za nižší náklady a následně škálovat podle potřeby.',
         vpsSsd: 'VPS SSD nabízí vyvážený poměr ceny a výkonu s garantovanými parametry v rámci modulů. Je ideální pro projekty, které vyžadují stabilní a predikovatelné prostředí. Díky SSD diskům jsou operace velmi rychlé.\n\nSleva se vztahuje na zřízení služby a umožňuje Vám začít s profesionálním virtuálním serverem za minimální náklady.',
+        wordpressHosting: 'WordPress hosting WP LowCost a WP NoLimit je navržený speciálně pro rychlý provoz WordPress webů. Se slevou 50 % snadno spustíte blog, firemní web i e-shop na optimalizované infrastruktuře.\n\nSoučástí řešení je jednoduchá správa, stabilní výkon a prostředí připravené pro moderní WordPress.',
         domains: 'Registrace domény je prvním krokem k vlastnímu webu. S naší slevou získáte oblíbené koncovky jako .EU, .ONLINE nebo .STORE za zlomek běžné ceny. Výhodná cena platí pro první rok registrace a umožní Vám rezervovat si vysněný název bez velkých investic.\n\nKe každé doméně navíc získáte základní správu DNS a možnost snadného propojení s dalšími službami Vedos.',
         website: 'VEDOS WebSite umožňuje rychlé sestavení webu bez programování. Vyberete si šablonu, upravíte obsah a publikujete. Řešení je ideální pro živnostníky a malé firmy, které chtějí být online bez zbytečné složitosti.\n\nDíky akční slevě získáte profesionálně vypadající web za zlomek ceny oproti zakázkovému vývoji.',
         disk: 'VEDOS Disk je bezpečné vzdálené úložiště pro zálohy a archivaci. Přístup přes FTP, rsync, SMB, SVN či Git umožňuje snadnou integraci do Vašich procesů. Vhodné pro firmy i jednotlivce, kteří potřebují spolehlivý prostor mimo vlastní infrastrukturu.\n\nSlevový kód sníží náklady na dlouhodobé uchovávání dat.',
@@ -181,6 +188,7 @@ export const translations = {
       domains: '50% discount on domains (.EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE, .FUN)',
       vpsOn: 'VPS ON 33% discount',
       vpsSsd: 'VPS SSD 25% discount',
+      wordpressHosting: 'WordPress hosting (WP LowCost + WP NoLimit) 50% discount',
       website: 'VEDOS WebSite 50% discount',
       // cd: 'VEDOS CD 25% discount',
       disk: 'VEDOS Disk 25% discount',
@@ -218,6 +226,11 @@ export const translations = {
         title: 'VPS SSD',
         content: 'Powerful virtual servers with dedicated performance and SSD disks. Guaranteed performance and availability for your projects.',
         cta: 'Get VPS SSD with 25% discount'
+      },
+      wordpressHosting: {
+        title: 'WordPress hosting',
+        content: 'Special 50% discount on WP LowCost and WP NoLimit WordPress hosting. Great for fast, secure, and reliable WordPress websites.',
+        cta: 'Get WordPress hosting with 50% discount'
       },
       website: {
         title: 'VEDOS WebSite',
@@ -271,6 +284,7 @@ export const translations = {
         webhostingLowCost: 'LowCost and NoLimit cover the needs of most websites. LowCost is perfect for personal sites, blogs and small business pages. If you expect growth, consider NoLimit with stronger database and PHP parameters.\n\nDiscount codes usually reduce the setup fee and the first billing period so you save right from the start.',
         vpsOn: 'VPS ON gives you full control – choose CPU, RAM and SSD storage on reliable OpenNebula infrastructure. It suits apps that require root access, isolation and the ability to scale.\n\nThe discount helps you validate production‑like environments at a lower cost and scale later.',
         vpsSsd: 'VPS SSD offers a balanced price-performance ratio with guaranteed parameters within modules. It is ideal for projects requiring a stable and predictable environment. Thanks to SSD disks, operations are very fast.\n\nThe discount applies to service setup and allows you to start with a professional virtual server at minimal cost.',
+        wordpressHosting: 'WP LowCost and WP NoLimit WordPress hosting are built specifically for WordPress performance and simplicity. With a 50% discount, you can launch blogs, business sites, and WooCommerce projects at low cost.\n\nThe environment is optimized for modern WordPress, with stable performance and easy administration.',
         domains: 'Domain registration is the first step to your own website. With our discount, you can get popular extensions like .EU, .ONLINE or .STORE at a fraction of the regular price. The promotional price applies to the first year of registration.\n\nIn addition, you get basic DNS management with every domain and the possibility of easy connection with other Vedos services.',
         website: 'VEDOS WebSite lets you build a website without coding. Pick a template, edit content and publish. It is ideal for freelancers and small businesses who want to get online quickly.\n\nThe promo makes professional‑looking websites very affordable compared to custom development.',
         disk: 'VEDOS Disk is secure remote storage for backups and archives. Access via FTP, rsync, SMB, SVN or Git integrates easily with your workflows. Suitable for companies and individuals who need reliable space outside their own infrastructure.\n\nThe coupon reduces the total cost of long‑term data retention.',
@@ -341,6 +355,7 @@ export const translations = {
       domains: '50% rabatu na domeny (.EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE, .FUN)',
       vpsOn: 'VPS ON rabat 33%',
       vpsSsd: 'VPS SSD rabat 25%',
+      wordpressHosting: 'WordPress hosting (WP LowCost + WP NoLimit) rabat 50%',
       website: 'VEDOS WebSite rabat 50%',
       // cd: 'VEDOS CD rabat 25%',
       disk: 'VEDOS Disk rabat 25%',
@@ -378,6 +393,11 @@ export const translations = {
         title: 'VPS SSD',
         content: 'Wydajne serwery wirtualne z dedykowaną wydajnością i dyskami SSD. Gwarantowana wydajność i dostępność dla Twoich projektów.',
         cta: 'Uzyskaj VPS SSD z 25% rabatem'
+      },
+      wordpressHosting: {
+        title: 'WordPress hosting',
+        content: 'Specjalna zniżka 50% na WordPress hosting WP LowCost i WP NoLimit. Idealny wybór dla szybkich i bezpiecznych stron WordPress.',
+        cta: 'Uzyskaj WordPress hosting z 50% rabatem'
       },
       website: {
         title: 'VEDOS WebSite',
@@ -431,6 +451,7 @@ export const translations = {
         webhostingLowCost: 'LowCost i NoLimit pokrywają potrzeby większości stron. LowCost jest świetny na start dla blogów i małych firm. Przy wzroście ruchu warto rozważyć NoLimit z lepszymi parametrami.\n\nKody rabatowe obniżają koszt uruchomienia oraz pierwszego okresu rozliczeniowego.',
         vpsOn: 'VPS ON daje pełną kontrolę – CPU, RAM i dysk SSD w oparciu o OpenNebula. Idealny dla aplikacji wymagających dostępu root, izolacji i skalowania.\n\nZniżka pozwala taniej przetestować środowisko produkcyjne.',
         vpsSsd: 'VPS SSD oferuje zrównoważony stosunek ceny do wydajności z gwarantowanymi parametrami w ramach modułów. Idealny dla projektów wymagających stabilnego i przewidywalnego środowiska. Dzięki dyskom SSD operacje są bardzo szybkie.\n\nZniżka dotyczy konfiguracji usługi i pozwala rozpocząć pracę z profesjonalnym serwerem wirtualnym przy minimalnych kosztach.',
+        wordpressHosting: 'WordPress hosting WP LowCost i WP NoLimit jest przygotowany specjalnie pod wydajność WordPressa. Dzięki zniżce 50% możesz tanio uruchomić blog, stronę firmową lub sklep WooCommerce.\n\nŚrodowisko jest zoptymalizowane pod nowoczesnego WordPressa i zapewnia prostą administrację.',
         website: 'VEDOS WebSite umożliwia stworzenie strony bez programowania. Wybierz szablon, edytuj treść i opublikuj. Rozwiązanie idealne dla jednoosobowych firm i małych biznesów.\n\nPromocja znacząco obniża koszt profesjonalnie wyglądającej witryny.',
         disk: 'VEDOS Disk to bezpieczna pamięć masowa na kopie zapasowe i archiwum. Dostęp przez FTP, rsync, SMB, SVN, Git ułatwia integrację z procesami.\n\nKupon obniża koszt długoterminowej retencji danych.',
         mailhosting: 'Mailhosting na własnej domenie wzmacnia wizerunek firmy. Nowoczesny webmail i ochrona antyspamowa/antywirusowa, dane w centrum danych w Czechach.\n\nDzięki zniżce szybko i tanio uruchomisz pocztę firmową.',
@@ -500,6 +521,7 @@ export const translations = {
       domains: '50% zľava na domény (.EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE, .FUN)',
       vpsOn: 'VPS ON zľava 33 %',
       vpsSsd: 'VPS SSD zľava 25 %',
+      wordpressHosting: 'WordPress hosting (WP LowCost + WP NoLimit) zľava 50 %',
       website: 'VEDOS WebSite zľava 50 %',
       // cd: 'VEDOS CD zľava 25 %',
       disk: 'VEDOS Disk zľava 25 %',
@@ -537,6 +559,11 @@ export const translations = {
         title: 'VPS SSD',
         content: 'Výkonné virtuálne servery s vyhradeným výkonom a SSD diskami. Garantovaný výkon a dostupnosť pre vaše projekty.',
         cta: 'Získať VPS SSD so zľavou 25%'
+      },
+      wordpressHosting: {
+        title: 'WordPress hosting',
+        content: 'Špeciálna 50% zľava na WordPress hosting WP LowCost a WP NoLimit. Ideálne riešenie pre rýchle a bezpečné WordPress weby.',
+        cta: 'Získať WordPress hosting so zľavou 50%'
       },
       website: {
         title: 'VEDOS WebSite',
@@ -590,6 +617,7 @@ export const translations = {
         webhostingLowCost: 'LowCost a NoLimit pokrývajú potreby väčšiny webov. LowCost je skvelý štart pre blogy a menšie firmy, pri raste sa oplatí prejsť na NoLimit s lepšími parametrami.\n\nZľavové kódy obvykle znižujú zriaďovací poplatok aj prvé obdobie.',
         vpsOn: 'VPS ON dáva plnú kontrolu – voľba CPU, RAM a SSD disku na OpenNebula infraštruktúre. Vhodné pre aplikácie vyžadujúce root prístup, izoláciu a škálovanie.\n\nZľava umožní lacnejší test produkčného prostredia.',
         vpsSsd: 'VPS SSD ponúka vyvážený pomer ceny a výkonu s garantovanými parametrami v rámci modulov. Je ideálny pre projekty, ktoré vyžadujú stabilné a predikovateľné prostredie. Vďaka SSD diskom sú operácie veľmi rýchle.\n\nZľava sa vzťahuje na zriadenie služby a umožňuje Vám začať s profesionálnym virtuálnym serverom za minimálne náklady.',
+        wordpressHosting: 'WordPress hosting WP LowCost a WP NoLimit je navrhnutý pre rýchly a stabilný chod WordPress webov. So zľavou 50 % môžete výhodne spustiť blog, firemný web aj WooCommerce projekt.\n\nProstredie je optimalizované pre moderný WordPress a jednoduchú správu.',
         website: 'VEDOS WebSite umožní zostaviť web bez programovania. Vyberiete šablónu, upravíte obsah a publikujete. Ideálne pre živnostníkov a malé firmy.\n\nVďaka zľave získate profesionálny web za nízku cenu.',
         disk: 'VEDOS Disk je bezpečné vzdialené úložisko pre zálohy a archív. Prístup cez FTP, rsync, SMB, SVN či Git uľahčuje integráciu do procesov.\n\nKupón znižuje náklady na dlhodobé uloženie dát.',
         mailhosting: 'Mailhosting na vlastnej doméne podporí profesionálny imidž. Moderný webmail, antispam/antivírus a dáta uložené v ČR. Jednoduché rozširovanie počtu schránok.\n\nSo zľavou vybavíte firemný e‑mail rýchlo a výhodne.',
@@ -659,6 +687,7 @@ export const translations = {
       domains: '50% Rabatt auf Domains (.EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE, .FUN)',
       vpsOn: 'VPS ON 33% Rabatt',
       vpsSsd: 'VPS SSD 25% Rabatt',
+      wordpressHosting: 'WordPress Hosting (WP LowCost + WP NoLimit) 50% Rabatt',
       website: 'VEDOS WebSite 50% Rabatt',
       // cd: 'VEDOS CD 25% Rabatt',
       disk: 'VEDOS Disk 25% Rabatt',
@@ -696,6 +725,11 @@ export const translations = {
         title: 'VPS SSD',
         content: 'Leistungsstarke virtuelle Server mit dedizierter Leistung und SSD-Festplatten. Garantierte Leistung und Verfügbarkeit für Ihre Projekte.',
         cta: 'VPS SSD mit 25% Rabatt erhalten'
+      },
+      wordpressHosting: {
+        title: 'WordPress Hosting',
+        content: 'Spezielle 50% Rabattaktion für WordPress Hosting WP LowCost und WP NoLimit. Ideal für schnelle und sichere WordPress-Websites.',
+        cta: 'WordPress Hosting mit 50% Rabatt erhalten'
       },
       website: {
         title: 'VEDOS WebSite',
@@ -749,6 +783,7 @@ export const translations = {
         webhostingLowCost: 'LowCost und NoLimit decken die meisten Anforderungen ab. LowCost eignet sich für kleinere Projekte, bei Wachstum empfiehlt sich NoLimit mit stärkeren Parametern.\n\nGutscheincodes reduzieren oft die Einrichtungsgebühr und die erste Abrechnungsperiode.',
         vpsOn: 'VPS ON gibt volle Kontrolle – CPU, RAM und SSD‑Speicher auf zuverlässiger OpenNebula‑Infrastruktur. Geeignet für Anwendungen mit Root‑Zugriff, Isolation und Skalierbarkeit.\n\nDer Rabatt erleichtert Tests produktionsnaher Umgebungen.',
         vpsSsd: 'VPS SSD bietet ein ausgewogenes Preis-Leistungs-Verhältnis mit garantierten Parametern innerhalb von Modulen. Ideal für Projekte, die eine stabile und vorhersagbare Umgebung erfordern. Dank SSD-Festplatten sind Operationen sehr schnell.\n\nDer Rabatt gilt für die Einrichtung des Dienstes und ermöglicht Ihnen den Start mit einem professionellen virtuellen Server zu minimalen Kosten.',
+        wordpressHosting: 'WordPress Hosting WP LowCost und WP NoLimit ist speziell für Leistung und Einfachheit bei WordPress ausgelegt. Mit 50 % Rabatt starten Sie Blogs, Firmenwebsites oder WooCommerce-Projekte besonders günstig.\n\nDie Umgebung ist für modernes WordPress optimiert und einfach zu verwalten.',
         domains: 'Die Domainregistrierung ist der erste Schritt zur eigenen Website. Mit unserem Rabatt erhalten Sie beliebte Endungen wie .EU, .ONLINE oder .STORE zu einem Bruchteil des regulären Preises. Der Aktionspreis gilt für das erste Jahr der Registrierung.\n\nDarüber hinaus erhalten Sie zu jeder Domain eine grundlegende DNS-Verwaltung und die Möglichkeit der einfachen Anbindung an andere Vedos-Dienste.',
         website: 'VEDOS WebSite ermöglicht den schnellen Aufbau einer Website ohne Programmierung. Vorlage wählen, Inhalte anpassen und veröffentlichen – ideal für kleine Unternehmen.\n\nDie Aktion macht professionelle Websites deutlich günstiger als Individualentwicklung.',
         disk: 'VEDOS Disk ist sicherer externer Speicher für Backups und Archivierung. Zugriff über FTP, rsync, SMB, SVN oder Git – einfach in Workflows integrierbar.\n\nDer Gutschein senkt die Kosten der Langzeitaufbewahrung.',
@@ -819,6 +854,7 @@ export const translations = {
       domains: '50% di sconto su domini (.EU, .ONLINE, .STORE, .TECH, .SITE, .WEBSITE, .SPACE, .FUN)',
       vpsOn: 'VPS ON sconto del 33%',
       vpsSsd: 'VPS SSD sconto del 25%',
+      wordpressHosting: 'WordPress hosting (WP LowCost + WP NoLimit) sconto del 50%',
       website: 'VEDOS WebSite sconto del 50%',
       disk: 'VEDOS Disk sconto del 25%',
       mailhosting: 'Mailhosting sconto del 50%',
@@ -855,6 +891,11 @@ export const translations = {
         title: 'VPS SSD',
         content: 'Potenti server virtuali con prestazioni dedicate e dischi SSD. Prestazioni e disponibilità garantite per i tuoi progetti.',
         cta: 'Ottieni VPS SSD con il 25% di sconto'
+      },
+      wordpressHosting: {
+        title: 'WordPress hosting',
+        content: 'Sconto speciale del 50% su WordPress hosting WP LowCost e WP NoLimit. Perfetto per siti WordPress veloci, stabili e sicuri.',
+        cta: 'Ottieni WordPress hosting con il 50% di sconto'
       },
       website: {
         title: 'VEDOS WebSite',
@@ -903,6 +944,7 @@ export const translations = {
         webhostingLowCost: 'LowCost e NoLimit coprono le esigenze della maggior parte dei siti web. LowCost è perfetto per siti personali, blog e piccole pagine aziendali. Se prevedi una crescita, considera NoLimit con parametri database e PHP più potenti.\n\nI codici sconto riducono solitamente la tariffa di attivazione e il primo periodo di fatturazione, così risparmi fin dall\'inizio.',
         vpsOn: 'VPS ON ti offre pieno controllo – scegli CPU, RAM e storage SSD su una infrastruttura OpenNebula affidabile. È adatto per applicazioni che richiedono accesso root, isolamento e capacità di scalare.\n\nLo sconto ti aiuta a validare ambienti simili alla produzione a un costo inferiore e scalare successivamente.',
         vpsSsd: 'VPS SSD offre un rapporto qualità-prezzo equilibrato con parametri garantiti all\'interno dei moduli. È ideale per progetti che richiedono un ambiente stabile e prevedibile. Grazie ai dischi SSD, le operazioni sono molto veloci.\n\nLo sconto si applica all\'attivazione del servizio e ti permette di iniziare con un server virtuale professionale a un costo minimo.',
+        wordpressHosting: 'WordPress hosting WP LowCost e WP NoLimit è pensato per prestazioni elevate su WordPress. Con lo sconto del 50% puoi avviare blog, siti aziendali o WooCommerce a costi contenuti.\n\nL\'ambiente è ottimizzato per WordPress moderno e per una gestione semplice.',
         domains: 'La registrazione del dominio è il primo passo verso il tuo sito web. Con il nostro sconto, puoi ottenere estensioni popolari come .EU, .ONLINE o .STORE a una frazione del prezzo normale. Il prezzo promozionale si applica al primo anno di registrazione.\n\nInoltre, ottieni la gestione DNS di base con ogni dominio e la possibilità di una facile connessione con altri servizi Vedos.',
         website: 'VEDOS WebSite ti permette di costruire un sito web senza codificare. Scegli un template, modifica i contenuti e pubblica. È ideale per liberi professionisti e piccole imprese che vogliono andare online rapidamente.\n\nLa promozione rende i siti web dall\'aspetto professionale molto convenienti rispetto allo sviluppo personalizzato.',
         disk: 'VEDOS Disk è uno storage remoto sicuro per backup e archivi. L\'accesso tramite FTP, rsync, SMB, SVN o Git si integra facilmente con i tuoi flussi di lavoro. Adatto per aziende e privati che necessitano di spazio affidabile al di fuori della propria infrastruttura.\n\nIl coupon riduce il costo totale della conservazione dei dati a lungo termine.',
