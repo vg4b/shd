@@ -210,6 +210,17 @@ const VoucherPage: React.FC<VoucherPageProps> = ({ category }) => {
       </div>
 
       <div className="row">
+        {category === 'wordpressHosting' && (
+          <div className="col-12 mb-4">
+            <div className="wp-recommended-banner">
+              <span className="wp-recommended-pill">{t('recommended')}</span>
+              <h2>{t('services.wordpressHosting.title')}: WP LowCost + WP NoLimit</h2>
+              <p>
+                {t('discountCode')}: <strong>{couponData.code}</strong> · {t('validUntil')} {couponData.validUntil}
+              </p>
+            </div>
+          </div>
+        )}
         <div className="col-12 mb-5">
           <InfoTile
             title={t(`${serviceKey}.title` as any)}

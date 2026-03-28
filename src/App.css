@@ -124,6 +124,8 @@ header .fs-4 {
   height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
 .info-tile:hover {
@@ -165,6 +167,21 @@ header .fs-4 {
   background: var(--primary-color);
   color: white;
   transform: scale(1.1) rotate(-5deg);
+}
+
+.tile-recommended-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(249, 115, 22, 0.35);
 }
 
 /* Coupon Badge in Tile */
@@ -305,22 +322,227 @@ header .fs-4 {
   letter-spacing: 1px;
 }
 
-/* Footer improvements */
-footer {
-  background: var(--dark-bg);
-  color: rgba(255, 255, 255, 0.8);
-  padding: 4rem 0;
-  margin-top: 5rem;
+/* WordPress highlight banner */
+.wp-recommended-banner {
+  border: 1px solid #bfdbfe;
+  background: linear-gradient(135deg, #eff6ff, #ffffff);
+  border-radius: var(--border-radius-xl);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
 }
 
-footer a {
-  color: var(--primary-light);
+.wp-recommended-pill {
+  display: inline-flex;
+  align-items: center;
+  background: var(--gradient-primary);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.wp-recommended-banner h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+}
+
+.wp-recommended-banner p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+/* Footer */
+.footer-modern {
+  border-top: 1px solid #e5e7eb;
+  background: #f9fafb;
+  color: #4b5563;
+  margin-top: 3rem;
+}
+
+.footer-modern__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+.footer-modern__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.footer-modern h3 {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #111827;
+}
+
+.footer-modern p {
+  margin: 0.75rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.footer-modern ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-modern a {
+  color: #2563eb;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
-footer a:hover {
-  color: white;
+.footer-modern a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.footer-modern__bottom {
+  margin-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+/* Blog */
+.blog-header {
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-xl);
+  padding: 2rem;
+}
+
+.blog-header p {
+  color: var(--text-secondary);
+}
+
+.blog-card {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-xl);
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+}
+
+.blog-card h2 {
+  font-size: 1.2rem;
+  margin: 0.75rem 0;
+  line-height: 1.4;
+}
+
+.blog-card p {
+  color: var(--text-secondary);
+  flex-grow: 1;
+}
+
+.blog-card__affiliate-link {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  color: #1d4ed8;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.blog-card__affiliate-link:hover {
+  text-decoration: underline;
+}
+
+.blog-card__meta {
+  display: inline-flex;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  align-items: center;
+}
+
+.blog-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.blog-post {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.blog-post__header {
+  margin-bottom: 1.5rem;
+}
+
+.blog-post__header h1 {
+  margin: 0.75rem 0;
+}
+
+.blog-post__header p {
+  color: var(--text-secondary);
+}
+
+.blog-post__content p {
+  line-height: 1.85;
+  margin-bottom: 1rem;
+}
+
+.blog-lang-note {
+  color: #92400e;
+  background: #fef3c7;
+  border-radius: 999px;
+  padding: 0.1rem 0.45rem;
+}
+
+.blog-language-notice {
+  border: 1px solid #fde68a;
+  background: #fffbeb;
+  color: #92400e;
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius-md);
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.blog-affiliate-box {
+  margin-top: 1.5rem;
+  border: 1px solid #bfdbfe;
+  background: #eff6ff;
+  border-radius: var(--border-radius-lg);
+  padding: 1rem 1.25rem;
+}
+
+.blog-affiliate-box h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.blog-affiliate-box ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.blog-affiliate-box a {
+  color: #1e40af;
+  text-decoration: none;
+}
+
+.blog-affiliate-box a:hover {
+  text-decoration: underline;
 }
 
 /* SEO Content Section */
@@ -391,5 +613,16 @@ footer a:hover {
 @media (max-width: 768px) {
   .hero-section h1 {
     font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-modern__container {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .footer-modern__grid {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2.5rem;
   }
 }

@@ -18,6 +18,8 @@ interface InfoTileProps {
     validUntil?: string;
   };
   icon?: "hosting" | "vps" | "domain" | "website" | "disk" | "mail" | "renewal";
+  recommended?: boolean;
+  recommendedLabel?: string;
 }
 
 const Icons = {
@@ -50,13 +52,20 @@ const InfoTile: React.FC<InfoTileProps> = ({
   link, 
   internalLink,
   discountCode,
-  icon = "hosting"
+  icon = "hosting",
+  recommended = false,
+  recommendedLabel
 }) => {
   const { t } = useLanguage();
   const navigateWithLanguage = useLanguageAwareNavigation();
 
   const tileContent = (
     <div className="info-tile">
+      {recommended && (
+        <div className="tile-recommended-badge">
+          {recommendedLabel || t("recommended")}
+        </div>
+      )}
       <div className="tile-icon">
         {Icons[icon]}
       </div>

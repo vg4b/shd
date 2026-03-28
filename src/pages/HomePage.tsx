@@ -103,6 +103,10 @@ const HomePage: React.FC = () => {
 
   const coupons: DiscountCoupon[] = [
     {
+      description: t("coupons.wordpressHosting") + ":",
+      code: validCoupons.wordpressHosting.code,
+    },
+    {
       description: t("coupons.webhostingNoLimit") + ":",
       code: validCoupons.webhostingNoLimit.code,
     },
@@ -117,10 +121,6 @@ const HomePage: React.FC = () => {
     {
       description: t("coupons.vpsSsd") + ":",
       code: validCoupons.vpsSsd.code,
-    },
-    {
-      description: t("coupons.wordpressHosting") + ":",
-      code: validCoupons.wordpressHosting.code,
     },
     {
       description: t("coupons.website") + ":",
@@ -259,16 +259,16 @@ const HomePage: React.FC = () => {
             <div className="hero-coupons">
               <h3 className="h5 mb-3 text-white-50">{t("topCoupons")}</h3>
               <div className="hero-coupon-item">
+                <span>{t("services.wordpressHosting.title")}</span>
+                <span className="hero-coupon-code">{validCoupons.wordpressHosting.code}</span>
+              </div>
+              <div className="hero-coupon-item">
                 <span>{t("services.webhostingNoLimit.title")}</span>
                 <span className="hero-coupon-code">{validCoupons.webhostingNoLimit.code}</span>
               </div>
               <div className="hero-coupon-item">
                 <span>{t("services.vpsOn.title")}</span>
                 <span className="hero-coupon-code">{validCoupons.vpsOn.code}</span>
-              </div>
-              <div className="hero-coupon-item">
-                <span>{t("services.wordpressHosting.title")}</span>
-                <span className="hero-coupon-code">{validCoupons.wordpressHosting.code}</span>
               </div>
               <div className="hero-coupon-item">
                 <span>{t("services.domains.title")}</span>
@@ -280,6 +280,18 @@ const HomePage: React.FC = () => {
       </div>
 
       <div className="row">
+        <InfoTile
+          title={t("services.wordpressHosting.title")}
+          content={t("services.wordpressHosting.content")}
+          icon="hosting"
+          recommended
+          recommendedLabel={t("recommended")}
+          discountCode={{
+            code: validCoupons.wordpressHosting.code,
+            validUntil: validCoupons.wordpressHosting.validUntil,
+          }}
+          internalLink="/wordpress-hosting"
+        />
         <InfoTile
           title={t("services.webhostingNoLimit.title")}
           content={t("services.webhostingNoLimit.content")}
@@ -319,16 +331,6 @@ const HomePage: React.FC = () => {
             validUntil: validCoupons.vpsSsd.validUntil,
           }}
           internalLink="/vps-ssd"
-        />
-        <InfoTile
-          title={t("services.wordpressHosting.title")}
-          content={t("services.wordpressHosting.content")}
-          icon="hosting"
-          discountCode={{
-            code: validCoupons.wordpressHosting.code,
-            validUntil: validCoupons.wordpressHosting.validUntil,
-          }}
-          internalLink="/wordpress-hosting"
         />
         <InfoTile
           title={t("services.website.title")}

@@ -16,6 +16,8 @@ import DiskPage from './pages/DiskPage';
 import MailhostingPage from './pages/MailhostingPage';
 import RenewalPage from './pages/RenewalPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 
 const AppContent: React.FC = () => {
   const routes = [
@@ -30,7 +32,9 @@ const AppContent: React.FC = () => {
     { path: "disk", element: <DiskPage /> },
     { path: "mailhosting", element: <MailhostingPage /> },
     { path: "renewal", element: <RenewalPage /> },
-    { path: "privacy", element: <PrivacyPolicyPage /> }
+    { path: "privacy", element: <PrivacyPolicyPage /> },
+    { path: "blog", element: <BlogPage /> },
+    { path: "blog/:slug", element: <BlogPostPage /> }
   ];
 
   return (

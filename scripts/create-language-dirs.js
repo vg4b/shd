@@ -14,6 +14,15 @@ const routes = [
   "disk",
   "mailhosting",
   "renewal",
+  "blog",
+  "blog/wordpress-hosting-lowcost-vs-nolimit",
+  "blog/vps-on-vs-vps-ssd",
+  "blog/jak-vybrat-domenu-a-neudelat-chybu",
+  "blog/how-to-choose-wordpress-hosting-2026",
+  "blog/jak-wybrac-vps-na-start",
+  "blog/ako-vybrat-webhosting-pre-firemny-web",
+  "blog/domain-fuer-unternehmen-auswaehlen",
+  "blog/hosting-wordpress-guida-rapida",
 ];
 const buildDir = path.join(__dirname, "../build");
 

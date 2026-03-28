@@ -12,8 +12,47 @@ export const translations = {
     validUntil: 'do',
     topCoupons: 'Top Slevové Kódy',
     moreInfo: 'Více informací',
+    recommended: 'Doporučeno',
     site: {
       title: 'slevy-hosting-domeny.cz'
+    },
+    footer: {
+      aboutTitle: 'O projektu',
+      aboutText1: 'shromažďuje aktuální slevové kódy na služby Vedos.cz (webhosting, WordPress hosting, VPS, domény a další).',
+      aboutText2: 'Tento web je pouze informativní a může obsahovat affiliate odkazy. Kliknutím na odkaz podpoříte provoz projektu a získáte slevu na produkty.',
+      linksTitle: 'Odkazy',
+      links: {
+        home: 'Domů',
+        blog: 'Blog',
+        privacy: 'Ochrana osobních údajů'
+      },
+      servicesTitle: 'Další služby',
+      services: {
+        vinInfo: 'VIN Info.cz — kontrola vozidla',
+        fixweb: 'FixWeb.cz — opravy webů',
+        dealora: 'Dealora.cz — slevové kódy',
+        openShops: 'Jsou obchody otevřené?',
+        kurzyKaret: 'KurzyKaret.cz — kurzy při platbě kartou'
+      }
+    },
+    blog: {
+      title: 'Blog',
+      subtitle: 'Praktické návody, srovnání a tipy pro výběr hostingu, WordPressu, VPS a domén.',
+      pageTitle: 'Blog | slevy-hosting-domeny.cz',
+      readMore: 'Číst článek',
+      openOffer: 'Otevřít nabídku',
+      relatedOffers: 'Související nabídky',
+      published: 'Publikováno',
+      updated: 'Aktualizováno',
+      minutes: 'min čtení',
+      lessThanMinute: '< 1 min čtení',
+      backToBlog: 'Zpět na blog',
+      noPostsForLanguage: 'Pro tento jazyk zatím nejsou dostupné články.',
+      csOnlyShort: 'Obsah je česky',
+      csOnlyNotice: 'Obsah tohoto článku je aktuálně dostupný pouze v češtině.',
+      languageMismatchNotice: 'Tento článek je dostupný v jiném jazyce. Níže vidíte původní verzi článku.',
+      notFoundTitle: 'Článek nebyl nalezen',
+      notFoundText: 'Zkuste si vybrat některý z článků v blogu.'
     },
     coupons: {
       webhostingNoLimit: 'Webhosting NoLimit a Extra sleva 70 %',
@@ -179,8 +218,47 @@ export const translations = {
     validUntil: 'valid until',
     topCoupons: 'Top Discount Codes',
     moreInfo: 'More information',
+    recommended: 'Recommended',
     site: {
       title: 'slevy-hosting-domeny.cz'
+    },
+    footer: {
+      aboutTitle: 'About project',
+      aboutText1: 'collects current discount codes for Vedos.cz services (webhosting, WordPress hosting, VPS, domains and more).',
+      aboutText2: 'This website is for informational purposes only and may contain affiliate links. By clicking a link, you support the project; nothing changes for you.',
+      linksTitle: 'Links',
+      links: {
+        home: 'Home',
+        blog: 'Blog',
+        privacy: 'Privacy Policy'
+      },
+      servicesTitle: 'Other services',
+      services: {
+        vinInfo: 'VIN Info.cz — vehicle check',
+        fixweb: 'FixWeb.cz — website fixes',
+        dealora: 'Dealora.cz — discount codes',
+        openShops: 'Are shops open?',
+        kurzyKaret: 'KurzyKaret.cz — card payment exchange rates'
+      }
+    },
+    blog: {
+      title: 'Blog',
+      subtitle: 'Practical guides, comparisons, and tips for choosing hosting, WordPress, VPS, and domains.',
+      pageTitle: 'Blog | slevy-hosting-domeny.cz',
+      readMore: 'Read article',
+      openOffer: 'Open offer',
+      relatedOffers: 'Related offers',
+      published: 'Published',
+      updated: 'Updated',
+      minutes: 'min read',
+      lessThanMinute: '< 1 min read',
+      backToBlog: 'Back to blog',
+      noPostsForLanguage: 'No posts are currently available for this language.',
+      csOnlyShort: 'Czech content',
+      csOnlyNotice: 'This article is currently available only in Czech.',
+      languageMismatchNotice: 'This article is available in another language. The original version is shown below.',
+      notFoundTitle: 'Article not found',
+      notFoundText: 'Try selecting one of the posts in the blog.'
     },
     coupons: {
       webhostingNoLimit: 'Webhosting NoLimit and Extra 70% discount',
@@ -346,8 +424,47 @@ export const translations = {
     validUntil: 'ważny do',
     topCoupons: 'Najlepsze Kody Rabatowe',
     moreInfo: 'Więcej informacji',
+    recommended: 'Polecane',
     site: {
       title: 'slevy-hosting-domeny.cz'
+    },
+    footer: {
+      aboutTitle: 'O projekcie',
+      aboutText1: 'zbiera aktualne kody rabatowe na usługi Vedos.cz (webhosting, WordPress hosting, VPS, domeny i inne).',
+      aboutText2: 'Ta strona ma charakter informacyjny i może zawierać linki afiliacyjne. Klikając link, wspierasz projekt — dla Ciebie nic się nie zmienia.',
+      linksTitle: 'Linki',
+      links: {
+        home: 'Strona główna',
+        blog: 'Blog',
+        privacy: 'Polityka prywatności'
+      },
+      servicesTitle: 'Inne usługi',
+      services: {
+        vinInfo: 'VIN Info.cz — sprawdzenie pojazdu',
+        fixweb: 'FixWeb.cz — naprawy stron',
+        dealora: 'Dealora.cz — kody rabatowe',
+        openShops: 'Czy sklepy są otwarte?',
+        kurzyKaret: 'KurzyKaret.cz — kursy przy płatności kartą'
+      }
+    },
+    blog: {
+      title: 'Blog',
+      subtitle: 'Praktyczne poradniki, porównania i wskazówki dotyczące hostingu, WordPressa, VPS i domen.',
+      pageTitle: 'Blog | slevy-hosting-domeny.cz',
+      readMore: 'Czytaj artykuł',
+      openOffer: 'Otwórz ofertę',
+      relatedOffers: 'Powiązane oferty',
+      published: 'Opublikowano',
+      updated: 'Zaktualizowano',
+      minutes: 'min czytania',
+      lessThanMinute: '< 1 min czytania',
+      backToBlog: 'Powrót do bloga',
+      noPostsForLanguage: 'Dla tego języka nie ma jeszcze dostępnych artykułów.',
+      csOnlyShort: 'Treść po czesku',
+      csOnlyNotice: 'Ten artykuł jest obecnie dostępny tylko po czesku.',
+      languageMismatchNotice: 'Ten artykuł jest dostępny w innym języku. Poniżej widzisz oryginalną wersję.',
+      notFoundTitle: 'Nie znaleziono artykułu',
+      notFoundText: 'Wybierz jeden z artykułów na blogu.'
     },
     coupons: {
       webhostingNoLimit: 'Webhosting NoLimit i dodatkowy rabat 70%',
@@ -512,8 +629,47 @@ export const translations = {
     validUntil: 'platný do',
     topCoupons: 'Top Zľavové Kódy',
     moreInfo: 'Viac informácií',
+    recommended: 'Odporúčané',
     site: {
       title: 'slevy-hosting-domeny.cz'
+    },
+    footer: {
+      aboutTitle: 'O projekte',
+      aboutText1: 'zhromažďuje aktuálne zľavové kódy na služby Vedos.cz (webhosting, WordPress hosting, VPS, domény a ďalšie).',
+      aboutText2: 'Web je informatívny a môže obsahovať affiliate odkazy. Kliknutím na odkaz podporíte projekt, pre vás sa nič nemení.',
+      linksTitle: 'Odkazy',
+      links: {
+        home: 'Domov',
+        blog: 'Blog',
+        privacy: 'Ochrana osobných údajov'
+      },
+      servicesTitle: 'Ďalšie služby',
+      services: {
+        vinInfo: 'VIN Info.cz — kontrola vozidla',
+        fixweb: 'FixWeb.cz — opravy webov',
+        dealora: 'Dealora.cz — zľavové kódy',
+        openShops: 'Sú obchody otvorené?',
+        kurzyKaret: 'KurzyKaret.cz — kurzy pri platbe kartou'
+      }
+    },
+    blog: {
+      title: 'Blog',
+      subtitle: 'Praktické návody, porovnania a tipy pre výber hostingu, WordPressu, VPS a domén.',
+      pageTitle: 'Blog | slevy-hosting-domeny.cz',
+      readMore: 'Čítať článok',
+      openOffer: 'Otvoriť ponuku',
+      relatedOffers: 'Súvisiace ponuky',
+      published: 'Publikované',
+      updated: 'Aktualizované',
+      minutes: 'min čítania',
+      lessThanMinute: '< 1 min čítania',
+      backToBlog: 'Späť na blog',
+      noPostsForLanguage: 'Pre tento jazyk zatiaľ nie sú dostupné články.',
+      csOnlyShort: 'Obsah v češtine',
+      csOnlyNotice: 'Tento článok je aktuálne dostupný iba v češtine.',
+      languageMismatchNotice: 'Tento článok je dostupný v inom jazyku. Nižšie vidíte pôvodnú verziu.',
+      notFoundTitle: 'Článok sa nenašiel',
+      notFoundText: 'Vyberte si niektorý z článkov na blogu.'
     },
     coupons: {
       webhostingNoLimit: 'Webhosting NoLimit a Extra zľava 70 %',
@@ -678,8 +834,47 @@ export const translations = {
     validUntil: 'gültig bis',
     topCoupons: 'Top Rabattcodes',
     moreInfo: 'Mehr Informationen',
+    recommended: 'Empfohlen',
     site: {
       title: 'slevy-hosting-domeny.cz'
+    },
+    footer: {
+      aboutTitle: 'Über das Projekt',
+      aboutText1: 'sammelt aktuelle Rabattcodes für Vedos.cz-Dienste (Webhosting, WordPress Hosting, VPS, Domains und mehr).',
+      aboutText2: 'Diese Website dient nur zu Informationszwecken und kann Affiliate-Links enthalten. Mit einem Klick auf einen Link unterstützen Sie das Projekt — für Sie ändert sich nichts.',
+      linksTitle: 'Links',
+      links: {
+        home: 'Startseite',
+        blog: 'Blog',
+        privacy: 'Datenschutzerklärung'
+      },
+      servicesTitle: 'Weitere Dienste',
+      services: {
+        vinInfo: 'VIN Info.cz — Fahrzeugprüfung',
+        fixweb: 'FixWeb.cz — Webseiten-Reparaturen',
+        dealora: 'Dealora.cz — Rabattcodes',
+        openShops: 'Sind die Geschäfte geöffnet?',
+        kurzyKaret: 'KurzyKaret.cz — Kurse bei Kartenzahlung'
+      }
+    },
+    blog: {
+      title: 'Blog',
+      subtitle: 'Praktische Anleitungen, Vergleiche und Tipps zur Wahl von Hosting, WordPress, VPS und Domains.',
+      pageTitle: 'Blog | slevy-hosting-domeny.cz',
+      readMore: 'Artikel lesen',
+      openOffer: 'Angebot öffnen',
+      relatedOffers: 'Verwandte Angebote',
+      published: 'Veröffentlicht',
+      updated: 'Aktualisiert',
+      minutes: 'Min. Lesezeit',
+      lessThanMinute: '< 1 Min. Lesezeit',
+      backToBlog: 'Zurück zum Blog',
+      noPostsForLanguage: 'Für diese Sprache sind noch keine Artikel verfügbar.',
+      csOnlyShort: 'Inhalt auf Tschechisch',
+      csOnlyNotice: 'Dieser Artikel ist derzeit nur auf Tschechisch verfügbar.',
+      languageMismatchNotice: 'Dieser Artikel ist in einer anderen Sprache verfügbar. Unten sehen Sie die Originalversion.',
+      notFoundTitle: 'Artikel nicht gefunden',
+      notFoundText: 'Wählen Sie bitte einen der Blogartikel aus.'
     },
     coupons: {
       webhostingNoLimit: 'Webhosting NoLimit und Extra 70% Rabatt',
@@ -845,8 +1040,47 @@ export const translations = {
     validUntil: 'valido fino al',
     topCoupons: 'Migliori Codici Sconto',
     moreInfo: 'Più informazioni',
+    recommended: 'Consigliato',
     site: {
       title: 'slevy-hosting-domeny.cz'
+    },
+    footer: {
+      aboutTitle: 'Informazioni sul progetto',
+      aboutText1: 'raccoglie i codici sconto attuali per i servizi Vedos.cz (webhosting, WordPress hosting, VPS, domini e altro).',
+      aboutText2: 'Questo sito ha scopo informativo e può contenere link affiliati. Cliccando un link supporti il progetto; per te non cambia nulla.',
+      linksTitle: 'Link',
+      links: {
+        home: 'Home',
+        blog: 'Blog',
+        privacy: 'Informativa sulla privacy'
+      },
+      servicesTitle: 'Altri servizi',
+      services: {
+        vinInfo: 'VIN Info.cz — controllo veicolo',
+        fixweb: 'FixWeb.cz — riparazioni siti web',
+        dealora: 'Dealora.cz — codici sconto',
+        openShops: 'I negozi sono aperti?',
+        kurzyKaret: 'KurzyKaret.cz — tassi al pagamento con carta'
+      }
+    },
+    blog: {
+      title: 'Blog',
+      subtitle: 'Guide pratiche, confronti e consigli per scegliere hosting, WordPress, VPS e domini.',
+      pageTitle: 'Blog | slevy-hosting-domeny.cz',
+      readMore: 'Leggi articolo',
+      openOffer: 'Apri offerta',
+      relatedOffers: 'Offerte correlate',
+      published: 'Pubblicato',
+      updated: 'Aggiornato',
+      minutes: 'min di lettura',
+      lessThanMinute: '< 1 min di lettura',
+      backToBlog: 'Torna al blog',
+      noPostsForLanguage: 'Per questa lingua non ci sono ancora articoli disponibili.',
+      csOnlyShort: 'Contenuto in ceco',
+      csOnlyNotice: 'Questo articolo è attualmente disponibile solo in ceco.',
+      languageMismatchNotice: "Questo articolo è disponibile in un'altra lingua. Di seguito vedi la versione originale.",
+      notFoundTitle: 'Articolo non trovato',
+      notFoundText: 'Scegli uno degli articoli del blog.'
     },
     coupons: {
       webhostingNoLimit: 'Webhosting NoLimit e sconto Extra del 70%',

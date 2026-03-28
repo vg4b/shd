@@ -10,4 +10,6 @@ export { default as WebsitePage } from './WebsitePage';
 export { default as DiskPage } from './DiskPage';
 export { default as MailhostingPage } from './MailhostingPage';
 export { default as RenewalPage } from './RenewalPage';
+export { default as BlogPage } from './BlogPage';
+export { default as BlogPostPage } from './BlogPostPage';
 export { default as VoucherPage } from './VoucherPage';

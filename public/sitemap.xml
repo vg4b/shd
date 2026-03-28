@@ -240,4 +240,104 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://slevy-hosting-domeny.cz/it/renewal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://slevy-hosting-domeny.cz/renewal/"/>
   </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://slevy-hosting-domeny.cz/blog/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://slevy-hosting-domeny.cz/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://slevy-hosting-domeny.cz/pl/blog/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://slevy-hosting-domeny.cz/sk/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://slevy-hosting-domeny.cz/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://slevy-hosting-domeny.cz/it/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://slevy-hosting-domeny.cz/blog/"/>
+  </url>
+
+  <!-- Blog Post: WP LowCost vs WP NoLimit -->
+  <url>
+    <loc>https://slevy-hosting-domeny.cz/blog/wordpress-hosting-lowcost-vs-nolimit/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/blog/wordpress-hosting-lowcost-vs-nolimit/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://slevy-hosting-domeny.cz/en/blog/wordpress-hosting-lowcost-vs-nolimit/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://slevy-hosting-domeny.cz/pl/blog/wordpress-hosting-lowcost-vs-nolimit/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://slevy-hosting-domeny.cz/sk/blog/wordpress-hosting-lowcost-vs-nolimit/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://slevy-hosting-domeny.cz/de/blog/wordpress-hosting-lowcost-vs-nolimit/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://slevy-hosting-domeny.cz/it/blog/wordpress-hosting-lowcost-vs-nolimit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://slevy-hosting-domeny.cz/blog/wordpress-hosting-lowcost-vs-nolimit/"/>
+  </url>
+
+  <!-- Blog Post: VPS ON vs VPS SSD -->
+  <url>
+    <loc>https://slevy-hosting-domeny.cz/blog/vps-on-vs-vps-ssd/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/blog/vps-on-vs-vps-ssd/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://slevy-hosting-domeny.cz/en/blog/vps-on-vs-vps-ssd/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://slevy-hosting-domeny.cz/pl/blog/vps-on-vs-vps-ssd/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://slevy-hosting-domeny.cz/sk/blog/vps-on-vs-vps-ssd/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://slevy-hosting-domeny.cz/de/blog/vps-on-vs-vps-ssd/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://slevy-hosting-domeny.cz/it/blog/vps-on-vs-vps-ssd/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://slevy-hosting-domeny.cz/blog/vps-on-vs-vps-ssd/"/>
+  </url>
+
+  <!-- Blog Post: How to choose a domain -->
+  <url>
+    <loc>https://slevy-hosting-domeny.cz/blog/jak-vybrat-domenu-a-neudelat-chybu/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://slevy-hosting-domeny.cz/blog/jak-vybrat-domenu-a-neudelat-chybu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://slevy-hosting-domeny.cz/en/blog/jak-vybrat-domenu-a-neudelat-chybu/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://slevy-hosting-domeny.cz/pl/blog/jak-vybrat-domenu-a-neudelat-chybu/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://slevy-hosting-domeny.cz/sk/blog/jak-vybrat-domenu-a-neudelat-chybu/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://slevy-hosting-domeny.cz/de/blog/jak-vybrat-domenu-a-neudelat-chybu/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://slevy-hosting-domeny.cz/it/blog/jak-vybrat-domenu-a-neudelat-chybu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://slevy-hosting-domeny.cz/blog/jak-vybrat-domenu-a-neudelat-chybu/"/>
+  </url>
+
+  <!-- Blog Post: EN -->
+  <url>
+    <loc>https://slevy-hosting-domeny.cz/en/blog/how-to-choose-wordpress-hosting-2026/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog Post: PL -->
+  <url>
+    <loc>https://slevy-hosting-domeny.cz/pl/blog/jak-wybrac-vps-na-start/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog Post: SK -->
+  <url>
+    <loc>https://slevy-hosting-domeny.cz/sk/blog/ako-vybrat-webhosting-pre-firemny-web/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog Post: DE -->
+  <url>
+    <loc>https://slevy-hosting-domeny.cz/de/blog/domain-fuer-unternehmen-auswaehlen/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog Post: IT -->
+  <url>
+    <loc>https://slevy-hosting-domeny.cz/it/blog/hosting-wordpress-guida-rapida/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
