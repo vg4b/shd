@@ -32,8 +32,8 @@ export const validCoupons = {
     validUntil: "31.12.2026",
   },
   renewal: {
-    code: "PZCHPR",
-    validUntil: "9.9.2026",
+    code: "N16PR",
+    validUntil: "20.9.2026",
   },
   domains: {
     code: "DM261BOE47",
